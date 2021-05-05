@@ -18,6 +18,7 @@
  */
 
 #include "rtl_tcp_dongle_info.h"
+#include <boost/foreach.hpp>
 #include <string>
 #include <vector>
 
@@ -34,8 +35,8 @@ boost::system::error_code Rtl_Tcp_Dongle_Info::read(boost::asio::ip::tcp::socket
     boost::system::error_code ec;
 
     unsigned char data[sizeof(char) * 4 + sizeof(uint32_t) * 2];
-    size_t received_bits = socket.receive(boost::asio::buffer(data), 0, ec);
-    if (!ec && (received_bits > 0))
+    socket.receive(boost::asio::buffer(data), 0, ec);
+    if (!ec)
         {
             std::memcpy(magic_, data, 4);
 
@@ -45,7 +46,7 @@ boost::system::error_code Rtl_Tcp_Dongle_Info::read(boost::asio::ip::tcp::socket
             tuner_type_ = boost::asio::detail::socket_ops::network_to_host_long(type);
 
             uint32_t count;
-            std::memcpy(&count, &data[8], 4);
+            std ::memcpy(&count, &data[8], 4);
 
             tuner_gain_count_ = boost::asio::detail::socket_ops::network_to_host_long(count);
         }
@@ -114,7 +115,7 @@ double Rtl_Tcp_Dongle_Info::clip_gain(int gain) const
         }
 
     double last_stop = gains.front();
-    for (auto g : gains)
+    BOOST_FOREACH (double g, gains)
         {
             g /= 10.0;
 

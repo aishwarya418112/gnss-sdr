@@ -59,10 +59,7 @@ bool Monitor_Pvt_Udp_Sink::write_monitor_pvt(const Monitor_Pvt* const monitor_pv
 
             try
                 {
-                    if (socket.send(boost::asio::buffer(outbound_data)) == 0)
-                        {
-                            return false;
-                        }
+                    socket.send(boost::asio::buffer(outbound_data));
                 }
             catch (boost::system::system_error const& e)
                 {

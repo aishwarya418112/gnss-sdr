@@ -21,11 +21,10 @@
 #include "acquisition_dump_reader.h"
 #include "concurrent_queue.h"
 #include "gnss_block_interface.h"
-#include "gnss_sdr_filesystem.h"
 #include "gnss_sdr_valve.h"
 #include "gnss_synchro.h"
 #include "gnuplot_i.h"
-#include "gps_l1_ca_pcps_acquisition.h"
+#include "gps_l1_ca_pcps_acquisition_gps.h"
 #include "in_memory_configuration.h"
 #include "test_flags.h"
 #include <glog/logging.h>
@@ -47,6 +46,19 @@
 #include <gnuradio/analog/sig_source.h>
 #else
 #include <gnuradio/analog/sig_source_c.h>
+#endif
+
+#if HAS_STD_FILESYSTEM
+#if HAS_STD_FILESYSTEM_EXPERIMENTAL
+#include <experimental/filesystem>
+namespace fs = std::experimental::filesystem;
+#else
+#include <filesystem>
+namespace fs = std::filesystem;
+#endif
+#else
+#include <boost/filesystem.hpp>
+namespace fs = boost::filesystem;
 #endif
 
 
@@ -147,7 +159,7 @@ void GpsL1CaPcpsAcquisitionTest::init()
     signal.copy(gnss_synchro.Signal, 2, 0);
     gnss_synchro.PRN = 1;
     config->set_property("GNSS-SDR.internal_fs_sps", "4000000");
-    config->set_property("Acquisition_1C.implementation", "GPS_L1_CA_PCPS_Acquisition");
+    config->set_property("Acquisition_1C.implementation", "GPS_L1_CA_PCPS_Acquisition_GPS");
     config->set_property("Acquisition_1C.item_type", "gr_complex");
     config->set_property("Acquisition_1C.coherent_integration_time_ms", "1");
     if (FLAGS_plot_acq_grid == true)
@@ -236,7 +248,7 @@ void GpsL1CaPcpsAcquisitionTest::plot_grid() const
 
 TEST_F(GpsL1CaPcpsAcquisitionTest /*unused*/, Instantiate /*unused*/)
 {
-    std::shared_ptr<GpsL1CaPcpsAcquisition> acquisition = std::make_shared<GpsL1CaPcpsAcquisition>(config.get(), "Acquisition_1C", 1, 0);
+    std::shared_ptr<GpsL1CaPcpsAcquisitionGPS> acquisition = std::make_shared<GpsL1CaPcpsAcquisitionGPS>(config.get(), "Acquisition_1C", 1, 0);
 }
 
 
@@ -251,7 +263,7 @@ TEST_F(GpsL1CaPcpsAcquisitionTest /*unused*/, ConnectAndRun /*unused*/)
 
     top_block = gr::make_top_block("Acquisition test");
     init();
-    gnss_shared_ptr<GpsL1CaPcpsAcquisition> acquisition = gnss_make_shared<GpsL1CaPcpsAcquisition>(config.get(), "Acquisition_1C", 1, 0);
+    gnss_shared_ptr<GpsL1CaPcpsAcquisitionGPS> acquisition = gnss_make_shared<GpsL1CaPcpsAcquisitionGPS>(config.get(), "Acquisition_1C", 1, 0);
     gnss_shared_ptr<GpsL1CaPcpsAcquisitionTest_msg_rx> msg_rx = GpsL1CaPcpsAcquisitionTest_msg_rx_make();
 
     ASSERT_NO_THROW({
@@ -296,7 +308,7 @@ TEST_F(GpsL1CaPcpsAcquisitionTest /*unused*/, ValidationOfResults /*unused*/)
             fs::create_directory(data_str);
         }
 
-    auto acquisition = gnss_make_shared<GpsL1CaPcpsAcquisition>(config.get(), "Acquisition_1C", 1, 0);
+    auto acquisition = gnss_make_shared<GpsL1CaPcpsAcquisitionGPS>(config.get(), "Acquisition_1C", 1, 0);
     auto msg_rx = GpsL1CaPcpsAcquisitionTest_msg_rx_make();
 
     ASSERT_NO_THROW({

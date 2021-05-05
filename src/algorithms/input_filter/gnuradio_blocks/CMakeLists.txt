@@ -43,8 +43,8 @@ target_link_libraries(input_filter_gr_blocks
         Gnuradio::blocks
         Gnuradio::filter
         Volkgnsssdr::volkgnsssdr
-        algorithms_libs
     PRIVATE
+        algorithms_libs
         Volk::volk
         Log4cpp::log4cpp
 )
@@ -59,6 +59,13 @@ if(GNURADIO_USES_STD_POINTERS)
         PUBLIC -DGNURADIO_USES_STD_POINTERS=1
     )
 endif()
+
+if(GNURADIO_FFT_USES_TEMPLATES)
+    target_compile_definitions(input_filter_gr_blocks
+        PUBLIC -DGNURADIO_FFT_USES_TEMPLATES=1
+    )
+endif()
+
 
 if(ENABLE_CLANG_TIDY)
     if(CLANG_TIDY_EXE)

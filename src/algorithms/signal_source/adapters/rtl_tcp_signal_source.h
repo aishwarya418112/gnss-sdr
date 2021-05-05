@@ -19,8 +19,8 @@
 #define GNSS_SDR_RTL_TCP_SIGNAL_SOURCE_H
 
 #include "concurrent_queue.h"
+#include "gnss_block_interface.h"
 #include "rtl_tcp_signal_source_c.h"
-#include "signal_source_base.h"
 #include <gnuradio/blocks/deinterleave.h>
 #include <gnuradio/blocks/file_sink.h>
 #include <gnuradio/blocks/float_to_complex.h>
@@ -42,7 +42,7 @@ class ConfigurationInterface;
  * I/Q samples over TCP.
  * (see https://osmocom.org/projects/rtl-sdr/wiki)
  */
-class RtlTcpSignalSource : public SignalSourceBase
+class RtlTcpSignalSource : public GNSSBlockInterface
 {
 public:
     RtlTcpSignalSource(const ConfigurationInterface* configuration,
@@ -52,6 +52,19 @@ public:
         Concurrent_Queue<pmt::pmt_t>* queue);
 
     ~RtlTcpSignalSource() = default;
+
+    inline std::string role() override
+    {
+        return role_;
+    }
+
+    /*!
+     * \brief Returns "RtlTcp_Signal_Source"
+     */
+    inline std::string implementation() override
+    {
+        return "RtlTcp_Signal_Source";
+    }
 
     inline size_t item_size() override
     {
@@ -71,6 +84,7 @@ private:
     gnss_shared_ptr<gr::block> valve_;
     gr::blocks::file_sink::sptr file_sink_;
 
+    std::string role_;
     std::string item_type_;
     std::string dump_filename_;
 

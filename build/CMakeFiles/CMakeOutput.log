@@ -1,0 +1,3285 @@
+The system is: Linux - 5.8.0-50-generic - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/gnss-sdr/gnss-sdr/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/gnss-sdr/gnss-sdr/build/CMakeFiles/3.16.3/CompilerIdC/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_22344/fast && /usr/bin/make -f CMakeFiles/cmTC_22344.dir/build.make CMakeFiles/cmTC_22344.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_22344.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_22344.dir/testCXXCompiler.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_22344
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22344.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_22344.dir/testCXXCompiler.cxx.o  -o cmTC_22344 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_77b75/fast && /usr/bin/make -f CMakeFiles/cmTC_77b75.dir/build.make CMakeFiles/cmTC_77b75.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccu8YA0J.s
+GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/9
+ /usr/include/x86_64-linux-gnu/c++/9
+ /usr/include/c++/9/backward
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 466f818abe2f30ba03783f22bd12d815
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccu8YA0J.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_77b75
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77b75.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_77b75 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_77b75' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnvxLgc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_77b75 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_77b75' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/9]
+    add: [/usr/include/x86_64-linux-gnu/c++/9]
+    add: [/usr/include/c++/9/backward]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+  collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+  collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_77b75/fast && /usr/bin/make -f CMakeFiles/cmTC_77b75.dir/build.make CMakeFiles/cmTC_77b75.dir/build]
+  ignore line: [make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccu8YA0J.s]
+  ignore line: [GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/9]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+  ignore line: [ /usr/include/c++/9/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 466f818abe2f30ba03783f22bd12d815]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccu8YA0J.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_77b75]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77b75.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_77b75 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_77b75' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnvxLgc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_77b75 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccnvxLgc.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_77b75] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_77b75.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_217c2/fast && /usr/bin/make -f CMakeFiles/cmTC_217c2.dir/build.make CMakeFiles/cmTC_217c2.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_217c2.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_217c2.dir/testCCompiler.c.o   -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_217c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_217c2.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_217c2.dir/testCCompiler.c.o  -o cmTC_217c2 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7d7f1/fast && /usr/bin/make -f CMakeFiles/cmTC_7d7f1.dir/build.make CMakeFiles/cmTC_7d7f1.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYNkDQH.s
+GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o /tmp/ccYNkDQH.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_7d7f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d7f1.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o  -o cmTC_7d7f1 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d7f1' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccW8Odla.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_7d7f1 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d7f1' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_7d7f1/fast && /usr/bin/make -f CMakeFiles/cmTC_7d7f1.dir/build.make CMakeFiles/cmTC_7d7f1.dir/build]
+  ignore line: [make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccYNkDQH.s]
+  ignore line: [GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o /tmp/ccYNkDQH.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_7d7f1]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d7f1.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o  -o cmTC_7d7f1 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7d7f1' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccW8Odla.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_7d7f1 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccW8Odla.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_7d7f1] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_7d7f1.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9b7e5/fast && /usr/bin/make -f CMakeFiles/cmTC_9b7e5.dir/build.make CMakeFiles/cmTC_9b7e5.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b7e5.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_9b7e5.dir/CheckIncludeFile.c.o   -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9b7e5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b7e5.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_9b7e5.dir/CheckIncludeFile.c.o  -o cmTC_9b7e5 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file filesystem exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0d20f/fast && /usr/bin/make -f CMakeFiles/cmTC_0d20f.dir/build.make CMakeFiles/cmTC_0d20f.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0d20f.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -std=c++17   -std=c++17 -o CMakeFiles/cmTC_0d20f.dir/CheckIncludeFile.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_0d20f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d20f.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++17    CMakeFiles/cmTC_0d20f.dir/CheckIncludeFile.cxx.o  -o cmTC_0d20f 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CXX_FILESYSTEM_NO_LINK_NEEDED succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5c2ac/fast && /usr/bin/make -f CMakeFiles/cmTC_5c2ac.dir/build.make CMakeFiles/cmTC_5c2ac.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5c2ac.dir/src.cxx.o
+/usr/bin/c++    -DCXX_FILESYSTEM_NO_LINK_NEEDED -std=c++17   -std=c++17 -o CMakeFiles/cmTC_5c2ac.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5c2ac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c2ac.dir/link.txt --verbose=1
+/usr/bin/c++   -DCXX_FILESYSTEM_NO_LINK_NEEDED -std=c++17    CMakeFiles/cmTC_5c2ac.dir/src.cxx.o  -o cmTC_5c2ac 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+        #include <filesystem>
+
+        int main() {
+            auto cwd = std::filesystem::current_path();
+            return static_cast<int>(cwd.string().size());
+        }
+    
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dc2c8/fast && /usr/bin/make -f CMakeFiles/cmTC_dc2c8.dir/build.make CMakeFiles/cmTC_dc2c8.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dc2c8.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_dc2c8.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_dc2c8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc2c8.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_dc2c8.dir/src.cxx.o  -o cmTC_dc2c8 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_put_time succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_91b71/fast && /usr/bin/make -f CMakeFiles/cmTC_91b71.dir/build.make CMakeFiles/cmTC_91b71.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_91b71.dir/src.cxx.o
+/usr/bin/c++    -Dhas_put_time   -std=c++2a -o CMakeFiles/cmTC_91b71.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_91b71
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91b71.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_put_time    CMakeFiles/cmTC_91b71.dir/src.cxx.o  -o cmTC_91b71 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+    #include <iomanip>
+    int main()
+    { std::put_time(nullptr, ""); }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ef353/fast && /usr/bin/make -f CMakeFiles/cmTC_ef353.dir/build.make CMakeFiles/cmTC_ef353.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ef353.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_ef353.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ef353
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef353.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_ef353.dir/src.cxx.o  -o cmTC_ef353 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eef55/fast && /usr/bin/make -f CMakeFiles/cmTC_eef55.dir/build.make CMakeFiles/cmTC_eef55.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eef55.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_eef55.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_eef55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eef55.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_eef55.dir/src.cxx.o  -o cmTC_eef55 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Determining if the function sgemm_ exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1e82f/fast && /usr/bin/make -f CMakeFiles/cmTC_1e82f.dir/build.make CMakeFiles/cmTC_1e82f.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1e82f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_   -std=gnu11 -o CMakeFiles/cmTC_1e82f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1e82f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e82f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_    CMakeFiles/cmTC_1e82f.dir/CheckFunctionExists.c.o  -o cmTC_1e82f  /usr/lib/x86_64-linux-gnu/libblas.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function cheev_ exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a1564/fast && /usr/bin/make -f CMakeFiles/cmTC_a1564.dir/build.make CMakeFiles/cmTC_a1564.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a1564.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_   -std=gnu11 -o CMakeFiles/cmTC_a1564.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a1564
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1564.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_    CMakeFiles/cmTC_a1564.dir/CheckFunctionExists.c.o  -o cmTC_a1564  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pcap_breakloop exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e4c1e/fast && /usr/bin/make -f CMakeFiles/cmTC_e4c1e.dir/build.make CMakeFiles/cmTC_e4c1e.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4c1e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pcap_breakloop   -std=gnu11 -o CMakeFiles/cmTC_e4c1e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e4c1e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4c1e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pcap_breakloop    CMakeFiles/cmTC_e4c1e.dir/CheckFunctionExists.c.o  -o cmTC_e4c1e  /usr/lib/x86_64-linux-gnu/libpcap.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pcap_datalink_name_to_val exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7aa7f/fast && /usr/bin/make -f CMakeFiles/cmTC_7aa7f.dir/build.make CMakeFiles/cmTC_7aa7f.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7aa7f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pcap_datalink_name_to_val   -std=gnu11 -o CMakeFiles/cmTC_7aa7f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7aa7f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7aa7f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pcap_datalink_name_to_val    CMakeFiles/cmTC_7aa7f.dir/CheckFunctionExists.c.o  -o cmTC_7aa7f  /usr/lib/x86_64-linux-gnu/libpcap.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pcap_datalink_val_to_name exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a90f4/fast && /usr/bin/make -f CMakeFiles/cmTC_a90f4.dir/build.make CMakeFiles/cmTC_a90f4.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a90f4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pcap_datalink_val_to_name   -std=gnu11 -o CMakeFiles/cmTC_a90f4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a90f4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a90f4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pcap_datalink_val_to_name    CMakeFiles/cmTC_a90f4.dir/CheckFunctionExists.c.o  -o cmTC_a90f4  /usr/lib/x86_64-linux-gnu/libpcap.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pcap_findalldevs exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_36af1/fast && /usr/bin/make -f CMakeFiles/cmTC_36af1.dir/build.make CMakeFiles/cmTC_36af1.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_36af1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pcap_findalldevs   -std=gnu11 -o CMakeFiles/cmTC_36af1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_36af1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36af1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pcap_findalldevs    CMakeFiles/cmTC_36af1.dir/CheckFunctionExists.c.o  -o cmTC_36af1  /usr/lib/x86_64-linux-gnu/libpcap.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pcap_freecode exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_340c1/fast && /usr/bin/make -f CMakeFiles/cmTC_340c1.dir/build.make CMakeFiles/cmTC_340c1.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_340c1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pcap_freecode   -std=gnu11 -o CMakeFiles/cmTC_340c1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_340c1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_340c1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pcap_freecode    CMakeFiles/cmTC_340c1.dir/CheckFunctionExists.c.o  -o cmTC_340c1  /usr/lib/x86_64-linux-gnu/libpcap.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pcap_get_selectable_fd exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_701f3/fast && /usr/bin/make -f CMakeFiles/cmTC_701f3.dir/build.make CMakeFiles/cmTC_701f3.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_701f3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pcap_get_selectable_fd   -std=gnu11 -o CMakeFiles/cmTC_701f3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_701f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_701f3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pcap_get_selectable_fd    CMakeFiles/cmTC_701f3.dir/CheckFunctionExists.c.o  -o cmTC_701f3  /usr/lib/x86_64-linux-gnu/libpcap.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pcap_lib_version exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_09794/fast && /usr/bin/make -f CMakeFiles/cmTC_09794.dir/build.make CMakeFiles/cmTC_09794.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_09794.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pcap_lib_version   -std=gnu11 -o CMakeFiles/cmTC_09794.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_09794
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09794.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pcap_lib_version    CMakeFiles/cmTC_09794.dir/CheckFunctionExists.c.o  -o cmTC_09794  /usr/lib/x86_64-linux-gnu/libpcap.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pcap_list_datalinks exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e64e5/fast && /usr/bin/make -f CMakeFiles/cmTC_e64e5.dir/build.make CMakeFiles/cmTC_e64e5.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e64e5.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pcap_list_datalinks   -std=gnu11 -o CMakeFiles/cmTC_e64e5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e64e5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e64e5.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pcap_list_datalinks    CMakeFiles/cmTC_e64e5.dir/CheckFunctionExists.c.o  -o cmTC_e64e5  /usr/lib/x86_64-linux-gnu/libpcap.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pcap_open_dead exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_31903/fast && /usr/bin/make -f CMakeFiles/cmTC_31903.dir/build.make CMakeFiles/cmTC_31903.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31903.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pcap_open_dead   -std=gnu11 -o CMakeFiles/cmTC_31903.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_31903
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31903.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pcap_open_dead    CMakeFiles/cmTC_31903.dir/CheckFunctionExists.c.o  -o cmTC_31903  /usr/lib/x86_64-linux-gnu/libpcap.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pcap_set_datalink exists passed with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7c356/fast && /usr/bin/make -f CMakeFiles/cmTC_7c356.dir/build.make CMakeFiles/cmTC_7c356.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7c356.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pcap_set_datalink   -std=gnu11 -o CMakeFiles/cmTC_7c356.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7c356
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c356.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pcap_set_datalink    CMakeFiles/cmTC_7c356.dir/CheckFunctionExists.c.o  -o cmTC_7c356  /usr/lib/x86_64-linux-gnu/libpcap.so 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d914e/fast && /usr/bin/make -f CMakeFiles/cmTC_d914e.dir/build.make CMakeFiles/cmTC_d914e.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d914e.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_d914e.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d914e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d914e.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_d914e.dir/src.cxx.o  -o cmTC_d914e 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d2139/fast && /usr/bin/make -f CMakeFiles/cmTC_d2139.dir/build.make CMakeFiles/cmTC_d2139.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d2139.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_d2139.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d2139
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2139.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_d2139.dir/src.cxx.o  -o cmTC_d2139 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9c37f/fast && /usr/bin/make -f CMakeFiles/cmTC_9c37f.dir/build.make CMakeFiles/cmTC_9c37f.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9c37f.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_9c37f.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9c37f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c37f.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_9c37f.dir/src.cxx.o  -o cmTC_9c37f 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ac67e/fast && /usr/bin/make -f CMakeFiles/cmTC_ac67e.dir/build.make CMakeFiles/cmTC_ac67e.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ac67e.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_ac67e.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ac67e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac67e.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_ac67e.dir/src.cxx.o  -o cmTC_ac67e 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2a56f/fast && /usr/bin/make -f CMakeFiles/cmTC_2a56f.dir/build.make CMakeFiles/cmTC_2a56f.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2a56f.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_2a56f.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2a56f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a56f.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_2a56f.dir/src.cxx.o  -o cmTC_2a56f 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_057f1/fast && /usr/bin/make -f CMakeFiles/cmTC_057f1.dir/build.make CMakeFiles/cmTC_057f1.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_057f1.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_057f1.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_057f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_057f1.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_057f1.dir/src.cxx.o  -o cmTC_057f1 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_07ea4/fast && /usr/bin/make -f CMakeFiles/cmTC_07ea4.dir/build.make CMakeFiles/cmTC_07ea4.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_07ea4.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_07ea4.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_07ea4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07ea4.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_07ea4.dir/src.cxx.o  -o cmTC_07ea4 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c086c/fast && /usr/bin/make -f CMakeFiles/cmTC_c086c.dir/build.make CMakeFiles/cmTC_c086c.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c086c.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_c086c.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c086c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c086c.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_c086c.dir/src.cxx.o  -o cmTC_c086c 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_12001/fast && /usr/bin/make -f CMakeFiles/cmTC_12001.dir/build.make CMakeFiles/cmTC_12001.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_12001.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_12001.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_12001
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12001.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_12001.dir/src.cxx.o  -o cmTC_12001 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b1276/fast && /usr/bin/make -f CMakeFiles/cmTC_b1276.dir/build.make CMakeFiles/cmTC_b1276.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b1276.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_b1276.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b1276
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1276.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_b1276.dir/src.cxx.o  -o cmTC_b1276 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7b1d3/fast && /usr/bin/make -f CMakeFiles/cmTC_7b1d3.dir/build.make CMakeFiles/cmTC_7b1d3.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7b1d3.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_7b1d3.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7b1d3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b1d3.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_7b1d3.dir/src.cxx.o  -o cmTC_7b1d3 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c8ddc/fast && /usr/bin/make -f CMakeFiles/cmTC_c8ddc.dir/build.make CMakeFiles/cmTC_c8ddc.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c8ddc.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_c8ddc.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c8ddc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8ddc.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_c8ddc.dir/src.cxx.o  -o cmTC_c8ddc 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f139f/fast && /usr/bin/make -f CMakeFiles/cmTC_f139f.dir/build.make CMakeFiles/cmTC_f139f.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f139f.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_f139f.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f139f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f139f.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_f139f.dir/src.cxx.o  -o cmTC_f139f 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_91aff/fast && /usr/bin/make -f CMakeFiles/cmTC_91aff.dir/build.make CMakeFiles/cmTC_91aff.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_91aff.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_91aff.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_91aff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91aff.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_91aff.dir/src.cxx.o  -o cmTC_91aff 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0d6e5/fast && /usr/bin/make -f CMakeFiles/cmTC_0d6e5.dir/build.make CMakeFiles/cmTC_0d6e5.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0d6e5.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_0d6e5.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0d6e5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d6e5.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_0d6e5.dir/src.cxx.o  -o cmTC_0d6e5 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bdbe2/fast && /usr/bin/make -f CMakeFiles/cmTC_bdbe2.dir/build.make CMakeFiles/cmTC_bdbe2.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bdbe2.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_bdbe2.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bdbe2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdbe2.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_bdbe2.dir/src.cxx.o  -o cmTC_bdbe2 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9e3a7/fast && /usr/bin/make -f CMakeFiles/cmTC_9e3a7.dir/build.make CMakeFiles/cmTC_9e3a7.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9e3a7.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_9e3a7.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9e3a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e3a7.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_9e3a7.dir/src.cxx.o  -o cmTC_9e3a7 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5fb2e/fast && /usr/bin/make -f CMakeFiles/cmTC_5fb2e.dir/build.make CMakeFiles/cmTC_5fb2e.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5fb2e.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_5fb2e.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5fb2e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fb2e.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_5fb2e.dir/src.cxx.o  -o cmTC_5fb2e 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_10b96/fast && /usr/bin/make -f CMakeFiles/cmTC_10b96.dir/build.make CMakeFiles/cmTC_10b96.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_10b96.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_10b96.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_10b96
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10b96.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_10b96.dir/src.cxx.o  -o cmTC_10b96 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_337b6/fast && /usr/bin/make -f CMakeFiles/cmTC_337b6.dir/build.make CMakeFiles/cmTC_337b6.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_337b6.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_337b6.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_337b6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_337b6.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_337b6.dir/src.cxx.o  -o cmTC_337b6 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_97634/fast && /usr/bin/make -f CMakeFiles/cmTC_97634.dir/build.make CMakeFiles/cmTC_97634.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_97634.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_97634.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_97634
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97634.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_97634.dir/src.cxx.o  -o cmTC_97634 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_460e4/fast && /usr/bin/make -f CMakeFiles/cmTC_460e4.dir/build.make CMakeFiles/cmTC_460e4.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_460e4.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_460e4.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_460e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_460e4.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_460e4.dir/src.cxx.o  -o cmTC_460e4 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8ccdc/fast && /usr/bin/make -f CMakeFiles/cmTC_8ccdc.dir/build.make CMakeFiles/cmTC_8ccdc.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8ccdc.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_8ccdc.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8ccdc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ccdc.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_8ccdc.dir/src.cxx.o  -o cmTC_8ccdc 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_affdd/fast && /usr/bin/make -f CMakeFiles/cmTC_affdd.dir/build.make CMakeFiles/cmTC_affdd.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_affdd.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_affdd.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_affdd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_affdd.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_affdd.dir/src.cxx.o  -o cmTC_affdd 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bd9fb/fast && /usr/bin/make -f CMakeFiles/cmTC_bd9fb.dir/build.make CMakeFiles/cmTC_bd9fb.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bd9fb.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_bd9fb.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bd9fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd9fb.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_bd9fb.dir/src.cxx.o  -o cmTC_bd9fb 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0ca58/fast && /usr/bin/make -f CMakeFiles/cmTC_0ca58.dir/build.make CMakeFiles/cmTC_0ca58.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0ca58.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_0ca58.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0ca58
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ca58.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_0ca58.dir/src.cxx.o  -o cmTC_0ca58 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9fac9/fast && /usr/bin/make -f CMakeFiles/cmTC_9fac9.dir/build.make CMakeFiles/cmTC_9fac9.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9fac9.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_9fac9.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9fac9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9fac9.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_9fac9.dir/src.cxx.o  -o cmTC_9fac9 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7910d/fast && /usr/bin/make -f CMakeFiles/cmTC_7910d.dir/build.make CMakeFiles/cmTC_7910d.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7910d.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_7910d.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7910d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7910d.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_7910d.dir/src.cxx.o  -o cmTC_7910d 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8991b/fast && /usr/bin/make -f CMakeFiles/cmTC_8991b.dir/build.make CMakeFiles/cmTC_8991b.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8991b.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_8991b.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8991b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8991b.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_8991b.dir/src.cxx.o  -o cmTC_8991b 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_97311/fast && /usr/bin/make -f CMakeFiles/cmTC_97311.dir/build.make CMakeFiles/cmTC_97311.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_97311.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_97311.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_97311
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97311.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_97311.dir/src.cxx.o  -o cmTC_97311 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_00019/fast && /usr/bin/make -f CMakeFiles/cmTC_00019.dir/build.make CMakeFiles/cmTC_00019.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_00019.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_00019.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_00019
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00019.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_00019.dir/src.cxx.o  -o cmTC_00019 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6a18b/fast && /usr/bin/make -f CMakeFiles/cmTC_6a18b.dir/build.make CMakeFiles/cmTC_6a18b.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6a18b.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_6a18b.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6a18b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a18b.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_6a18b.dir/src.cxx.o  -o cmTC_6a18b 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ba96a/fast && /usr/bin/make -f CMakeFiles/cmTC_ba96a.dir/build.make CMakeFiles/cmTC_ba96a.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ba96a.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_ba96a.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ba96a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba96a.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_ba96a.dir/src.cxx.o  -o cmTC_ba96a 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c24f9/fast && /usr/bin/make -f CMakeFiles/cmTC_c24f9.dir/build.make CMakeFiles/cmTC_c24f9.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c24f9.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_c24f9.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c24f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c24f9.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_c24f9.dir/src.cxx.o  -o cmTC_c24f9 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e8dbb/fast && /usr/bin/make -f CMakeFiles/cmTC_e8dbb.dir/build.make CMakeFiles/cmTC_e8dbb.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e8dbb.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_e8dbb.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e8dbb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8dbb.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_e8dbb.dir/src.cxx.o  -o cmTC_e8dbb 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7cef5/fast && /usr/bin/make -f CMakeFiles/cmTC_7cef5.dir/build.make CMakeFiles/cmTC_7cef5.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7cef5.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_7cef5.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7cef5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cef5.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_7cef5.dir/src.cxx.o  -o cmTC_7cef5 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f4dd8/fast && /usr/bin/make -f CMakeFiles/cmTC_f4dd8.dir/build.make CMakeFiles/cmTC_f4dd8.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f4dd8.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_f4dd8.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f4dd8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4dd8.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_f4dd8.dir/src.cxx.o  -o cmTC_f4dd8 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d0fb6/fast && /usr/bin/make -f CMakeFiles/cmTC_d0fb6.dir/build.make CMakeFiles/cmTC_d0fb6.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d0fb6.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_d0fb6.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d0fb6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0fb6.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_d0fb6.dir/src.cxx.o  -o cmTC_d0fb6 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_aef22/fast && /usr/bin/make -f CMakeFiles/cmTC_aef22.dir/build.make CMakeFiles/cmTC_aef22.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_aef22.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_aef22.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_aef22
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aef22.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_aef22.dir/src.cxx.o  -o cmTC_aef22 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d66ff/fast && /usr/bin/make -f CMakeFiles/cmTC_d66ff.dir/build.make CMakeFiles/cmTC_d66ff.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d66ff.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_d66ff.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d66ff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d66ff.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_d66ff.dir/src.cxx.o  -o cmTC_d66ff 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e3a27/fast && /usr/bin/make -f CMakeFiles/cmTC_e3a27.dir/build.make CMakeFiles/cmTC_e3a27.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e3a27.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_e3a27.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e3a27
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3a27.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_e3a27.dir/src.cxx.o  -o cmTC_e3a27 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_25b56/fast && /usr/bin/make -f CMakeFiles/cmTC_25b56.dir/build.make CMakeFiles/cmTC_25b56.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_25b56.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_25b56.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_25b56
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25b56.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_25b56.dir/src.cxx.o  -o cmTC_25b56 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b977c/fast && /usr/bin/make -f CMakeFiles/cmTC_b977c.dir/build.make CMakeFiles/cmTC_b977c.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b977c.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_b977c.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b977c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b977c.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_b977c.dir/src.cxx.o  -o cmTC_b977c 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_87c9c/fast && /usr/bin/make -f CMakeFiles/cmTC_87c9c.dir/build.make CMakeFiles/cmTC_87c9c.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_87c9c.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_87c9c.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_87c9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87c9c.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_87c9c.dir/src.cxx.o  -o cmTC_87c9c 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bc3ad/fast && /usr/bin/make -f CMakeFiles/cmTC_bc3ad.dir/build.make CMakeFiles/cmTC_bc3ad.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bc3ad.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_bc3ad.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bc3ad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc3ad.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_bc3ad.dir/src.cxx.o  -o cmTC_bc3ad 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8a571/fast && /usr/bin/make -f CMakeFiles/cmTC_8a571.dir/build.make CMakeFiles/cmTC_8a571.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8a571.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_8a571.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8a571
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a571.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_8a571.dir/src.cxx.o  -o cmTC_8a571 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_88b5b/fast && /usr/bin/make -f CMakeFiles/cmTC_88b5b.dir/build.make CMakeFiles/cmTC_88b5b.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_88b5b.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_88b5b.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_88b5b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88b5b.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_88b5b.dir/src.cxx.o  -o cmTC_88b5b 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cdb24/fast && /usr/bin/make -f CMakeFiles/cmTC_cdb24.dir/build.make CMakeFiles/cmTC_cdb24.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cdb24.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_cdb24.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cdb24
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdb24.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_cdb24.dir/src.cxx.o  -o cmTC_cdb24 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d0050/fast && /usr/bin/make -f CMakeFiles/cmTC_d0050.dir/build.make CMakeFiles/cmTC_d0050.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d0050.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_d0050.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d0050
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0050.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_d0050.dir/src.cxx.o  -o cmTC_d0050 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e4ed8/fast && /usr/bin/make -f CMakeFiles/cmTC_e4ed8.dir/build.make CMakeFiles/cmTC_e4ed8.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e4ed8.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_e4ed8.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e4ed8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4ed8.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_e4ed8.dir/src.cxx.o  -o cmTC_e4ed8 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f91c6/fast && /usr/bin/make -f CMakeFiles/cmTC_f91c6.dir/build.make CMakeFiles/cmTC_f91c6.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f91c6.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_f91c6.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f91c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f91c6.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_f91c6.dir/src.cxx.o  -o cmTC_f91c6 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b5222/fast && /usr/bin/make -f CMakeFiles/cmTC_b5222.dir/build.make CMakeFiles/cmTC_b5222.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b5222.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_b5222.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b5222
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5222.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_b5222.dir/src.cxx.o  -o cmTC_b5222 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_28abb/fast && /usr/bin/make -f CMakeFiles/cmTC_28abb.dir/build.make CMakeFiles/cmTC_28abb.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_28abb.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_28abb.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_28abb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28abb.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_28abb.dir/src.cxx.o  -o cmTC_28abb 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4baaa/fast && /usr/bin/make -f CMakeFiles/cmTC_4baaa.dir/build.make CMakeFiles/cmTC_4baaa.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4baaa.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_4baaa.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4baaa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4baaa.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_4baaa.dir/src.cxx.o  -o cmTC_4baaa 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_55cd0/fast && /usr/bin/make -f CMakeFiles/cmTC_55cd0.dir/build.make CMakeFiles/cmTC_55cd0.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_55cd0.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_55cd0.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_55cd0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55cd0.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_55cd0.dir/src.cxx.o  -o cmTC_55cd0 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cb26c/fast && /usr/bin/make -f CMakeFiles/cmTC_cb26c.dir/build.make CMakeFiles/cmTC_cb26c.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cb26c.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_cb26c.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cb26c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb26c.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_cb26c.dir/src.cxx.o  -o cmTC_cb26c 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_adc4c/fast && /usr/bin/make -f CMakeFiles/cmTC_adc4c.dir/build.make CMakeFiles/cmTC_adc4c.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_adc4c.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_adc4c.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_adc4c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adc4c.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_adc4c.dir/src.cxx.o  -o cmTC_adc4c 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e2f1e/fast && /usr/bin/make -f CMakeFiles/cmTC_e2f1e.dir/build.make CMakeFiles/cmTC_e2f1e.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e2f1e.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_e2f1e.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e2f1e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2f1e.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_e2f1e.dir/src.cxx.o  -o cmTC_e2f1e 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7b056/fast && /usr/bin/make -f CMakeFiles/cmTC_7b056.dir/build.make CMakeFiles/cmTC_7b056.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7b056.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_7b056.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7b056
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b056.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_7b056.dir/src.cxx.o  -o cmTC_7b056 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f97ba/fast && /usr/bin/make -f CMakeFiles/cmTC_f97ba.dir/build.make CMakeFiles/cmTC_f97ba.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f97ba.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_f97ba.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f97ba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f97ba.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_f97ba.dir/src.cxx.o  -o cmTC_f97ba 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7fa2e/fast && /usr/bin/make -f CMakeFiles/cmTC_7fa2e.dir/build.make CMakeFiles/cmTC_7fa2e.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7fa2e.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_7fa2e.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7fa2e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fa2e.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_7fa2e.dir/src.cxx.o  -o cmTC_7fa2e 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dd498/fast && /usr/bin/make -f CMakeFiles/cmTC_dd498.dir/build.make CMakeFiles/cmTC_dd498.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dd498.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_dd498.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_dd498
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd498.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_dd498.dir/src.cxx.o  -o cmTC_dd498 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f2b35/fast && /usr/bin/make -f CMakeFiles/cmTC_f2b35.dir/build.make CMakeFiles/cmTC_f2b35.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f2b35.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_f2b35.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f2b35
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2b35.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_f2b35.dir/src.cxx.o  -o cmTC_f2b35 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_66f5c/fast && /usr/bin/make -f CMakeFiles/cmTC_66f5c.dir/build.make CMakeFiles/cmTC_66f5c.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_66f5c.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_66f5c.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_66f5c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66f5c.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_66f5c.dir/src.cxx.o  -o cmTC_66f5c 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1abf2/fast && /usr/bin/make -f CMakeFiles/cmTC_1abf2.dir/build.make CMakeFiles/cmTC_1abf2.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1abf2.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_1abf2.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1abf2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1abf2.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_1abf2.dir/src.cxx.o  -o cmTC_1abf2 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d5448/fast && /usr/bin/make -f CMakeFiles/cmTC_d5448.dir/build.make CMakeFiles/cmTC_d5448.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d5448.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_d5448.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d5448
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5448.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_d5448.dir/src.cxx.o  -o cmTC_d5448 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a92ea/fast && /usr/bin/make -f CMakeFiles/cmTC_a92ea.dir/build.make CMakeFiles/cmTC_a92ea.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a92ea.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_a92ea.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a92ea
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a92ea.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_a92ea.dir/src.cxx.o  -o cmTC_a92ea 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1d13e/fast && /usr/bin/make -f CMakeFiles/cmTC_1d13e.dir/build.make CMakeFiles/cmTC_1d13e.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1d13e.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_1d13e.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1d13e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d13e.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_1d13e.dir/src.cxx.o  -o cmTC_1d13e 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4b4f8/fast && /usr/bin/make -f CMakeFiles/cmTC_4b4f8.dir/build.make CMakeFiles/cmTC_4b4f8.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4b4f8.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_4b4f8.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4b4f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b4f8.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_4b4f8.dir/src.cxx.o  -o cmTC_4b4f8 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3d79f/fast && /usr/bin/make -f CMakeFiles/cmTC_3d79f.dir/build.make CMakeFiles/cmTC_3d79f.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3d79f.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_3d79f.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3d79f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d79f.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_3d79f.dir/src.cxx.o  -o cmTC_3d79f 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_571d7/fast && /usr/bin/make -f CMakeFiles/cmTC_571d7.dir/build.make CMakeFiles/cmTC_571d7.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_571d7.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_571d7.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_571d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_571d7.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_571d7.dir/src.cxx.o  -o cmTC_571d7 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0a757/fast && /usr/bin/make -f CMakeFiles/cmTC_0a757.dir/build.make CMakeFiles/cmTC_0a757.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0a757.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_0a757.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0a757
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a757.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_0a757.dir/src.cxx.o  -o cmTC_0a757 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8008d/fast && /usr/bin/make -f CMakeFiles/cmTC_8008d.dir/build.make CMakeFiles/cmTC_8008d.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8008d.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_8008d.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8008d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8008d.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_8008d.dir/src.cxx.o  -o cmTC_8008d 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_62099/fast && /usr/bin/make -f CMakeFiles/cmTC_62099.dir/build.make CMakeFiles/cmTC_62099.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_62099.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_62099.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_62099
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62099.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_62099.dir/src.cxx.o  -o cmTC_62099 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b7f56/fast && /usr/bin/make -f CMakeFiles/cmTC_b7f56.dir/build.make CMakeFiles/cmTC_b7f56.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b7f56.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_b7f56.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b7f56
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7f56.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_b7f56.dir/src.cxx.o  -o cmTC_b7f56 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b9d8c/fast && /usr/bin/make -f CMakeFiles/cmTC_b9d8c.dir/build.make CMakeFiles/cmTC_b9d8c.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b9d8c.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_b9d8c.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b9d8c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9d8c.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_b9d8c.dir/src.cxx.o  -o cmTC_b9d8c 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_551a0/fast && /usr/bin/make -f CMakeFiles/cmTC_551a0.dir/build.make CMakeFiles/cmTC_551a0.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_551a0.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_551a0.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_551a0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_551a0.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_551a0.dir/src.cxx.o  -o cmTC_551a0 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a7b44/fast && /usr/bin/make -f CMakeFiles/cmTC_a7b44.dir/build.make CMakeFiles/cmTC_a7b44.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a7b44.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_a7b44.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a7b44
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7b44.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_a7b44.dir/src.cxx.o  -o cmTC_a7b44 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_74677/fast && /usr/bin/make -f CMakeFiles/cmTC_74677.dir/build.make CMakeFiles/cmTC_74677.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_74677.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_74677.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_74677
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74677.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_74677.dir/src.cxx.o  -o cmTC_74677 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1a040/fast && /usr/bin/make -f CMakeFiles/cmTC_1a040.dir/build.make CMakeFiles/cmTC_1a040.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1a040.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_1a040.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1a040
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a040.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_1a040.dir/src.cxx.o  -o cmTC_1a040 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_88b2e/fast && /usr/bin/make -f CMakeFiles/cmTC_88b2e.dir/build.make CMakeFiles/cmTC_88b2e.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_88b2e.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_88b2e.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_88b2e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88b2e.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_88b2e.dir/src.cxx.o  -o cmTC_88b2e 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f88a7/fast && /usr/bin/make -f CMakeFiles/cmTC_f88a7.dir/build.make CMakeFiles/cmTC_f88a7.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f88a7.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_f88a7.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f88a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f88a7.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_f88a7.dir/src.cxx.o  -o cmTC_f88a7 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_01405/fast && /usr/bin/make -f CMakeFiles/cmTC_01405.dir/build.make CMakeFiles/cmTC_01405.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_01405.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_01405.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_01405
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01405.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_01405.dir/src.cxx.o  -o cmTC_01405 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ecf31/fast && /usr/bin/make -f CMakeFiles/cmTC_ecf31.dir/build.make CMakeFiles/cmTC_ecf31.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ecf31.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_ecf31.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ecf31
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecf31.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_ecf31.dir/src.cxx.o  -o cmTC_ecf31 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b9076/fast && /usr/bin/make -f CMakeFiles/cmTC_b9076.dir/build.make CMakeFiles/cmTC_b9076.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b9076.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_b9076.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b9076
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9076.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_b9076.dir/src.cxx.o  -o cmTC_b9076 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_250fa/fast && /usr/bin/make -f CMakeFiles/cmTC_250fa.dir/build.make CMakeFiles/cmTC_250fa.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_250fa.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_250fa.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_250fa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_250fa.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_250fa.dir/src.cxx.o  -o cmTC_250fa 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d2536/fast && /usr/bin/make -f CMakeFiles/cmTC_d2536.dir/build.make CMakeFiles/cmTC_d2536.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d2536.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_d2536.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d2536
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2536.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_d2536.dir/src.cxx.o  -o cmTC_d2536 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_55acb/fast && /usr/bin/make -f CMakeFiles/cmTC_55acb.dir/build.make CMakeFiles/cmTC_55acb.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_55acb.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_55acb.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_55acb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55acb.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_55acb.dir/src.cxx.o  -o cmTC_55acb 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1c572/fast && /usr/bin/make -f CMakeFiles/cmTC_1c572.dir/build.make CMakeFiles/cmTC_1c572.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1c572.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_1c572.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1c572
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c572.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_1c572.dir/src.cxx.o  -o cmTC_1c572 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e4491/fast && /usr/bin/make -f CMakeFiles/cmTC_e4491.dir/build.make CMakeFiles/cmTC_e4491.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e4491.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_e4491.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e4491
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4491.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_e4491.dir/src.cxx.o  -o cmTC_e4491 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dc53a/fast && make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_dc53a.dir/build.make CMakeFiles/cmTC_dc53a.dir/build
+make[2]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dc53a.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_dc53a.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_dc53a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc53a.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_dc53a.dir/src.cxx.o  -o cmTC_dc53a 
+make[2]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_36256/fast && make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_36256.dir/build.make CMakeFiles/cmTC_36256.dir/build
+make[2]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_36256.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_36256.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_36256
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36256.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_36256.dir/src.cxx.o  -o cmTC_36256 
+make[2]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_37352/fast && make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_37352.dir/build.make CMakeFiles/cmTC_37352.dir/build
+make[2]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_37352.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_37352.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_37352
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37352.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_37352.dir/src.cxx.o  -o cmTC_37352 
+make[2]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0afa9/fast && /usr/bin/make -f CMakeFiles/cmTC_0afa9.dir/build.make CMakeFiles/cmTC_0afa9.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0afa9.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_0afa9.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0afa9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0afa9.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_0afa9.dir/src.cxx.o  -o cmTC_0afa9 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e8343/fast && /usr/bin/make -f CMakeFiles/cmTC_e8343.dir/build.make CMakeFiles/cmTC_e8343.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e8343.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_e8343.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e8343
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8343.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_e8343.dir/src.cxx.o  -o cmTC_e8343 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_88901/fast && /usr/bin/make -f CMakeFiles/cmTC_88901.dir/build.make CMakeFiles/cmTC_88901.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_88901.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_88901.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_88901
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88901.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_88901.dir/src.cxx.o  -o cmTC_88901 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dbeb2/fast && /usr/bin/make -f CMakeFiles/cmTC_dbeb2.dir/build.make CMakeFiles/cmTC_dbeb2.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dbeb2.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_dbeb2.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_dbeb2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbeb2.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_dbeb2.dir/src.cxx.o  -o cmTC_dbeb2 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1dde7/fast && /usr/bin/make -f CMakeFiles/cmTC_1dde7.dir/build.make CMakeFiles/cmTC_1dde7.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1dde7.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_1dde7.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1dde7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1dde7.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_1dde7.dir/src.cxx.o  -o cmTC_1dde7 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ea3c6/fast && /usr/bin/make -f CMakeFiles/cmTC_ea3c6.dir/build.make CMakeFiles/cmTC_ea3c6.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ea3c6.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_ea3c6.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ea3c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea3c6.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_ea3c6.dir/src.cxx.o  -o cmTC_ea3c6 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4f950/fast && /usr/bin/make -f CMakeFiles/cmTC_4f950.dir/build.make CMakeFiles/cmTC_4f950.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4f950.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_4f950.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4f950
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f950.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_4f950.dir/src.cxx.o  -o cmTC_4f950 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_129b3/fast && /usr/bin/make -f CMakeFiles/cmTC_129b3.dir/build.make CMakeFiles/cmTC_129b3.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_129b3.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_129b3.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_129b3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_129b3.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_129b3.dir/src.cxx.o  -o cmTC_129b3 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ee4f9/fast && /usr/bin/make -f CMakeFiles/cmTC_ee4f9.dir/build.make CMakeFiles/cmTC_ee4f9.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ee4f9.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_ee4f9.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ee4f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee4f9.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_ee4f9.dir/src.cxx.o  -o cmTC_ee4f9 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a624a/fast && /usr/bin/make -f CMakeFiles/cmTC_a624a.dir/build.make CMakeFiles/cmTC_a624a.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a624a.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_a624a.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a624a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a624a.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_a624a.dir/src.cxx.o  -o cmTC_a624a 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fae45/fast && /usr/bin/make -f CMakeFiles/cmTC_fae45.dir/build.make CMakeFiles/cmTC_fae45.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fae45.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_fae45.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fae45
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fae45.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_fae45.dir/src.cxx.o  -o cmTC_fae45 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9ad76/fast && /usr/bin/make -f CMakeFiles/cmTC_9ad76.dir/build.make CMakeFiles/cmTC_9ad76.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9ad76.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_9ad76.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9ad76
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ad76.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_9ad76.dir/src.cxx.o  -o cmTC_9ad76 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a7a50/fast && /usr/bin/make -f CMakeFiles/cmTC_a7a50.dir/build.make CMakeFiles/cmTC_a7a50.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a7a50.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_a7a50.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a7a50
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7a50.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_a7a50.dir/src.cxx.o  -o cmTC_a7a50 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c0e2e/fast && /usr/bin/make -f CMakeFiles/cmTC_c0e2e.dir/build.make CMakeFiles/cmTC_c0e2e.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c0e2e.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_c0e2e.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c0e2e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0e2e.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_c0e2e.dir/src.cxx.o  -o cmTC_c0e2e 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d46f8/fast && /usr/bin/make -f CMakeFiles/cmTC_d46f8.dir/build.make CMakeFiles/cmTC_d46f8.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d46f8.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_d46f8.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d46f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d46f8.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_d46f8.dir/src.cxx.o  -o cmTC_d46f8 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0ae44/fast && /usr/bin/make -f CMakeFiles/cmTC_0ae44.dir/build.make CMakeFiles/cmTC_0ae44.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0ae44.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_0ae44.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0ae44
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ae44.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_0ae44.dir/src.cxx.o  -o cmTC_0ae44 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eb458/fast && /usr/bin/make -f CMakeFiles/cmTC_eb458.dir/build.make CMakeFiles/cmTC_eb458.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eb458.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_eb458.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_eb458
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb458.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_eb458.dir/src.cxx.o  -o cmTC_eb458 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d3a9d/fast && /usr/bin/make -f CMakeFiles/cmTC_d3a9d.dir/build.make CMakeFiles/cmTC_d3a9d.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d3a9d.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_d3a9d.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d3a9d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3a9d.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_d3a9d.dir/src.cxx.o  -o cmTC_d3a9d 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dbc3a/fast && /usr/bin/make -f CMakeFiles/cmTC_dbc3a.dir/build.make CMakeFiles/cmTC_dbc3a.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dbc3a.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_dbc3a.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_dbc3a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbc3a.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_dbc3a.dir/src.cxx.o  -o cmTC_dbc3a 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_916d3/fast && /usr/bin/make -f CMakeFiles/cmTC_916d3.dir/build.make CMakeFiles/cmTC_916d3.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_916d3.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_916d3.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_916d3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_916d3.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_916d3.dir/src.cxx.o  -o cmTC_916d3 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_086df/fast && /usr/bin/make -f CMakeFiles/cmTC_086df.dir/build.make CMakeFiles/cmTC_086df.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_086df.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_086df.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_086df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_086df.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_086df.dir/src.cxx.o  -o cmTC_086df 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b9e4b/fast && /usr/bin/make -f CMakeFiles/cmTC_b9e4b.dir/build.make CMakeFiles/cmTC_b9e4b.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b9e4b.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_b9e4b.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b9e4b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9e4b.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_b9e4b.dir/src.cxx.o  -o cmTC_b9e4b 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_86a9b/fast && /usr/bin/make -f CMakeFiles/cmTC_86a9b.dir/build.make CMakeFiles/cmTC_86a9b.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_86a9b.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_86a9b.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_86a9b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86a9b.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_86a9b.dir/src.cxx.o  -o cmTC_86a9b 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1a604/fast && /usr/bin/make -f CMakeFiles/cmTC_1a604.dir/build.make CMakeFiles/cmTC_1a604.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1a604.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_1a604.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1a604
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a604.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_1a604.dir/src.cxx.o  -o cmTC_1a604 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };
+Performing C++ SOURCE FILE Test has_rotl succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_784e0/fast && /usr/bin/make -f CMakeFiles/cmTC_784e0.dir/build.make CMakeFiles/cmTC_784e0.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_784e0.dir/src.cxx.o
+/usr/bin/c++    -Dhas_rotl   -std=c++2a -o CMakeFiles/cmTC_784e0.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_784e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_784e0.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_rotl    CMakeFiles/cmTC_784e0.dir/src.cxx.o  -o cmTC_784e0 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <bit>
+        #include <cstdint>
+        int main()
+        {
+            std::uint8_t i = 0b00011101;
+            auto k = std::rotl(i,0);
+        }
+Performing C++ SOURCE FILE Test has_std_plus_void succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_210a1/fast && /usr/bin/make -f CMakeFiles/cmTC_210a1.dir/build.make CMakeFiles/cmTC_210a1.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_210a1.dir/src.cxx.o
+/usr/bin/c++    -Dhas_std_plus_void   -std=c++2a -o CMakeFiles/cmTC_210a1.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_210a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_210a1.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_std_plus_void    CMakeFiles/cmTC_210a1.dir/src.cxx.o  -o cmTC_210a1 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        int main()
+        { [](float a=1, float b=0){return std::plus<>();}; };
+Performing C++ SOURCE FILE Test has_transform_reduce succeeded with the following output:
+Change Dir: /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3023a/fast && /usr/bin/make -f CMakeFiles/cmTC_3023a.dir/build.make CMakeFiles/cmTC_3023a.dir/build
+make[1]: Entering directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3023a.dir/src.cxx.o
+/usr/bin/c++    -Dhas_transform_reduce   -std=c++2a -o CMakeFiles/cmTC_3023a.dir/src.cxx.o -c /home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3023a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3023a.dir/link.txt --verbose=1
+/usr/bin/c++   -Dhas_transform_reduce    CMakeFiles/cmTC_3023a.dir/src.cxx.o  -o cmTC_3023a 
+make[1]: Leaving directory '/home/gnss-sdr/gnss-sdr/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+        #include <functional>
+        #include <numeric>
+        #include <vector>
+        int main()
+        {
+        std::vector<float> a(5);
+        std::vector<float> b(5);
+        auto c = std::transform_reduce(cbegin(a), cend(a), cbegin(b), 0, std::plus<>{}, std::multiplies<>{}); };

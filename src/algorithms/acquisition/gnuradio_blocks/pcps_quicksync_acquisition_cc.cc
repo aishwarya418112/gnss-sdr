@@ -16,6 +16,7 @@
 
 #include "pcps_quicksync_acquisition_cc.h"
 #include "MATH_CONSTANTS.h"
+#include "gnss_sdr_make_unique.h"
 #include <glog/logging.h>
 #include <gnuradio/io_signature.h>
 #include <volk/volk.h>
@@ -94,8 +95,17 @@ pcps_quicksync_acquisition_cc::pcps_quicksync_acquisition_cc(
     original form to perform later correlation in time domain*/
     d_code = std::vector<gr_complex>(d_samples_per_code, lv_cmake(0.0F, 0.0F));
 
-    d_fft_if = gnss_fft_fwd_make_unique(d_fft_size);
-    d_ifft = gnss_fft_rev_make_unique(d_fft_size);
+#if GNURADIO_FFT_USES_TEMPLATES
+    // Direct FFT
+    d_fft_if = std::make_unique<gr::fft::fft_complex_fwd>(d_fft_size);
+    // Inverse FFT
+    d_ifft = std::make_unique<gr::fft::fft_complex_rev>(d_fft_size);
+#else
+    // Direct FFT
+    d_fft_if = std::make_unique<gr::fft::fft_complex>(d_fft_size, true);
+    // Inverse FFT
+    d_ifft = std::make_unique<gr::fft::fft_complex>(d_fft_size, false);
+#endif
 
     // For dumping samples into a file
     d_dump = dump;

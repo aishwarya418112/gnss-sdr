@@ -22,7 +22,6 @@
 #include "ad9361_manager.h"
 #include "configuration_interface.h"
 #include "gnss_sdr_flags.h"
-#include "gnss_sdr_string_literals.h"
 #include "gnss_sdr_valve.h"
 #include <glog/logging.h>
 #include <algorithm>  // for max
@@ -30,12 +29,10 @@
 #include <iostream>
 #include <utility>
 
-using namespace std::string_literals;
 
 Fmcomms2SignalSource::Fmcomms2SignalSource(const ConfigurationInterface *configuration,
     const std::string &role, unsigned int in_stream, unsigned int out_stream,
-    Concurrent_Queue<pmt::pmt_t> *queue)
-    : SignalSourceBase(configuration, role, "Fmcomms2_Signal_Source"s), in_stream_(in_stream), out_stream_(out_stream)
+    Concurrent_Queue<pmt::pmt_t> *queue) : role_(role), in_stream_(in_stream), out_stream_(out_stream)
 {
     const std::string default_item_type("gr_complex");
     const std::string default_dump_file("./data/signal_source.dat");
@@ -330,15 +327,6 @@ Fmcomms2SignalSource::Fmcomms2SignalSource(const ConfigurationInterface *configu
             DLOG(INFO) << "Dumping output into file " << dump_filename_;
             file_sink_ = gr::blocks::file_sink::make(item_size_, dump_filename_.c_str());
             DLOG(INFO) << "file_sink(" << file_sink_->unique_id() << ")";
-        }
-
-    if (in_stream_ > 0)
-        {
-            LOG(ERROR) << "A signal source does not have an input stream";
-        }
-    if (out_stream_ > 1)
-        {
-            LOG(ERROR) << "This implementation only supports one output stream";
         }
 }
 

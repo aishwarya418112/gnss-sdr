@@ -23,6 +23,8 @@
 #include "dll_pll_veml_tracking.h"
 #include "Beidou_B1I.h"
 #include "Beidou_B3I.h"
+#include "navic_l5_ca.h"
+#include "navic_l5.h"
 #include "GPS_L1_CA.h"
 #include "GPS_L2C.h"
 #include "GPS_L5.h"
@@ -38,10 +40,10 @@
 #include "galileo_e6_signal_replica.h"
 #include "gnss_satellite.h"
 #include "gnss_sdr_create_directory.h"
-#include "gnss_sdr_filesystem.h"
 #include "gnss_synchro.h"
 #include "gps_l2c_signal_replica.h"
 #include "gps_l5_signal_replica.h"
+#include "navic_sdr_signal_replica.h"
 #include "gps_sdr_signal_replica.h"
 #include "lock_detectors.h"
 #include "tracking_discriminators.h"
@@ -63,6 +65,19 @@
 #if HAS_GENERIC_LAMBDA
 #else
 #include <boost/bind/bind.hpp>
+#endif
+
+#if HAS_STD_FILESYSTEM
+#if HAS_STD_FILESYSTEM_EXPERIMENTAL
+#include <experimental/filesystem>
+namespace fs = std::experimental::filesystem;
+#else
+#include <filesystem>
+namespace fs = std::filesystem;
+#endif
+#else
+#include <boost/filesystem/path.hpp>
+namespace fs = boost::filesystem;
 #endif
 
 
@@ -197,6 +212,42 @@ dll_pll_veml_tracking::dll_pll_veml_tracking(const Dll_Pll_Conf &conf_) : gr::bl
                             d_signal_pretty_name = d_signal_pretty_name + "I";
                             d_interchange_iq = true;
                         }
+                }
+            else
+                {
+                    LOG(WARNING) << "Invalid Signal argument when instantiating tracking blocks";
+                    std::cerr << "Invalid Signal argument when instantiating tracking blocks\n";
+                    d_correlation_length_ms = 1;
+                    d_secondary = false;
+                    d_signal_carrier_freq = 0.0;
+                    d_code_period = 0.0;
+                    d_code_length_chips = 0;
+                    d_code_samples_per_chip = 0U;
+                    d_symbols_per_bit = 0;
+                }
+        }
+    else if (d_trk_parameters.system == 'N')
+        {
+            d_systemName = "NAVIC";
+            if (d_signal_type == "L5")
+                {
+                    d_signal_carrier_freq = NAVIC_L5_FREQ_HZ;
+                    d_code_period = NAVIC_L5_CA_CODE_PERIOD_S;
+                    d_code_chip_rate = NAVIC_L5_CA_CODE_RATE_CPS;
+                    d_correlation_length_ms = 1;
+                    d_code_samples_per_chip = 1;
+                    d_code_length_chips = static_cast<int32_t>(NAVIC_L5_CA_CODE_LENGTH_CHIPS);
+                    // GPS L1 C/A does not have pilot component nor secondary code
+                    d_secondary = false;
+                    d_trk_parameters.track_pilot = false;
+                    d_trk_parameters.slope = 1.0;
+                    d_trk_parameters.spc = d_trk_parameters.early_late_space_chips;
+                    d_trk_parameters.y_intercept = 1.0;
+                    // symbol integration: 20 trk symbols (20 ms) = 1 tlm bit
+                    // set the preamble in the secondary code acquisition to obtain tlm symbol synchronization
+                    d_secondary_code_length = static_cast<uint32_t>(NAVIC_CA_PREAMBLE_LENGTH_SYMBOLS);
+                    d_secondary_code_string = NAVIC_CA_PREAMBLE_SYMBOLS_STR;
+                    d_symbols_per_bit = NAVIC_CA_TELEMETRY_SYMBOLS_PER_BIT;
                 }
             else
                 {
@@ -663,6 +714,11 @@ void dll_pll_veml_tracking::start_tracking()
                     gps_l5i_code_gen_float(d_tracking_code, d_acquisition_gnss_synchro->PRN);
                 }
         }
+    else if (d_systemName == "NAVIC" and d_signal_type == "L5")
+        {
+            navic_l5_ca_code_gen_float(d_tracking_code, d_acquisition_gnss_synchro->PRN, 0);
+        }
+    
     else if (d_systemName == "Galileo" and d_signal_type == "1B")
         {
             if (d_trk_parameters.track_pilot)

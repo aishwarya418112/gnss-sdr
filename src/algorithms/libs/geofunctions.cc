@@ -20,7 +20,7 @@
 #include <array>
 #include <cmath>  // for sin, cos, sqrt, abs, pow
 
-const double STRP_PI = 3.1415926535898;  // Pi as defined in IS-GPS-200L
+const double STRP_PI = 3.1415926535898;  // Pi as defined in IS-GPS-200K
 
 arma::mat Skew_symmetric(const arma::vec &a)
 {

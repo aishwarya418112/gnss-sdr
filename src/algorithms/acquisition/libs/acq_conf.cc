@@ -44,9 +44,10 @@ Acq_Conf::Acq_Conf()
     dump = false;
     blocking = true;
     make_2_steps = false;
+    dump_filename = "";
     dump_channel = 0U;
     it_size = sizeof(gr_complex);
-    item_type = std::string("gr_complex");
+    item_type = "gr_complex";
     blocking_on_standby = false;
     use_automatic_resampler = false;
     resampler_ratio = 1.0;

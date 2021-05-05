@@ -16,6 +16,7 @@
  */
 
 #include "notch_lite_cc.h"
+#include "gnss_sdr_make_unique.h"
 #include <boost/math/distributions/chi_squared.hpp>
 #include <gnuradio/io_signature.h>
 #include <volk/volk.h>
@@ -62,7 +63,11 @@ NotchLite::NotchLite(float p_c_factor,
     angle1_ = 0.0;
     angle2_ = 0.0;
     power_spect_ = volk_gnsssdr::vector<float>(length_);
-    d_fft_ = gnss_fft_fwd_make_unique(length_);
+#if GNURADIO_FFT_USES_TEMPLATES
+    d_fft_ = std::make_unique<gr::fft::fft_complex_fwd>(length_);
+#else
+    d_fft_ = std::make_unique<gr::fft::fft_complex>(length_, true);
+#endif
 }
 
 

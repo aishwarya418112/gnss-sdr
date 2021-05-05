@@ -21,6 +21,8 @@
 
 #include "GPS_L1_CA.h"
 #include "GPS_L5.h"
+#include "navic_l5.h"
+#include "navic_l5_ca.h"
 #include "Galileo_E1.h"
 #include "Galileo_E5a.h"
 #include "acquisition_msg_rx.h"

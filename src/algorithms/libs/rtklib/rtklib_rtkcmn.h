@@ -29,7 +29,7 @@
  *
  *
  * References :
- *     [1] IS-GPS-200L, Navstar GPS Space Segment/Navigation User Interfaces,
+ *     [1] IS-GPS-200K, Navstar GPS Space Segment/Navigation User Interfaces,
  *         7 March, 2006
  *     [2] RTCA/DO-229C, Minimum operational performanc standards for global
  *         positioning system/wide area augmentation system airborne equipment,
@@ -59,7 +59,6 @@
 #define GNSS_SDR_RTKLIB_RTKCMN_H
 
 #include "rtklib.h"
-#include <cstddef>
 #include <string>
 
 
@@ -97,7 +96,7 @@
         }                                            \
     while (0)
 
-char *strncpy_no_trunc(char *out, size_t outsz, const char *in, size_t insz);
+
 void fatalerr(const char *format, ...);
 int satno(int sys, int prn);
 int satsys(int sat, int *prn);

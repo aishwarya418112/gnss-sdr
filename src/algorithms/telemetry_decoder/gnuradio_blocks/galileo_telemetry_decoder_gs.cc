@@ -26,7 +26,6 @@
 #include "display.h"
 #include "galileo_almanac_helper.h"  // for Galileo_Almanac_Helper
 #include "galileo_ephemeris.h"       // for Galileo_Ephemeris
-#include "galileo_has_data.h"        // For Galileo HAS messages
 #include "galileo_iono.h"            // for Galileo_Iono
 #include "galileo_utc_model.h"       // for Galileo_Utc_Model
 #include "gnss_synchro.h"
@@ -94,10 +93,7 @@ galileo_telemetry_decoder_gs::galileo_telemetry_decoder_gs(
                 d_codelength = static_cast<int32_t>(d_frame_length_symbols);
                 d_datalength = (d_codelength / d_nn) - d_mm;
                 d_max_symbols_without_valid_frame = GALILEO_INAV_PAGE_SYMBOLS * 30;  // rise alarm 60 seconds without valid tlm
-                if (conf.enable_reed_solomon == true)
-                    {
-                        d_inav_nav.enable_reed_solomon();
-                    }
+
                 break;
             }
         case 2:  // FNAV
@@ -210,9 +206,6 @@ galileo_telemetry_decoder_gs::galileo_telemetry_decoder_gs(
     d_out1.reserve(max_states);
     d_state0.reserve(max_states);
     d_state1.reserve(max_states);
-
-    d_inav_nav.init_PRN(d_satellite.get_PRN());
-    d_first_eph_sent = false;
 
     // create appropriate transition matrices
     nsc_transit(d_out0.data(), d_state0.data(), 0, g_encoder.data(), d_KK, d_nn);
@@ -360,19 +353,7 @@ void galileo_telemetry_decoder_gs::decode_INAV_word(float *page_part_symbols, in
                     std::cout << TEXT_BLUE << "New Galileo E5b I/NAV message received in channel " << d_channel << ": ephemeris from satellite " << d_satellite << TEXT_RESET << '\n';
                 }
             this->message_port_pub(pmt::mp("telemetry"), pmt::make_any(tmp_obj));
-            d_first_eph_sent = true;  // do not send reduced CED anymore, since we have the full ephemeris set
         }
-    else
-        {
-            // If we still do not have ephemeris, check if we have a reduced CED
-            if ((d_band == '1') && !d_first_eph_sent && (d_inav_nav.have_new_reduced_ced() == true))
-                {
-                    const std::shared_ptr<Galileo_Ephemeris> tmp_obj = std::make_shared<Galileo_Ephemeris>(d_inav_nav.get_reduced_ced());
-                    std::cout << "New Galileo E1 I/NAV reduced CED message received in channel " << d_channel << " from satellite " << d_satellite << '\n';
-                    this->message_port_pub(pmt::mp("telemetry"), pmt::make_any(tmp_obj));
-                }
-        }
-
     if (d_inav_nav.have_new_iono_and_GST() == true)
         {
             // get object for this SV (mandatory)
@@ -400,7 +381,7 @@ void galileo_telemetry_decoder_gs::decode_INAV_word(float *page_part_symbols, in
                     std::cout << TEXT_BLUE << "New Galileo E5b I/NAV message received in channel " << d_channel << ": UTC model parameters from satellite " << d_satellite << TEXT_RESET << '\n';
                 }
             this->message_port_pub(pmt::mp("telemetry"), pmt::make_any(tmp_obj));
-            d_delta_t = tmp_obj->A_0G + tmp_obj->A_1G * (static_cast<double>(d_TOW_at_current_symbol_ms) / 1000.0 - tmp_obj->t_0G + 604800 * (std::fmod(static_cast<float>(d_inav_nav.get_Galileo_week() - tmp_obj->WN_0G), 64.0)));
+            d_delta_t = tmp_obj->A_0G_10 + tmp_obj->A_1G_10 * (static_cast<double>(d_TOW_at_current_symbol_ms) / 1000.0 - tmp_obj->t_0G_10 + 604800 * (std::fmod(static_cast<float>(d_inav_nav.get_Galileo_week() - tmp_obj->WN_0G_10), 64.0)));
             DLOG(INFO) << "delta_t=" << d_delta_t << "[s]";
         }
     if (d_inav_nav.have_new_almanac() == true)
@@ -531,15 +512,15 @@ void galileo_telemetry_decoder_gs::decode_CNAV_word(float *page_symbols, int32_t
     // 4. If we have a new full message, read it
     if (d_cnav_nav.have_new_HAS_message() == true)
         {
-            if (d_cnav_nav.is_HAS_message_dummy() == true)
+            // TODO: Retrieve data from message and send it somewhere
+            // Galileo_HAS_data has_data = d_cnav_nav.get_HAS_data();
+            if (d_cnav_nav.is_HAS_message_dummy())
                 {
-                    std::cout << TEXT_MAGENTA << "New Galileo E6 HAS dummy message received in channel " << d_channel << " from satellite " << d_satellite << TEXT_RESET << '\n';
+                    std::cout << TEXT_MAGENTA << "New Galileo E6 HAS message received in channel " << d_channel << " from satellite " << d_satellite << TEXT_RESET << '\n';
                 }
             else
                 {
-                    const std::shared_ptr<Galileo_HAS_data> tmp_obj = std::make_shared<Galileo_HAS_data>(d_cnav_nav.get_HAS_data());
-                    this->message_port_pub(pmt::mp("telemetry"), pmt::make_any(tmp_obj));
-                    std::cout << TEXT_MAGENTA << "New Galileo E6 HAS message received in channel " << d_channel << " from satellite " << d_satellite << TEXT_RESET << '\n';
+                    std::cout << TEXT_MAGENTA << "New Galileo E6 HAS dummy message received in channel " << d_channel << " from satellite " << d_satellite << TEXT_RESET << '\n';
                 }
         }
 }
@@ -668,7 +649,7 @@ int galileo_telemetry_decoder_gs::general_work(int noutput_items __attribute__((
                         if (abs(corr_value) >= d_samples_per_preamble)
                             {
                                 d_preamble_index = d_sample_counter;  // record the preamble sample stamp
-                                LOG(INFO) << "Preamble detection for Galileo satellite " << this->d_satellite << " in channel " << this->d_channel;
+                                DLOG(INFO) << "Preamble detection for Galileo satellite " << this->d_satellite;
                                 d_stat = 1;  // enter into frame pre-detection status
                             }
                     }

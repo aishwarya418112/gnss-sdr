@@ -1,0 +1,1 @@
+/usr/bin/cc  -fcx-limited-range -Wall -Werror=incompatible-pointer-types -Werror=pointer-sign -O3 -DNDEBUG  -rdynamic CMakeFiles/list_cpu_features.dir/src/utils/list_cpu_features.c.o  -o list_cpu_features  libcpu_features.a -ldl 

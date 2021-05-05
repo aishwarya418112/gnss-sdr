@@ -32,9 +32,6 @@ boost::system::error_code rtl_tcp_command(RTL_TCP_COMMAND id, unsigned param, bo
     std::memcpy(&data[1], &nparam, sizeof(nparam));
 
     boost::system::error_code ec;
-    if (socket.send(boost::asio::buffer(data), 0, ec) == 0)
-        {
-            // 0 bytes sent
-        }
+    socket.send(boost::asio::buffer(data), 0, ec);
     return ec;
 }

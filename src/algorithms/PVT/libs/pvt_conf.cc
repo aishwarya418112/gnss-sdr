@@ -29,7 +29,7 @@ Pvt_Conf::Pvt_Conf()
     max_obs_block_rx_clock_offset_ms = 40;
     rinex_version = 0;
     rinexobs_rate_ms = 0;
-    rinex_name = std::string("-");
+    rinex_name = "-";
 
     dump = false;
     dump_mat = true;
@@ -61,10 +61,8 @@ Pvt_Conf::Pvt_Conf()
 
     enable_rx_clock_correction = true;
     monitor_enabled = false;
-    monitor_ephemeris_enabled = false;
     protobuf_enabled = true;
     udp_port = 0;
-    udp_eph_port = 0;
     pre_2009_file = false;
     show_local_time_zone = false;
 }

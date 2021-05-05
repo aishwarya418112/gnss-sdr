@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gnss-sdr/gnss-sdr/src/algorithms/libs/gnss_sdr_flags.cc
+gnss_sdr_flags.h
+/home/gnss-sdr/gnss-sdr/src/algorithms/libs/gnss_sdr_flags.h
+iostream
+-
+string
+-
+experimental/filesystem
+-
+filesystem
+-
+boost/filesystem/operations.hpp
+-
+
+/home/gnss-sdr/gnss-sdr/src/algorithms/libs/gnss_sdr_flags.h
+gflags/gflags.h
+-
+cstdint
+-
+
