@@ -116,7 +116,7 @@ Gnss_Satellite& Gnss_Satellite::operator=(Gnss_Satellite&& other) noexcept
 
 void Gnss_Satellite::set_system(const std::string& system_)
 {
-    // Set the satellite system {"GPS", "Glonass", "SBAS", "Galileo", "Compass"}
+    // Set the satellite system {"GPS", "Glonass", "SBAS", "Galileo", "Compass", "NAVIC"}
     auto it = system_set.find(system_);
 
     if (it != system_set.cend())
@@ -125,7 +125,7 @@ void Gnss_Satellite::set_system(const std::string& system_)
         }
     else
         {
-            DLOG(INFO) << "System " << system_ << " is not defined {GPS, Glonass, SBAS, Galileo, Beidou}. Initialization?";
+            DLOG(INFO) << "System " << system_ << " is not defined {GPS, Glonass, SBAS, Galileo, Beidou, NAVIC}. Initialization?";
             system = std::string("");
         }
 }
@@ -228,6 +228,18 @@ void Gnss_Satellite::set_PRN(uint32_t PRN_)
                 }
         }
 
+    else if (system == "NAVIC")
+        {
+            if (PRN_ < 1 or PRN_ > 7)
+                {
+                    DLOG(INFO) << "This PRN is not defined";
+                    PRN = 0;
+                }
+            else
+                {
+                    PRN = PRN_;
+                }
+        }
     else
         {
             DLOG(INFO) << "System " << system << " is not defined";
@@ -261,7 +273,7 @@ uint32_t Gnss_Satellite::get_PRN() const
 
 std::string Gnss_Satellite::get_system() const
 {
-    // Get the satellite system {"GPS", "Glonass", "SBAS", "Galileo", "Beidou"}
+    // Get the satellite system {"GPS", "Glonass", "SBAS", "Galileo", "Beidou","NAVIC"}
     std::string system_ = system;
     return system_;
 }
@@ -269,7 +281,7 @@ std::string Gnss_Satellite::get_system() const
 
 std::string Gnss_Satellite::get_system_short() const
 {
-    // Get the satellite system {"G", "R", "S", "E", "C"}
+    // Get the satellite system {"G", "R", "S", "E", "C","N"}
     return satelliteSystem.at(system);
 }
 
@@ -311,7 +323,7 @@ std::string Gnss_Satellite::what_block(const std::string& system_, uint32_t PRN_
                 case 7:
                     block_ = std::string("IIR-M");  // Plane A
                     break;
-                case 8:                           // NOLINT(bugprone-branch-clone)
+                case 8:
                     block_ = std::string("IIF");  // Plane C
                     break;
                 case 9:
@@ -344,7 +356,7 @@ std::string Gnss_Satellite::what_block(const std::string& system_, uint32_t PRN_
                 case 18:
                     block_ = std::string("III");  // Plane D
                     break;
-                case 19:                          // NOLINT(bugprone-branch-clone)
+                case 19:
                     block_ = std::string("IIR");  // Plane D
                     break;
                 case 20:
@@ -359,7 +371,7 @@ std::string Gnss_Satellite::what_block(const std::string& system_, uint32_t PRN_
                 case 23:
                     block_ = std::string("III");  // Plane E
                     break;
-                case 24:                          // NOLINT(bugprone-branch-clone)
+                case 24:
                     block_ = std::string("IIF");  // Plane A
                     break;
                 case 25:
@@ -386,6 +398,39 @@ std::string Gnss_Satellite::what_block(const std::string& system_, uint32_t PRN_
                 case 32:
                     block_ = std::string("IIF");  // Plane F
                     break;
+                default:
+                    block_ = std::string("Unknown");
+                }
+        }
+    if (system_ == "NAVIC")
+        {
+            
+            switch (PRN_)
+                {
+                case 1:
+                    block_ = std::string("IRNSS-1A");  // Plane 1A
+                    break;
+                case 2:
+                    block_ = std::string("IRNSS-1B");  // Plane 1B
+                    break;
+                case 3:
+                    block_ = std::string("IRNSS-1C");  // Plane 1C
+                    break;
+                case 4:
+                    block_ = std::string("IRNSS-1D");  // Plane 1D
+                    break;
+                case 5:
+                    block_ = std::string("IRNSS-1E");  // Plane 1E
+                    break;
+                case 6:
+                    block_ = std::string("IRNSS-1F");  // Plane 1F
+                    break;
+                case 7:
+                    block_ = std::string("IRNSS-1G");  // Plane 1G
+                    break;
+                case 8:
+                    block_ = std::string("IRNSS-1H");  // Plane 1H
+                    break;    
                 default:
                     block_ = std::string("Unknown");
                 }
@@ -507,7 +552,7 @@ std::string Gnss_Satellite::what_block(const std::string& system_, uint32_t PRN_
                 case 123:
                     block_ = std::string("EGNOS");  // EGNOS Operational Platform. Astra 5B
                     break;
-                case 131:                          // NOLINT(bugprone-branch-clone)
+                case 131:
                     block_ = std::string("WAAS");  // WAAS Eutelsat 117 West B
                     break;
                 case 135:

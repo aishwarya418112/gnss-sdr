@@ -63,7 +63,6 @@ public:
     double property(std::string property_name, double default_value) const override;
     void set_property(std::string property_name, std::string value) override;
     bool is_present(const std::string& property_name) const;
-    bool has_section() const;
 
 private:
     void init();

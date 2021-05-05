@@ -38,7 +38,6 @@
 
 class ConfigurationInterface;
 class GNSSBlockInterface;
-class SignalSourceInterface;
 class AcquisitionInterface;
 class TrackingInterface;
 class TelemetryDecoderInterface;
@@ -52,7 +51,7 @@ public:
     GNSSBlockFactory() = default;
     ~GNSSBlockFactory() = default;
 
-    std::unique_ptr<SignalSourceInterface> GetSignalSource(const ConfigurationInterface* configuration,
+    std::unique_ptr<GNSSBlockInterface> GetSignalSource(const ConfigurationInterface* configuration,
         Concurrent_Queue<pmt::pmt_t>* queue, int ID = -1);
 
     std::unique_ptr<GNSSBlockInterface> GetSignalConditioner(const ConfigurationInterface* configuration, int ID = -1);

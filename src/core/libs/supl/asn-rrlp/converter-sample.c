@@ -500,7 +500,7 @@ static void buffer_dump()
         }
     else
         {
-            fprintf(stderr, " %lu\n", DynamicBuffer.length);
+            fprintf(stderr, " %ld\n", DynamicBuffer.length);
         }
 }
 

@@ -151,7 +151,6 @@ target_link_libraries(core_receiver
     PUBLIC
         core_libs
     PRIVATE
-        algorithms_libs
         core_monitor
         signal_source_adapters
         data_type_adapters
@@ -169,6 +168,8 @@ target_link_libraries(core_receiver
         Glog::glog
         Armadillo::armadillo
 )
+
+target_include_directories(core_receiver PRIVATE ${CMAKE_SOURCE_DIR}/src/algorithms/libs)
 
 if(ENABLE_ARMA_NO_DEBUG)
     target_compile_definitions(core_receiver
