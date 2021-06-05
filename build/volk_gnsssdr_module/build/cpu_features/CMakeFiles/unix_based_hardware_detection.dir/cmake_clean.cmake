@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/unix_based_hardware_detection.dir/src/hwcaps.c.o"
+  "CMakeFiles/unix_based_hardware_detection.dir/src/hwcaps.c.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

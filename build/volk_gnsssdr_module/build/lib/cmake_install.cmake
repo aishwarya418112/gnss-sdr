@@ -1,8 +1,8 @@
-# Install script for directory: /home/gnss-sdr/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/lib
+# Install script for directory: /home/aishwarya/Desktop/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/install")
+  set(CMAKE_INSTALL_PREFIX "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -37,18 +37,23 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdr_runtimex" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14.git" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14.git")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14.git"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/lib/libvolk_gnsssdr.so.0.0.14")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/lib/libvolk_gnsssdr.so.0.0.14.git")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14.git" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14.git")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so.0.0.14.git")
     endif()
   endif()
 endif()
@@ -60,7 +65,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdr_runtimex" OR NOT CMAKE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/lib/libvolk_gnsssdr.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/lib/libvolk_gnsssdr.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libvolk_gnsssdr.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -70,6 +75,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdr_runtimex" OR NOT CMAKE
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdr_develx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/lib/libvolk_gnsssdr.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/lib/libvolk_gnsssdr.a")
 endif()
 

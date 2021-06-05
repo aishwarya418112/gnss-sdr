@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/front-end-cal.dir/main.cc.o"
+  "CMakeFiles/front-end-cal.dir/main.cc.o.d"
   "front-end-cal"
   "front-end-cal.pdb"
 )

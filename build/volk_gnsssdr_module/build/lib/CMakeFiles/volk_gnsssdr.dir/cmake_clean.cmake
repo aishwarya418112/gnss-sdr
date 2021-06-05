@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "libvolk_gnsssdr.pdb"
   "libvolk_gnsssdr.so"
-  "libvolk_gnsssdr.so.0.0.14"
+  "libvolk_gnsssdr.so.0.0.14.git"
 )
 
 # Per-language clean rules from dependency scanning.

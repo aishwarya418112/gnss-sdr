@@ -1,4 +1,4 @@
-# Install script for directory: /home/gnss-sdr/gnss-sdr/src/main
+# Install script for directory: /home/aishwarya/Desktop/gnss-sdr/src/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -37,6 +37,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgnss-sdrx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gnss-sdr" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gnss-sdr")
@@ -44,13 +49,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgnss-sdrx" OR NOT CMAKE_INSTALL_COM
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gnss-sdr"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/gnss-sdr/gnss-sdr/build/src/main/gnss-sdr")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/aishwarya/Desktop/gnss-sdr/build/src/main/gnss-sdr")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gnss-sdr" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gnss-sdr")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gnss-sdr"
-         OLD_RPATH "/usr/local/lib:"
-         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gnss-sdr")
     endif()
@@ -58,34 +59,34 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xgnss-sdrx" OR NOT CMAKE_INSTALL_COM
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnss-sdr" TYPE DIRECTORY FILES "/home/gnss-sdr/gnss-sdr/conf" FILES_MATCHING REGEX "/[^/]*\\.conf$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnss-sdr" TYPE DIRECTORY FILES "/home/aishwarya/Desktop/gnss-sdr/conf" FILES_MATCHING REGEX "/[^/]*\\.conf$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnss-sdr/conf" TYPE FILE RENAME "default.conf" FILES "/home/gnss-sdr/gnss-sdr/conf/gnss-sdr.conf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnss-sdr/conf" TYPE FILE RENAME "default.conf" FILES "/home/aishwarya/Desktop/gnss-sdr/conf/gnss-sdr.conf")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdrx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/apps/volk_gnsssdr_profile")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/apps/volk_gnsssdr_profile")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdrx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/apps/volk_gnsssdr-config-info")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM FILES "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/apps/volk_gnsssdr-config-info")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/gnss-sdr/gnss-sdr/build/gnss-sdr.1.gz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/aishwarya/Desktop/gnss-sdr/build/gnss-sdr.1.gz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/gnss-sdr" TYPE FILE FILES "/home/gnss-sdr/gnss-sdr/build/changelog.gz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/gnss-sdr" TYPE FILE FILES "/home/aishwarya/Desktop/gnss-sdr/build/changelog.gz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_profile.1.gz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_profile.1.gz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr-config-info.1.gz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/man/man1" TYPE FILE FILES "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr-config-info.1.gz")
 endif()
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/gnss-sdr/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/apps
+# Install script for directory: /home/aishwarya/Desktop/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/install")
+  set(CMAKE_INSTALL_PREFIX "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -37,6 +37,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdrx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/volk_gnsssdr_profile" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/volk_gnsssdr_profile")
@@ -44,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdrx" OR NOT CMAKE_INSTALL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/volk_gnsssdr_profile"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/apps/volk_gnsssdr_profile")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/apps/volk_gnsssdr_profile")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/volk_gnsssdr_profile" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/volk_gnsssdr_profile")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -60,7 +65,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdrx" OR NOT CMAKE_INSTALL
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/volk_gnsssdr-config-info"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/apps/volk_gnsssdr-config-info")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/apps/volk_gnsssdr-config-info")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/volk_gnsssdr-config-info" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/volk_gnsssdr-config-info")
     if(CMAKE_INSTALL_DO_STRIP)

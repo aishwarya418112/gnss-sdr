@@ -1,42 +1,22 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/observables/gnuradio_blocks/hybrid_observables_gs.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/observables/gnuradio_blocks/CMakeFiles/obs_gr_blocks.dir/hybrid_observables_gs.cc.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "BOOST_ALL_NO_LIB"
-  "BOOST_DATE_TIME_DYN_LINK"
-  "BOOST_SERIALIZATION_DYN_LINK"
-  "GNSSSDR_INSTALL_DIR=\"/usr/local\""
-  "HAS_GENERIC_LAMBDA=1"
-  "HAS_STD_FILESYSTEM=1"
-  "_FILE_OFFSET_BITS=64"
-  "_LARGEFILE_SOURCE"
-  "_LARGE_FILES"
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src/algorithms/libs"
-  "../src/core/interfaces"
-  "../src/algorithms/observables/libs"
-  "../src/algorithms/libs/gsl/include"
-  "../src/core/system_parameters"
-  "/usr/include/glog"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/observables/gnuradio_blocks/hybrid_observables_gs.cc" "src/algorithms/observables/gnuradio_blocks/CMakeFiles/obs_gr_blocks.dir/hybrid_observables_gs.cc.o" "gcc" "src/algorithms/observables/gnuradio_blocks/CMakeFiles/obs_gr_blocks.dir/hybrid_observables_gs.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/gnss-sdr/gnss-sdr/build/src/algorithms/observables/libs/CMakeFiles/observables_libs.dir/DependInfo.cmake"
-  "/home/gnss-sdr/gnss-sdr/build/src/algorithms/libs/CMakeFiles/algorithms_libs.dir/DependInfo.cmake"
-  "/home/gnss-sdr/gnss-sdr/build/src/core/system_parameters/CMakeFiles/core_system_parameters.dir/DependInfo.cmake"
-  "/home/gnss-sdr/gnss-sdr/build/src/algorithms/libs/CMakeFiles/gnss_sdr_flags.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/observables/libs/CMakeFiles/observables_libs.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/libs/CMakeFiles/algorithms_libs.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/core/system_parameters/CMakeFiles/core_system_parameters.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/libs/CMakeFiles/gnss_sdr_flags.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

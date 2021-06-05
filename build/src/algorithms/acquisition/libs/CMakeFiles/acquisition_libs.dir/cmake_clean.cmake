@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/acquisition_libs.dir/acq_conf.cc.o"
+  "CMakeFiles/acquisition_libs.dir/acq_conf.cc.o.d"
   "libacquisition_libs.a"
   "libacquisition_libs.pdb"
 )

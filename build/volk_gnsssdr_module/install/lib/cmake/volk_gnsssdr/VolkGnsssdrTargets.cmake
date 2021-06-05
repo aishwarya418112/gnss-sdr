@@ -4,7 +4,7 @@ if("${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}" LESS 2.5)
    message(FATAL_ERROR "CMake >= 2.6.0 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.6)
+cmake_policy(VERSION 2.6...3.18)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -55,7 +55,7 @@ add_library(VolkGnsssdr::volk_gnsssdr SHARED IMPORTED)
 
 set_target_properties(VolkGnsssdr::volk_gnsssdr PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "dl;m"
+  INTERFACE_LINK_LIBRARIES "dl;/usr/lib/x86_64-linux-gnu/liborc-0.4.so;m"
 )
 
 # Create imported target VolkGnsssdr::volk_gnsssdr_static
@@ -63,7 +63,7 @@ add_library(VolkGnsssdr::volk_gnsssdr_static STATIC IMPORTED)
 
 set_target_properties(VolkGnsssdr::volk_gnsssdr_static PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "dl;\$<LINK_ONLY:CpuFeatures::cpu_features>;\$<LINK_ONLY:pthread>;m"
+  INTERFACE_LINK_LIBRARIES "dl;/usr/lib/x86_64-linux-gnu/liborc-0.4.so;\$<LINK_ONLY:CpuFeatures::cpu_features>;/usr/lib/x86_64-linux-gnu/liborc-0.4.a;\$<LINK_ONLY:pthread>;m"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)
@@ -99,7 +99,7 @@ but not all the files it references.
 endforeach()
 unset(_IMPORT_CHECK_TARGETS)
 
-# Make sure the targets which have been exported in some other 
+# Make sure the targets which have been exported in some other
 # export set exist.
 unset(${CMAKE_FIND_PACKAGE_NAME}_NOT_FOUND_MESSAGE_targets)
 foreach(_target "CpuFeatures::cpu_features" )

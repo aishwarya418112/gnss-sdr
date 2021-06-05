@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/list_cpu_features.dir/src/utils/list_cpu_features.c.o"
+  "CMakeFiles/list_cpu_features.dir/src/utils/list_cpu_features.c.o.d"
   "list_cpu_features"
   "list_cpu_features.pdb"
 )

@@ -73,7 +73,7 @@ constexpr char GPS_CA_PREAMBLE[9] = "10001011";
 constexpr char GPS_CA_PREAMBLE_SYMBOLS_STR[161] = "1111111111111111111100000000000000000000000000000000000000000000000000000000000011111111111111111111000000000000000000001111111111111111111111111111111111111111";
 
 // GPS NAVIGATION MESSAGE STRUCTURE
-// NAVIGATION MESSAGE FIELDS POSITIONS (from IS-GPS-200K Appendix II)
+// NAVIGATION MESSAGE FIELDS POSITIONS (from IS-GPS-200L Appendix II)
 
 // SUBFRAME 1-5 (TLM and HOW)
 
@@ -183,14 +183,14 @@ const std::vector<std::pair<int32_t, int32_t>> DELTAT_LSF({{271, 8}});
 constexpr double DELTAT_LSF_LSB = 1;
 
 // Page 25 - Antispoofing, SV config and SV health (PRN 25 -32)
-const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV25({{229, 6}});
+/*const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV25({{229, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV26({{241, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV27({{247, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV28({{253, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV29({{259, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV30({{271, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV31({{277, 6}});
-const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV32({{283, 6}});
+const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV32({{283, 6}});*/
 
 
 // SUBFRAME 5
@@ -208,7 +208,7 @@ const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV5({{121, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV6({{127, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV7({{133, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV8({{139, 6}});
-const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV9({{151, 6}});
+/*const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV9({{151, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV10({{157, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV11({{163, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV12({{169, 6}});
@@ -223,7 +223,7 @@ const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV20({{229, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV21({{241, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV22({{247, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV23({{253, 6}});
-const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV24({{259, 6}});
+const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV24({{259, 6}});*/
 
 
 /** \} */

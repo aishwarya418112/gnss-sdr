@@ -1,58 +1,43 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/PVT/libs/geojson_printer.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/geojson_printer.cc.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/PVT/libs/gpx_printer.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/gpx_printer.cc.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/PVT/libs/kml_printer.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/kml_printer.cc.o"
-  "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/monitor_pvt.pb.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/monitor_pvt.pb.cc.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/PVT/libs/monitor_pvt_udp_sink.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/monitor_pvt_udp_sink.cc.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/PVT/libs/nmea_printer.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/nmea_printer.cc.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/PVT/libs/pvt_conf.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/pvt_conf.cc.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/PVT/libs/pvt_solution.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/pvt_solution.cc.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/PVT/libs/rinex_printer.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rinex_printer.cc.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/PVT/libs/rtcm.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rtcm.cc.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/PVT/libs/rtcm_printer.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rtcm_printer.cc.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/PVT/libs/rtklib_solver.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rtklib_solver.cc.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "BOOST_ALL_NO_LIB"
-  "BOOST_DATE_TIME_DYN_LINK"
-  "BOOST_SERIALIZATION_DYN_LINK"
-  "GNSS_SDR_VERSION=\"0.0.14\""
-  "HAS_STD_FILESYSTEM=1"
-  "USE_BOOST_ASIO_IO_CONTEXT=1"
-  "_FILE_OFFSET_BITS=64"
-  "_LARGEFILE_SOURCE"
-  "_LARGE_FILES"
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src/core/receiver"
-  "../src/algorithms/PVT/libs/SYSTEM"
-  "src/algorithms/PVT/libs"
-  "../src/algorithms/libs"
-  "../src/core/system_parameters"
-  "../src/algorithms/libs/rtklib"
-  "/usr/include/glog"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/PVT/libs/galileo_ephemeris.pb.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/galileo_ephemeris.pb.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/galileo_ephemeris.pb.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/geojson_printer.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/geojson_printer.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/geojson_printer.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/PVT/libs/gps_ephemeris.pb.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/gps_ephemeris.pb.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/gps_ephemeris.pb.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/gpx_printer.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/gpx_printer.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/gpx_printer.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/kml_printer.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/kml_printer.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/kml_printer.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/monitor_ephemeris_udp_sink.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/monitor_ephemeris_udp_sink.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/monitor_ephemeris_udp_sink.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/PVT/libs/monitor_pvt.pb.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/monitor_pvt.pb.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/monitor_pvt.pb.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/monitor_pvt_udp_sink.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/monitor_pvt_udp_sink.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/monitor_pvt_udp_sink.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/nmea_printer.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/nmea_printer.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/nmea_printer.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/pvt_conf.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/pvt_conf.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/pvt_conf.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/pvt_solution.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/pvt_solution.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/pvt_solution.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/rinex_printer.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rinex_printer.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rinex_printer.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/rtcm.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rtcm.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rtcm.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/rtcm_printer.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rtcm_printer.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rtcm_printer.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/PVT/libs/rtklib_solver.cc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rtklib_solver.cc.o" "gcc" "src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/rtklib_solver.cc.o.d"
   )
 
 # Pairs of files generated by the same build rule.
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/monitor_pvt.pb.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/monitor_pvt.pb.h"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/PVT/libs/galileo_ephemeris.pb.cc" "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/PVT/libs/galileo_ephemeris.pb.h"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/PVT/libs/gps_ephemeris.pb.cc" "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/PVT/libs/gps_ephemeris.pb.h"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/PVT/libs/monitor_pvt.pb.cc" "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/PVT/libs/monitor_pvt.pb.h"
   )
 
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/gnss-sdr/gnss-sdr/build/src/core/system_parameters/CMakeFiles/core_system_parameters.dir/DependInfo.cmake"
-  "/home/gnss-sdr/gnss-sdr/build/src/algorithms/libs/rtklib/CMakeFiles/algorithms_libs_rtklib.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/core/system_parameters/CMakeFiles/core_system_parameters.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/libs/rtklib/CMakeFiles/algorithms_libs_rtklib.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/libs/CMakeFiles/algorithms_libs.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

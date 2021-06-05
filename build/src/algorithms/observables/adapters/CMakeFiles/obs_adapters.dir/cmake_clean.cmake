@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/obs_adapters.dir/hybrid_observables.cc.o"
+  "CMakeFiles/obs_adapters.dir/hybrid_observables.cc.o.d"
   "libobs_adapters.a"
   "libobs_adapters.pdb"
 )

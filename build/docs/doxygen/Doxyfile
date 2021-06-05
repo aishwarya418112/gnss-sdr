@@ -42,7 +42,7 @@ PROJECT_NAME           = "GNSS-SDR"
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = 0.0.14
+PROJECT_NUMBER         = 0.0.14.git-next-ab6a774f4
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -55,14 +55,14 @@ PROJECT_BRIEF          = "An Open Source GNSS Software Defined Receiver"
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           = /home/gnss-sdr/gnss-sdr/docs/doxygen/images/gnss-sdr_logo_round.png
+PROJECT_LOGO           = /home/aishwarya/Desktop/gnss-sdr/docs/doxygen/images/gnss-sdr_logo_round.png
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = /home/gnss-sdr/gnss-sdr/build/docs
+OUTPUT_DIRECTORY       = /home/aishwarya/Desktop/gnss-sdr/build/docs
 
 # If the CREATE_SUBDIRS tag is set to YES then doxygen will create 4096 sub-
 # directories (in 2 levels) under the output directory of each output format and
@@ -164,7 +164,7 @@ FULL_PATH_NAMES        = NO
 # will be relative from the directory where doxygen is started.
 # This tag requires that the tag FULL_PATH_NAMES is set to YES.
 
-STRIP_FROM_PATH        = /home/gnss-sdr/gnss-sdr
+STRIP_FROM_PATH        = /home/aishwarya/Desktop/gnss-sdr
 
 # The STRIP_FROM_INC_PATH tag can be used to strip a user-defined part of the
 # path mentioned in the documentation of a class, which tells the reader which
@@ -838,8 +838,8 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = /home/gnss-sdr/gnss-sdr/src \
-                         /home/gnss-sdr/gnss-sdr/docs/doxygen/other
+INPUT                  = /home/aishwarya/Desktop/gnss-sdr/src \
+                         /home/aishwarya/Desktop/gnss-sdr/docs/doxygen/other
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
@@ -882,12 +882,12 @@ RECURSIVE              = YES
 # Note that relative paths are relative to the directory from which doxygen is
 # run.
 
-EXCLUDE                = /home/gnss-sdr/gnss-sdr/docs/html \
-                         /home/gnss-sdr/gnss-sdr/docs/latex \
-                         /home/gnss-sdr/gnss-sdr/cmake \
-                         /home/gnss-sdr/gnss-sdr/data \
-                         /home/gnss-sdr/gnss-sdr/src/core/libs/supl \
-                         /home/gnss-sdr/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr
+EXCLUDE                = /home/aishwarya/Desktop/gnss-sdr/docs/html \
+                         /home/aishwarya/Desktop/gnss-sdr/docs/latex \
+                         /home/aishwarya/Desktop/gnss-sdr/cmake \
+                         /home/aishwarya/Desktop/gnss-sdr/data \
+                         /home/aishwarya/Desktop/gnss-sdr/src/core/libs/supl \
+                         /home/aishwarya/Desktop/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded
@@ -940,7 +940,7 @@ EXAMPLE_RECURSIVE      = NO
 # that contain images that are to be included in the documentation (see the
 # \image command).
 
-IMAGE_PATH             = /home/gnss-sdr/gnss-sdr/docs/doxygen/images/
+IMAGE_PATH             = /home/aishwarya/Desktop/gnss-sdr/docs/doxygen/images/
 
 # The INPUT_FILTER tag can be used to specify a program that doxygen should
 # invoke to filter for each input file. Doxygen will invoke the filter program

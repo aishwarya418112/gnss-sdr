@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/channel_adapters.dir/channel.cc.o"
+  "CMakeFiles/channel_adapters.dir/channel.cc.o.d"
   "libchannel_adapters.a"
   "libchannel_adapters.pdb"
 )

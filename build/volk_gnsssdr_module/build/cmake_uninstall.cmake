@@ -4,11 +4,11 @@
 # Copyright (C) 2015-2020  (see AUTHORS file for a list of contributors)
 # SPDX-License-Identifier: BSD-3-Clause
 
-if(NOT EXISTS "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/install_manifest.txt\"")
+if(NOT EXISTS "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/install_manifest.txt\"")
 endif()
 
-file(READ "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/install_manifest.txt" files)
+file(READ "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")

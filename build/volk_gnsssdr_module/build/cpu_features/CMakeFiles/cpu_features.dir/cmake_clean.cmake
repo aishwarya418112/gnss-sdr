@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpu_features.dir/src/cpuinfo_x86.c.o"
+  "CMakeFiles/cpu_features.dir/src/cpuinfo_x86.c.o.d"
   "libcpu_features.a"
   "libcpu_features.pdb"
 )

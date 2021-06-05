@@ -84,7 +84,6 @@ private:
         evGPS_1C,
         evGPS_2S,
         evGPS_L5,
-        evNAV_L5,
         evSBAS_1C,
         evGAL_1B,
         evGAL_5X,

@@ -1,8 +1,8 @@
-# Install script for directory: /home/gnss-sdr/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/python/volk_gnsssdr_modtool
+# Install script for directory: /home/aishwarya/Desktop/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/python/volk_gnsssdr_modtool
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/install")
+  set(CMAKE_INSTALL_PREFIX "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -37,26 +37,31 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdrx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.8/dist-packages/volk_gnsssdr_modtool" TYPE FILE FILES
-    "/home/gnss-sdr/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/python/volk_gnsssdr_modtool/__init__.py"
-    "/home/gnss-sdr/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/python/volk_gnsssdr_modtool/cfg.py"
-    "/home/gnss-sdr/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/python/volk_gnsssdr_modtool/volk_gnsssdr_modtool_generate.py"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.6/dist-packages/volk_gnsssdr_modtool" TYPE FILE FILES
+    "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/python/volk_gnsssdr_modtool/__init__.py"
+    "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/python/volk_gnsssdr_modtool/cfg.py"
+    "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/python/volk_gnsssdr_modtool/volk_gnsssdr_modtool_generate.py"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdrx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.8/dist-packages/volk_gnsssdr_modtool" TYPE FILE FILES
-    "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/__init__.pyc"
-    "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/cfg.pyc"
-    "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/volk_gnsssdr_modtool_generate.pyc"
-    "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/__init__.pyo"
-    "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/cfg.pyo"
-    "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/volk_gnsssdr_modtool_generate.pyo"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.6/dist-packages/volk_gnsssdr_modtool" TYPE FILE FILES
+    "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/__init__.pyc"
+    "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/cfg.pyc"
+    "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/volk_gnsssdr_modtool_generate.pyc"
+    "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/__init__.pyo"
+    "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/cfg.pyo"
+    "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/volk_gnsssdr_modtool_generate.pyo"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xvolk_gnsssdrx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "volk_gnsssdr_modtool" FILES "/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/volk_gnsssdr_modtool.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE PROGRAM RENAME "volk_gnsssdr_modtool" FILES "/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/python/volk_gnsssdr_modtool/volk_gnsssdr_modtool.exe")
 endif()
 

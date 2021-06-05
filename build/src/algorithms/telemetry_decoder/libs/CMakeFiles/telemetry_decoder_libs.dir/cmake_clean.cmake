@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/telemetry_decoder_libs.dir/tlm_conf.cc.o"
+  "CMakeFiles/telemetry_decoder_libs.dir/tlm_conf.cc.o.d"
   "CMakeFiles/telemetry_decoder_libs.dir/tlm_utils.cc.o"
+  "CMakeFiles/telemetry_decoder_libs.dir/tlm_utils.cc.o.d"
   "CMakeFiles/telemetry_decoder_libs.dir/viterbi_decoder.cc.o"
+  "CMakeFiles/telemetry_decoder_libs.dir/viterbi_decoder.cc.o.d"
   "libtelemetry_decoder_libs.a"
   "libtelemetry_decoder_libs.pdb"
 )

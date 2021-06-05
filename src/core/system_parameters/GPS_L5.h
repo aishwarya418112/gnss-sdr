@@ -35,8 +35,8 @@ constexpr double GPS_L5I_PERIOD_S = 0.001;            //!< GPS L5I code period [
 constexpr double GPS_L5I_SYMBOL_PERIOD_S = 0.01;      //!< GPS L5I symbol period [seconds]
 constexpr double GPS_L5Q_CODE_RATE_CPS = 10.23e6;     //!< GPS L5Q code rate [chips/s]
 constexpr double GPS_L5Q_PERIOD_S = 0.001;            //!< GPS L5Q code period [seconds]
-constexpr int32_t GPS_L5Q_CODE_LENGTH_CHIPS = 1023.0;  //!< GPS L5Q code length [chips]
-constexpr int32_t GPS_L5I_CODE_LENGTH_CHIPS = 1023.0;  //!< GPS L5I code length [chips]
+constexpr int32_t GPS_L5Q_CODE_LENGTH_CHIPS = 10230;  //!< GPS L5Q code length [chips]
+constexpr int32_t GPS_L5I_CODE_LENGTH_CHIPS = 10230;  //!< GPS L5I code length [chips]
 constexpr int32_t GPS_L5I_PERIOD_MS = 1;              //!< GPS L5I code period [ms]
 constexpr int32_t GPS_L5I_SYMBOL_PERIOD_MS = 10;      //!< GPS L5I symbol period [ms]
 

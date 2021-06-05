@@ -1,25 +1,17 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/telemetry_decoder/libs/libswiftcnav/bits.c" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/bits.c.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/telemetry_decoder/libs/libswiftcnav/cnav_msg.c" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/cnav_msg.c.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/telemetry_decoder/libs/libswiftcnav/edc.c" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/edc.c.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/telemetry_decoder/libs/libswiftcnav/viterbi27.c" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/viterbi27.c.o"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_C
-  "_FILE_OFFSET_BITS=64"
-  "_LARGEFILE_SOURCE"
-  "_LARGE_FILES"
   )
 
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/telemetry_decoder/libs/libswiftcnav/bits.c" "src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/bits.c.o" "gcc" "src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/bits.c.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/telemetry_decoder/libs/libswiftcnav/cnav_msg.c" "src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/cnav_msg.c.o" "gcc" "src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/cnav_msg.c.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/telemetry_decoder/libs/libswiftcnav/edc.c" "src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/edc.c.o" "gcc" "src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/edc.c.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/telemetry_decoder/libs/libswiftcnav/viterbi27.c" "src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/viterbi27.c.o" "gcc" "src/algorithms/telemetry_decoder/libs/libswiftcnav/CMakeFiles/telemetry_decoder_libswiftcnav.dir/viterbi27.c.o.d"
   )
 
 # Targets to which this target links.

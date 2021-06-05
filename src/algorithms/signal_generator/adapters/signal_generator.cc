@@ -24,8 +24,6 @@
 #include "Galileo_E5a.h"
 #include "Galileo_E5b.h"
 #include "Galileo_E6.h"
-#include "navic_l5.h"
-#include "navic_l5_ca.h"
 #include "configuration_interface.h"
 #include <glog/logging.h>
 #include <cstdint>
@@ -106,11 +104,6 @@ SignalGenerator::SignalGenerator(const ConfigurationInterface* configuration,
         {
             vector_length = static_cast<unsigned int>(round(static_cast<float>(fs_in) / (GPS_L1_CA_CODE_RATE_CPS / GPS_L1_CA_CODE_LENGTH_CHIPS)));
         }
-    else if (std::find(system.begin(), system.end(), "N") != system.end())
-        {
-            vector_length = static_cast<unsigned int>(round(static_cast<float>(fs_in) / (NAVIC_L5_CA_CODE_RATE_CPS / NAVIC_L5_CA_CODE_LENGTH_CHIPS)));
-        }
-        
     else if (std::find(system.begin(), system.end(), "R") != system.end())
         {
             if (signal1[0].at(0) == '1')

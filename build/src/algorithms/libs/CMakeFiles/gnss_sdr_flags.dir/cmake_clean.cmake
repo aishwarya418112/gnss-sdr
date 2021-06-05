@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gnss_sdr_flags.dir/gnss_sdr_flags.cc.o"
+  "CMakeFiles/gnss_sdr_flags.dir/gnss_sdr_flags.cc.o.d"
   "libgnss_sdr_flags.a"
   "libgnss_sdr_flags.pdb"
 )

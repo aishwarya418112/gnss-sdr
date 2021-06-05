@@ -19,10 +19,10 @@
 
 TEST(Protobuf, Works)
 {
-    uint32_t prn_true = 7;
-    uint32_t prn_true2 = 7;
-    std::string sys = "N";
-    std::string sig = "L5";
+    uint32_t prn_true = 17;
+    uint32_t prn_true2 = 23;
+    std::string sys = "G";
+    std::string sig = "1C";
 
     Gnss_Synchro gs = Gnss_Synchro();
     gs.System = *sys.c_str();

@@ -11,7 +11,7 @@ if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     message(FATAL_ERROR "Prevented in-tree build, it is bad practice.\nTry 'cd build && cmake ..' instead.")
 endif()
 
-cmake_minimum_required(VERSION 2.8.12...3.19)
+cmake_minimum_required(VERSION 2.8.12...3.20)
 project(gnss-sdr CXX C)
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/Modules)
 
@@ -94,6 +94,8 @@ option(ENABLE_SYSTEM_TESTING_EXTRA "Download external tools and build extra syst
 
 option(ENABLE_GNSS_SIM_INSTALL "Enable the installation of gnss_sim on the fly" ON)
 
+option(ENABLE_OWN_CPUFEATURES "Force the building of the cpu_features library even if it is already installed" ON)
+
 if(NOT (ENABLE_UNIT_TESTING_EXTRA OR ENABLE_SYSTEM_TESTING_EXTRA OR ENABLE_FPGA))
     set(ENABLE_GNSS_SIM_INSTALL OFF)
 endif()
@@ -110,8 +112,7 @@ if(ENABLE_FPGA)
 endif()
 
 option(ENABLE_BENCHMARKS "Build code snippets benchmarks" OFF)
-if(CMAKE_VERSION VERSION_LESS 3.5.1 OR
-    (CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CMAKE_CXX_COMPILER_VERSION VERSION_GREATER "10.99"))
+if(CMAKE_VERSION VERSION_LESS 3.5.1)
     set(ENABLE_BENCHMARKS OFF)
 endif()
 
@@ -121,7 +122,7 @@ option(ENABLE_EXTERNAL_MATHJAX "Use MathJax from an external CDN in HTML docs" O
 ################################################################################
 # GNSS-SDR version information
 ################################################################################
-set(THIS_IS_A_RELEASE ON)   # only related to version name, no further implications.
+set(THIS_IS_A_RELEASE OFF)   # only related to version name, no further implications.
 if(NOT ${THIS_IS_A_RELEASE})
     find_package(Git)
     set_package_properties(Git PROPERTIES
@@ -321,16 +322,21 @@ set(GNSSSDR_PROTOBUF_MIN_VERSION "3.0.0")
 # Versions to download and build (but not installed) if not found
 ################################################################################
 set(GNSSSDR_GFLAGS_LOCAL_VERSION "2.2.2")
-set(GNSSSDR_GLOG_LOCAL_VERSION "0.4.0")
-set(GNSSSDR_ARMADILLO_LOCAL_VERSION "10.1.x")
-set(GNSSSDR_GTEST_LOCAL_VERSION "1.10.0")
+set(GNSSSDR_GLOG_LOCAL_VERSION "0.5.0")
+set(GNSSSDR_ARMADILLO_LOCAL_VERSION "10.5.x")
+set(GNSSSDR_GTEST_LOCAL_VERSION "1.10.x")
+set(GNSSSDR_GTEST_LOCAL_VERSION_POST_CMAKE_3_19 "f5e592d8ee5ffb1d9af5be7f715ce3576b8bf9c4")  # Used with CMake >= 3.19
 set(GNSSSDR_GNSS_SIM_LOCAL_VERSION "master")
 set(GNSSSDR_GPSTK_LOCAL_VERSION "8.0.0")
-set(GNSSSDR_MATIO_LOCAL_VERSION "1.5.19")
+set(GNSSSDR_MATIO_LOCAL_VERSION "1.5.21")
 set(GNSSSDR_PUGIXML_LOCAL_VERSION "1.11.4")
-set(GNSSSDR_PROTOCOLBUFFERS_LOCAL_VERSION "3.14.0")
-set(GNSSSDR_BENCHMARK_LOCAL_VERSION "1.5.2")
+set(GNSSSDR_PROTOCOLBUFFERS_LOCAL_VERSION "3.17.1")
+set(GNSSSDR_BENCHMARK_LOCAL_VERSION "1.5.4")
 set(GNSSSDR_MATHJAX_EXTERNAL_VERSION "2.7.7")
+
+if(CMAKE_VERSION VERSION_LESS "3.3")
+    set(GNSSSDR_GLOG_LOCAL_VERSION "0.4.0")    # Fix for Debian 8
+endif()
 
 if(CMAKE_VERSION VERSION_LESS "3.0.2")
     set(GNSSSDR_GFLAGS_LOCAL_VERSION "2.2.1")  # Fix for CentOS 7
@@ -545,7 +551,7 @@ set_package_properties(GOOGLETEST PROPERTIES
 )
 if(NOT GOOGLETEST_FOUND)
     set_package_properties(GOOGLETEST PROPERTIES
-        PURPOSE "Googletest v${GNSSSDR_GTEST_LOCAL_VERSION} will be downloaded and built when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
+        PURPOSE "Googletest v${GNSSSDR_GTEST_LOCAL_VERSION} will be downloaded, built, and statically linked when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
     )
 endif()
 
@@ -618,10 +624,12 @@ if(NOT (GNURADIO_VERSION VERSION_LESS 3.8) AND LOG4CPP_READY_FOR_CXX17)
             )
         endif()
         if(FILESYSTEM_FOUND)
-            if(CMAKE_VERSION VERSION_LESS 3.13)
-                set(CMAKE_CXX_STANDARD 17)
-            else()
-                set(CMAKE_CXX_STANDARD 20)
+            set(CMAKE_CXX_STANDARD 17)
+            if(CMAKE_VERSION VERSION_GREATER 3.13)
+                # UHD 4.0.0.0 still does not support C++20
+                if((NOT UHD_FOUND) OR (UHD_FOUND AND ("${UHD_VERSION}" VERSION_LESS 3.99)))
+                    set(CMAKE_CXX_STANDARD 20)
+                endif()
             endif()
             set(CMAKE_CXX_STANDARD_REQUIRED ON)
         endif()
@@ -1102,11 +1110,17 @@ if(NOT VOLKGNSSSDR_FOUND)
     set(VOLK_GNSSSDR_CMAKE_ARGS ${VOLK_GNSSSDR_COMPILER}
         -DCMAKE_INSTALL_PREFIX=${CMAKE_BINARY_DIR}/volk_gnsssdr_module/install
         -DENABLE_STATIC_LIBS=ON
+        -DENABLE_OWN_CPUFEATURES=${ENABLE_OWN_CPUFEATURES}
         -DENABLE_PROFILING=${ENABLE_PROFILING}
         -DENABLE_ORC=${ORC_ENABLED}
         ${STRIP_VOLK_GNSSSDR_PROFILE}
         ${USE_THIS_PYTHON}
     )
+    if(CMAKE_VERSION VERSION_GREATER 3.18.99 AND CMAKE_GENERATOR STREQUAL Xcode)
+        if(XCODE_VERSION VERSION_GREATER 11)
+            set(VOLK_GNSSSDR_CMAKE_ARGS ${VOLK_GNSSSDR_CMAKE_ARGS} -T buildsystem=1)
+        endif()
+    endif()
     if(DEFINED ENV{OECORE_TARGET_SYSROOT})
         set(VOLK_GNSSSDR_CMAKE_ARGS ${VOLK_GNSSSDR_CMAKE_ARGS}
             -DCROSSCOMPILE_MULTILIB=TRUE
@@ -1156,6 +1170,33 @@ if(NOT VOLKGNSSSDR_FOUND)
         )
     else()
         if(SUPPORTED_CPU_FEATURES_ARCH)
+            set(VOLK_GNSSSDR_BUILD_BYPRODUCTS
+                ${CMAKE_BINARY_DIR}/volk_gnsssdr_module/install/lib${VOLK_GNSSSDR_LIB_SUFFIX}/${CMAKE_FIND_LIBRARY_PREFIXES}volk_gnsssdr${CMAKE_STATIC_LIBRARY_SUFFIX}
+                ${CMAKE_BINARY_DIR}/volk_gnsssdr_module/install/bin/volk_gnsssdr_profile
+            )
+            if(NOT ENABLE_OWN_CPUFEATURES)
+                find_package(CpuFeatures QUIET)
+                set_package_properties(CpuFeatures PROPERTIES
+                    URL "https://github.com/google/cpu_features"
+                    PURPOSE "Used by the volk_gnsssdr library."
+                    TYPE REQUIRED
+                )
+            endif()
+            if(CpuFeatures_FOUND)
+                message(STATUS "Found CpuFeatures: (found version ${CpuFeatures_VERSION})")
+                set_package_properties(CpuFeatures PROPERTIES
+                    DESCRIPTION "A cross platform C99 library to get CPU features at runtime (found: v${CpuFeatures_VERSION})"
+                )
+            else()
+                set_package_properties(CpuFeatures PROPERTIES
+                    DESCRIPTION "A cross platform C99 library to get CPU features at runtime"
+                    PURPOSE "CpuFeatures will be built when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
+                )
+                set(VOLK_GNSSSDR_BUILD_BYPRODUCTS
+                    ${VOLK_GNSSSDR_BUILD_BYPRODUCTS}
+                    ${CMAKE_BINARY_DIR}/volk_gnsssdr_module/install/${CMAKE_INSTALL_LIBDIR}/${CMAKE_FIND_LIBRARY_PREFIXES}cpu_features${CMAKE_STATIC_LIBRARY_SUFFIX}
+                )
+            endif()
             ExternalProject_Add(volk_gnsssdr_module
                 PREFIX ${CMAKE_BINARY_DIR}/volk_gnsssdr_module
                 SOURCE_DIR ${CMAKE_SOURCE_DIR}/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr
@@ -1167,9 +1208,7 @@ if(NOT VOLKGNSSSDR_FOUND)
                 UPDATE_COMMAND ""
                 PATCH_COMMAND ""
                 BUILD_COMMAND ${VOLK_GNSSSDR_BUILD_COMMAND} volk_gnsssdr_profile
-                BUILD_BYPRODUCTS ${CMAKE_BINARY_DIR}/volk_gnsssdr_module/install/lib${VOLK_GNSSSDR_LIB_SUFFIX}/${CMAKE_FIND_LIBRARY_PREFIXES}volk_gnsssdr${CMAKE_STATIC_LIBRARY_SUFFIX}
-                    ${CMAKE_BINARY_DIR}/volk_gnsssdr_module/install/bin/volk_gnsssdr_profile
-                    ${CMAKE_BINARY_DIR}/volk_gnsssdr_module/install/${CMAKE_INSTALL_LIBDIR}/${CMAKE_FIND_LIBRARY_PREFIXES}cpu_features${CMAKE_STATIC_LIBRARY_SUFFIX}
+                BUILD_BYPRODUCTS ${VOLK_GNSSSDR_BUILD_BYPRODUCTS}
                 INSTALL_DIR ${CMAKE_BINARY_DIR}/volk_gnsssdr_module/install
             )
         else()
@@ -1200,6 +1239,9 @@ if(NOT VOLKGNSSSDR_FOUND)
     set_property(TARGET volk_gnsssdr PROPERTY IMPORTED_LOCATION ${CMAKE_BINARY_DIR}/volk_gnsssdr_module/install/lib${VOLK_GNSSSDR_LIB_SUFFIX}/libvolk_gnsssdr${CMAKE_STATIC_LIBRARY_SUFFIX})
     set(VOLK_GNSSSDR_INCLUDE_DIRS "${CMAKE_BINARY_DIR}/volk_gnsssdr_module/build/include/;${CMAKE_SOURCE_DIR}/src/algorithms/libs/volk_gnsssdr_module/volk_gnsssdr/include;${ORC_INCLUDE_DIRS}")
     set(VOLK_GNSSSDR_LIBRARIES volk_gnsssdr ${ORC_LIBRARIES_STATIC})
+    if(CpuFeatures_FOUND)
+        set(VOLK_GNSSSDR_LIBRARIES ${VOLK_GNSSSDR_LIBRARIES} CpuFeatures::cpu_features)
+    endif()
 
     if(NOT TARGET Volkgnsssdr::volkgnsssdr)
         file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/volk_gnsssdr_module/build/include)
@@ -1213,9 +1255,11 @@ if(NOT VOLKGNSSSDR_FOUND)
             INTERFACE_LINK_LIBRARIES "${VOLK_GNSSSDR_LIBRARIES}"
         )
         if(CMAKE_VERSION VERSION_GREATER 3.0 AND SUPPORTED_CPU_FEATURES_ARCH)
-            set_target_properties(Volkgnsssdr::volkgnsssdr PROPERTIES
-                INTERFACE_LINK_LIBRARIES ${CMAKE_BINARY_DIR}/volk_gnsssdr_module/install/${CMAKE_INSTALL_LIBDIR}/${CMAKE_FIND_LIBRARY_PREFIXES}cpu_features${CMAKE_STATIC_LIBRARY_SUFFIX}
-            )
+            if(NOT CpuFeatures_FOUND)
+                set_target_properties(Volkgnsssdr::volkgnsssdr PROPERTIES
+                    INTERFACE_LINK_LIBRARIES ${CMAKE_BINARY_DIR}/volk_gnsssdr_module/install/${CMAKE_INSTALL_LIBDIR}/${CMAKE_FIND_LIBRARY_PREFIXES}cpu_features${CMAKE_STATIC_LIBRARY_SUFFIX}
+                )
+            endif()
         endif()
     endif()
 
@@ -1240,6 +1284,8 @@ if(NOT VOLKGNSSSDR_FOUND)
     set_package_properties(VOLKGNSSSDR PROPERTIES
         PURPOSE "volk_gnsssdr will be built when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
     )
+else()
+    set(ENABLE_OWN_CPUFEATURES OFF)
 endif()
 
 
@@ -1262,7 +1308,7 @@ if(NOT GFLAGS_FOUND)
     else()
         message(STATUS " The gflags library has not been found.")
     endif()
-    message(STATUS " gflags v${GNSSSDR_GFLAGS_LOCAL_VERSION} will be downloaded and built automatically")
+    message(STATUS " gflags v${GNSSSDR_GFLAGS_LOCAL_VERSION} will be downloaded, built, and statically linked automatically")
     message(STATUS " when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'.")
     set(GFLAGS_BUILD_COMMAND ${CMAKE_COMMAND}
         "--build" "${CMAKE_BINARY_DIR}/gflags-${GNSSSDR_GFLAGS_LOCAL_VERSION}"
@@ -1374,9 +1420,9 @@ if(NOT GFLAGS_FOUND)
         target_link_libraries(Gflags::gflags INTERFACE shlwapi.lib)
     endif()
 
-    set(LOCAL_GFLAGS TRUE CACHE STRING "GFlags downloaded and built automatically" FORCE)
+    set(LOCAL_GFLAGS TRUE CACHE STRING "GFlags downloaded, built, and statically linked automatically" FORCE)
     set_package_properties(GFLAGS PROPERTIES
-        PURPOSE "Gflags v${GNSSSDR_GFLAGS_LOCAL_VERSION} will be downloaded and built when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
+        PURPOSE "Gflags v${GNSSSDR_GFLAGS_LOCAL_VERSION} and Glog v${GNSSSDR_GLOG_LOCAL_VERSION} will be downloaded, built, and statically linked when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
     )
     if(CMAKE_VERSION VERSION_LESS 3.2)
         set_property(TARGET Gflags::gflags APPEND PROPERTY
@@ -1402,7 +1448,7 @@ if(NOT GLOG_FOUND OR ${LOCAL_GFLAGS})
     if(NOT GFLAGS_FOUND)
         message(STATUS " or it is likely not linked to gflags.")
     endif()
-    message(STATUS " glog v${GNSSSDR_GLOG_LOCAL_VERSION} will be downloaded and built automatically")
+    message(STATUS " glog v${GNSSSDR_GLOG_LOCAL_VERSION} will be downloaded, built, and statically linked automatically")
     message(STATUS " when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'.")
     if(NOT ${LOCAL_GFLAGS})
         add_library(gflags-${GNSSSDR_GFLAGS_LOCAL_VERSION} UNKNOWN IMPORTED)
@@ -1425,7 +1471,7 @@ if(NOT GLOG_FOUND OR ${LOCAL_GFLAGS})
         set(GLOG_TOOLCHAIN_FILE -DCMAKE_TOOLCHAIN_FILE=${CMAKE_TOOLCHAIN_FILE})
     endif()
 
-    if(CMAKE_VERSION VERSION_LESS 3.2)
+    if(CMAKE_VERSION VERSION_LESS 3.3)
         if(CMAKE_VERSION VERSION_LESS 3.0)
             set(GLOG_MAKE_PROGRAM ${CMAKE_MAKE_PROGRAM})
             set(GFLAGS_LIBRARIES_TO_LINK ${GFlags_LIBS})
@@ -1534,7 +1580,7 @@ ${CMAKE_BINARY_DIR}/thirdparty/glog/glog-${GNSSSDR_GLOG_LOCAL_VERSION}/configure
                 ${CMAKE_BINARY_DIR}/thirdparty/glog/glog-${GNSSSDR_GLOG_LOCAL_VERSION}/src
                 ${CMAKE_BINARY_DIR}/glog-${GNSSSDR_GLOG_LOCAL_VERSION}/src
             )
-        else()  # CMake > 3.0 but < 3.2
+        else()  # CMake > 3.0 but < 3.3
             ExternalProject_Add(glog-${GNSSSDR_GLOG_LOCAL_VERSION}
                 DEPENDS ${TARGET_GFLAGS}
                 PREFIX ${CMAKE_BINARY_DIR}/glog-${GNSSSDR_GLOG_LOCAL_VERSION}
@@ -1558,7 +1604,7 @@ ${CMAKE_BINARY_DIR}/thirdparty/glog/glog-${GNSSSDR_GLOG_LOCAL_VERSION}/configure
                 ${GFlags_INCLUDE_DIRS}
             )
         endif()
-    else()  # CMake > 3.2
+    else()  # CMake > 3.3
         set(GLOG_BUILD_BYPRODUCTS
             ${CMAKE_BINARY_DIR}/glog-${GNSSSDR_GLOG_LOCAL_VERSION}/${CMAKE_FIND_LIBRARY_PREFIXES}glog${CMAKE_STATIC_LIBRARY_SUFFIX}
         )
@@ -1579,10 +1625,11 @@ ${CMAKE_BINARY_DIR}/thirdparty/glog/glog-${GNSSSDR_GLOG_LOCAL_VERSION}/configure
             SOURCE_DIR ${CMAKE_BINARY_DIR}/thirdparty/glog/glog-${GNSSSDR_GLOG_LOCAL_VERSION}
             BINARY_DIR ${CMAKE_BINARY_DIR}/glog-${GNSSSDR_GLOG_LOCAL_VERSION}
             CMAKE_ARGS -DCMAKE_CXX_COMPILER=${CMAKE_CXX_COMPILER}
-                -DCMAKE_C_COMPILER=${CMAKE_C_COMPILER}
                 -DCMAKE_PREFIX_PATH=${GFLAGS_PREFIX_PATH}
                 ${GLOG_TOOLCHAIN_FILE}
                 -DCMAKE_BUILD_TYPE=$<$<CONFIG:Debug>:Debug>$<$<CONFIG:Release>:Release>$<$<CONFIG:RelWithDebInfo>:RelWithDebInfo>$<$<CONFIG:MinSizeRel>:MinSizeRel>$<$<CONFIG:NoOptWithASM>:Debug>$<$<CONFIG:Coverage>:Debug>$<$<CONFIG:O2WithASM>:RelWithDebInfo>$<$<CONFIG:O3WithASM>:RelWithDebInfo>$<$<CONFIG:ASAN>:Debug>
+                -DBUILD_SHARED_LIBS=OFF
+                -DBUILD_TESTING=OFF
             BUILD_COMMAND "${GLOG_MAKE_PROGRAM} ${PARALLEL_BUILD}"
             BUILD_BYPRODUCTS ${GLOG_BUILD_BYPRODUCTS}
             UPDATE_COMMAND ""
@@ -1641,10 +1688,10 @@ ${CMAKE_BINARY_DIR}/thirdparty/glog/glog-${GNSSSDR_GLOG_LOCAL_VERSION}/configure
         endif()
     endif()
 
-    set(LOCAL_GLOG TRUE CACHE STRING "Glog downloaded and built automatically" FORCE)
+    set(LOCAL_GLOG TRUE CACHE STRING "Glog downloaded, built, and statically linked automatically" FORCE)
 
     set_package_properties(GLOG PROPERTIES
-        PURPOSE "Glog v${GNSSSDR_GLOG_LOCAL_VERSION} will be downloaded and built when doing 'make'."
+        PURPOSE "Glog v${GNSSSDR_GLOG_LOCAL_VERSION} will be downloaded, built, and statically linked when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
     )
 endif()
 
@@ -1770,7 +1817,7 @@ else()
 endif()
 
 if(NOT ARMADILLO_FOUND OR ENABLE_OWN_ARMADILLO)
-    message(STATUS " Armadillo ${GNSSSDR_ARMADILLO_LOCAL_VERSION} will be downloaded and built automatically")
+    message(STATUS " Armadillo ${GNSSSDR_ARMADILLO_LOCAL_VERSION} will be downloaded, built, and statically linked automatically")
     message(STATUS " when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'.")
     set(armadillo_BRANCH ${GNSSSDR_ARMADILLO_LOCAL_VERSION})
     set(armadillo_RELEASE ${armadillo_BRANCH})
@@ -1865,7 +1912,7 @@ if(NOT ARMADILLO_FOUND OR ENABLE_OWN_ARMADILLO)
         set(GFORTRAN "")
     endif()
     set(ARMADILLO_STATIC_LIBRARY ${binary_dir}/${CMAKE_FIND_LIBRARY_PREFIXES}armadillo${CMAKE_STATIC_LIBRARY_SUFFIX})
-    set(LOCAL_ARMADILLO TRUE CACHE STRING "Armadillo downloaded and built automatically" FORCE)
+    set(LOCAL_ARMADILLO TRUE CACHE STRING "Armadillo downloaded, built, and statically linked automatically" FORCE)
     set(ARMADILLO_VERSION_STRING ${armadillo_RELEASE})
     file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/thirdparty/armadillo/armadillo-${armadillo_RELEASE}/include)
     add_library(Armadillo::armadillo STATIC IMPORTED)
@@ -1897,7 +1944,7 @@ if(NOT ARMADILLO_FOUND OR ENABLE_OWN_ARMADILLO)
     endif()
     set_package_properties(Armadillo PROPERTIES
         DESCRIPTION "C++ library for linear algebra and scientific computing"
-        PURPOSE "Armadillo ${GNSSSDR_ARMADILLO_LOCAL_VERSION} will be downloaded and built when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
+        PURPOSE "Armadillo ${GNSSSDR_ARMADILLO_LOCAL_VERSION} will be downloaded, built, and statically linked when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
     )
 endif()
 
@@ -2009,7 +2056,7 @@ if(NOT MATIO_FOUND OR MATIO_VERSION_STRING VERSION_LESS ${GNSSSDR_MATIO_MIN_VERS
     if(MATIO_FOUND)
         message(STATUS " Matio installed version (${MATIO_VERSION_STRING}) is too old (>= ${GNSSSDR_MATIO_MIN_VERSION} is required).")
     endif()
-    message(STATUS " Matio v${GNSSSDR_MATIO_LOCAL_VERSION} will be downloaded and built automatically")
+    message(STATUS " Matio v${GNSSSDR_MATIO_LOCAL_VERSION} will be downloaded, built, and statically linked automatically")
     message(STATUS " when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'.")
     find_package(ZLIB)
     set_package_properties(ZLIB PROPERTIES
@@ -2178,7 +2225,7 @@ if(NOT MATIO_FOUND OR MATIO_VERSION_STRING VERSION_LESS ${GNSSSDR_MATIO_MIN_VERS
         message(FATAL_ERROR "*** The zlib library is required to build gnss-sdr")
     endif()
     set_package_properties(MATIO PROPERTIES
-        PURPOSE "Matio v${GNSSSDR_MATIO_LOCAL_VERSION} will be downloaded and built when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
+        PURPOSE "Matio v${GNSSSDR_MATIO_LOCAL_VERSION} will be downloaded, built, and statically linked when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
     )
 endif()
 
@@ -2193,7 +2240,7 @@ set_package_properties(PUGIXML PROPERTIES
     TYPE REQUIRED
 )
 if(NOT PUGIXML_FOUND)
-    message(STATUS " PugiXML v${GNSSSDR_PUGIXML_LOCAL_VERSION} will be downloaded and built when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'.")
+    message(STATUS " PugiXML v${GNSSSDR_PUGIXML_LOCAL_VERSION} will be downloaded, built, and statically linked when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'.")
     set(PUGIXML_COMPILER -DCMAKE_CXX_COMPILER=${CMAKE_CXX_COMPILER})
     set(PUGIXML_CMAKE_FLAGS "")
     if(DEFINED ENV{OECORE_TARGET_SYSROOT})
@@ -2282,7 +2329,7 @@ if(NOT PUGIXML_FOUND)
     endif()
 
     set_package_properties(PUGIXML PROPERTIES
-        PURPOSE "PugiXML v${GNSSSDR_PUGIXML_LOCAL_VERSION} will be downloaded and built when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
+        PURPOSE "PugiXML v${GNSSSDR_PUGIXML_LOCAL_VERSION} will be downloaded, built, and statically linked when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
     )
 endif()
 
@@ -2536,7 +2583,7 @@ if((NOT Protobuf_FOUND) OR (NOT Protobuf_PROTOC_EXECUTABLE) OR (${Protobuf_VERSI
         endif()
     endif()
     set_package_properties(Protobuf PROPERTIES
-        PURPOSE "Protocol Buffers v${GNSSSDR_PROTOCOLBUFFERS_LOCAL_VERSION} will be downloaded and built when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
+        PURPOSE "Protocol Buffers v${GNSSSDR_PROTOCOLBUFFERS_LOCAL_VERSION} will be downloaded, built, and statically linked when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME}'."
     )
 endif()
 if(${Protobuf_VERSION} VERSION_EQUAL "0.0.0")
@@ -2861,6 +2908,10 @@ if(GNURADIO_IIO_FOUND)
     set(GR_IIO_INCLUDE_HAS_GNURADIO TRUE)
     set(GNURADIO_API_IIO TRUE)
 else()
+    # Force to always search for gr-iio
+    unset(GRIIO_FOUND CACHE)
+    unset(IIO_INCLUDE_DIRS CACHE)
+    unset(IIO_LIBRARIES CACHE)
     find_package(GRIIO)
     set_package_properties(GRIIO PROPERTIES
         PURPOSE "Used for communication with PlutoSDR and FMCOMMS devices."
@@ -3210,6 +3261,7 @@ add_feature_info(ENABLE_GNSS_SIM_INSTALL ENABLE_GNSS_SIM_INSTALL "Enables downlo
 add_feature_info(ENABLE_INSTALL_TESTS ENABLE_INSTALL_TESTS "Install test binaries when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME} install'.")
 add_feature_info(ENABLE_BENCHMARKS ENABLE_BENCHMARKS "Enables building of code snippet benchmarks.")
 add_feature_info(ENABLE_EXTERNAL_MATHJAX ENABLE_EXTERNAL_MATHJAX "Use MathJax from an external CDN in HTML docs when doing '${CMAKE_MAKE_PROGRAM_PRETTY_NAME} doc'.")
+add_feature_info(ENABLE_OWN_CPUFEATURES ENABLE_OWN_CPUFEATURES "Force building own local version of the cpu_features library, even if it is already installed.")
 
 message(STATUS "")
 message(STATUS "***************************************")

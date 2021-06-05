@@ -39,7 +39,7 @@ if(NOT benchmark_FOUND)
         SOURCE_DIR ${CMAKE_BINARY_DIR}/thirdparty/benchmark
         BINARY_DIR ${CMAKE_BINARY_DIR}/benchmark-${GNSSSDR_BENCHMARK_LOCAL_VERSION}
         CMAKE_ARGS ${BENCHMARK_COMPILER}
-            -DBENCHMARK_ENABLE_GTEST_TESTS=OFF
+            -DBENCHMARK_ENABLE_TESTING=OFF
             ${BENCHMARK_TOOLCHAIN_ARG}
             -DCMAKE_BUILD_TYPE=$<$<CONFIG:Debug>:Debug>$<$<CONFIG:Release>:Release>$<$<CONFIG:RelWithDebInfo>:RelWithDebInfo>$<$<CONFIG:MinSizeRel>:MinSizeRel>$<$<CONFIG:NoOptWithASM>:Debug>$<$<CONFIG:Coverage>:Debug>$<$<CONFIG:O2WithASM>:RelWithDebInfo>$<$<CONFIG:O3WithASM>:RelWithDebInfo>$<$<CONFIG:ASAN>:Debug>
         BUILD_COMMAND "${BENCHMARK_BUILD_COMMAND} ${BENCHMARK_PARALLEL_BUILD}"
@@ -103,6 +103,7 @@ endmacro()
 add_benchmark(benchmark_copy)
 add_benchmark(benchmark_preamble core_system_parameters)
 add_benchmark(benchmark_detector core_system_parameters)
+add_benchmark(benchmark_reed_solomon core_system_parameters)
 
 if(has_std_plus_void)
     target_compile_definitions(benchmark_detector PRIVATE -DCOMPILER_HAS_STD_PLUS_VOID=1)

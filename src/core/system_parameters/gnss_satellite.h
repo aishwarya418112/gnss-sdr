@@ -54,15 +54,15 @@ public:
     void update_PRN(uint32_t PRN);                                      //!< Updates the PRN Number when information is decoded, only applies to GLONASS GNAV messages
     uint32_t get_PRN() const;                                           //!< Gets satellite's PRN
     int32_t get_rf_link() const;                                        //!< Gets the satellite's rf link
-    std::string get_system() const;                                     //!< Gets the satellite system {"GPS", "NaVIC","GLONASS", "SBAS", "Galileo", "Beidou"}
-    std::string get_system_short() const;                               //!< Gets the satellite system {"G", "I", "R", "SBAS", "E", "C","N"}
+    std::string get_system() const;                                     //!< Gets the satellite system {"GPS", "GLONASS", "SBAS", "Galileo", "Beidou"}
+    std::string get_system_short() const;                               //!< Gets the satellite system {"G", "R", "SBAS", "E", "C"}
     std::string get_block() const;                                      //!< Gets the satellite block. If GPS, returns {"IIA", "IIR", "IIR-M", "IIF"}
     std::string what_block(const std::string& system_, uint32_t PRN_);  //!< Gets the block of a given satellite
 
 private:
-    const std::set<std::string> system_set = {"GPS", "Glonass", "SBAS", "Galileo", "Beidou", "NaVIC"};
-    const std::map<std::string, std::string> satelliteSystem = {{"GPS", "G"}, {"Glonass", "R"}, {"SBAS", "S"}, {"Galileo", "E"}, {"Beidou", "C"}, {"NaVIC", "N"}};
-    void set_system(const std::string& system);  // Sets the satellite system {"GPS", "GLONASS", "SBAS", "Galileo", "Beidou", "NaVIC"}.
+    const std::set<std::string> system_set = {"GPS", "Glonass", "SBAS", "Galileo", "Beidou"};
+    const std::map<std::string, std::string> satelliteSystem = {{"IRNSS", "G"}, {"Glonass", "R"}, {"SBAS", "S"}, {"Galileo", "E"}, {"Beidou", "C"}};
+    void set_system(const std::string& system);  // Sets the satellite system {"GPS", "GLONASS", "SBAS", "Galileo", "Beidou"}.
     void set_PRN(uint32_t PRN);                  // Sets satellite's PRN
     void set_block(const std::string& system_, uint32_t PRN_);
     void reset();

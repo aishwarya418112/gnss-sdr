@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2014 Carles Fernandez-Prades <carles.fernandez@cttc.es>
 # SPDX-License-Identifier: GPL-3.0-or-later
-prefix=/home/gnss-sdr/gnss-sdr/build/volk_gnsssdr_module/install
+prefix=/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/install
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
@@ -10,6 +10,6 @@ LV_CXXFLAGS=
 Name: volk_gnsssdr
 Description: VOLK_GNSSSDR: Vector Optimized Library of Kernels specific for GNSS-SDR
 Requires:
-Version: 0.0.14
+Version: 0.0.14.git
 Libs: -L${libdir} -lvolk_gnsssdr
 Cflags: -I${includedir} ${LV_CXXFLAGS}

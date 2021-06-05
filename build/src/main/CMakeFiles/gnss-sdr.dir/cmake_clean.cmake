@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gnss-sdr.dir/main.cc.o"
+  "CMakeFiles/gnss-sdr.dir/main.cc.o.d"
   "gnss-sdr"
   "gnss-sdr.pdb"
 )

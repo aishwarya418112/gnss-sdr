@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/signal_source_libs.dir/gnss_sdr_valve.cc.o"
+  "CMakeFiles/signal_source_libs.dir/gnss_sdr_valve.cc.o.d"
   "CMakeFiles/signal_source_libs.dir/rtl_tcp_commands.cc.o"
+  "CMakeFiles/signal_source_libs.dir/rtl_tcp_commands.cc.o.d"
   "CMakeFiles/signal_source_libs.dir/rtl_tcp_dongle_info.cc.o"
+  "CMakeFiles/signal_source_libs.dir/rtl_tcp_dongle_info.cc.o.d"
   "libsignal_source_libs.a"
   "libsignal_source_libs.pdb"
 )

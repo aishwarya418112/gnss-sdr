@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pvt_adapters.dir/rtklib_pvt.cc.o"
+  "CMakeFiles/pvt_adapters.dir/rtklib_pvt.cc.o.d"
   "libpvt_adapters.a"
   "libpvt_adapters.pdb"
 )

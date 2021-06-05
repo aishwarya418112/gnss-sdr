@@ -1,49 +1,25 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/channel/libs/channel_fsm.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/channel/libs/CMakeFiles/channel_libs.dir/channel_fsm.cc.o"
-  "/home/gnss-sdr/gnss-sdr/src/algorithms/channel/libs/channel_msg_receiver_cc.cc" "/home/gnss-sdr/gnss-sdr/build/src/algorithms/channel/libs/CMakeFiles/channel_libs.dir/channel_msg_receiver_cc.cc.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "BOOST_ALL_NO_LIB"
-  "BOOST_DATE_TIME_DYN_LINK"
-  "BOOST_SERIALIZATION_DYN_LINK"
-  "HAS_GENERIC_LAMBDA=1"
-  "USE_BOOST_ASIO_IO_CONTEXT=1"
-  "_FILE_OFFSET_BITS=64"
-  "_LARGEFILE_SOURCE"
-  "_LARGE_FILES"
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../src/core/receiver"
-  "../src/core/system_parameters"
-  "../src/core/interfaces"
-  "../src/core/libs"
-  "../src/core/libs/supl"
-  "../src/core/libs/supl/asn-supl"
-  "../src/core/libs/supl/asn-rrlp"
-  "../src/algorithms/PVT/libs/SYSTEM"
-  "src/algorithms/PVT/libs"
-  "../src/algorithms/PVT/libs"
-  "../src/algorithms/libs/rtklib"
-  "/usr/include/glog"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/channel/libs/channel_fsm.cc" "src/algorithms/channel/libs/CMakeFiles/channel_libs.dir/channel_fsm.cc.o" "gcc" "src/algorithms/channel/libs/CMakeFiles/channel_libs.dir/channel_fsm.cc.o.d"
+  "/home/aishwarya/Desktop/gnss-sdr/src/algorithms/channel/libs/channel_msg_receiver_cc.cc" "src/algorithms/channel/libs/CMakeFiles/channel_libs.dir/channel_msg_receiver_cc.cc.o" "gcc" "src/algorithms/channel/libs/CMakeFiles/channel_libs.dir/channel_msg_receiver_cc.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/gnss-sdr/gnss-sdr/build/src/core/system_parameters/CMakeFiles/core_system_parameters.dir/DependInfo.cmake"
-  "/home/gnss-sdr/gnss-sdr/build/src/core/libs/CMakeFiles/core_libs.dir/DependInfo.cmake"
-  "/home/gnss-sdr/gnss-sdr/build/src/core/libs/supl/CMakeFiles/core_libs_supl.dir/DependInfo.cmake"
-  "/home/gnss-sdr/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/DependInfo.cmake"
-  "/home/gnss-sdr/gnss-sdr/build/src/algorithms/libs/rtklib/CMakeFiles/algorithms_libs_rtklib.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/core/system_parameters/CMakeFiles/core_system_parameters.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/core/libs/CMakeFiles/core_libs.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/core/libs/supl/CMakeFiles/core_libs_supl.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/PVT/libs/CMakeFiles/pvt_libs.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/libs/rtklib/CMakeFiles/algorithms_libs_rtklib.dir/DependInfo.cmake"
+  "/home/aishwarya/Desktop/gnss-sdr/build/src/algorithms/libs/CMakeFiles/algorithms_libs.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
