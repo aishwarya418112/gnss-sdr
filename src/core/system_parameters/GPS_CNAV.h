@@ -35,7 +35,7 @@
 constexpr int32_t GPS_CNAV_DATA_PAGE_BITS = 300;
 
 // common to all messages
-const std::vector<std::pair<int32_t, int32_t> > CNAV_PRN({{9, 6}});
+const std::vector<std::pair<int32_t, int32_t> > CNAV_PRN({{16, 6}});
 const std::vector<std::pair<int32_t, int32_t> > CNAV_MSG_TYPE({{15, 6}});
 const std::vector<std::pair<int32_t, int32_t> > CNAV_TOW({{21, 17}});  // GPS Time Of Week in seconds
 constexpr int32_t CNAV_TOW_LSB = 6;

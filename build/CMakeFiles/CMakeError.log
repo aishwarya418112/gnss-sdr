@@ -1,25 +1,25 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_f5430/fast && /usr/bin/make  -f CMakeFiles/cmTC_f5430.dir/build.make CMakeFiles/cmTC_f5430.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8b5f4/fast && /usr/bin/make  -f CMakeFiles/cmTC_8b5f4.dir/build.make CMakeFiles/cmTC_8b5f4.dir/build
 make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f5430.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu11 -o CMakeFiles/cmTC_f5430.dir/src.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_f5430
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5430.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_f5430.dir/src.c.o -o cmTC_f5430 
-CMakeFiles/cmTC_f5430.dir/src.c.o: In function `main':
+Building C object CMakeFiles/cmTC_8b5f4.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu11 -o CMakeFiles/cmTC_8b5f4.dir/src.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8b5f4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b5f4.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_8b5f4.dir/src.c.o -o cmTC_8b5f4 
+CMakeFiles/cmTC_8b5f4.dir/src.c.o: In function `main':
 src.c:(.text+0x3e): undefined reference to `pthread_create'
 src.c:(.text+0x4a): undefined reference to `pthread_detach'
 src.c:(.text+0x56): undefined reference to `pthread_cancel'
 src.c:(.text+0x67): undefined reference to `pthread_join'
 src.c:(.text+0x7b): undefined reference to `pthread_atfork'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_f5430.dir/build.make:98: recipe for target 'cmTC_f5430' failed
-make[1]: *** [cmTC_f5430] Error 1
+CMakeFiles/cmTC_8b5f4.dir/build.make:98: recipe for target 'cmTC_8b5f4' failed
+make[1]: *** [cmTC_8b5f4] Error 1
 make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_f5430/fast' failed
-make: *** [cmTC_f5430/fast] Error 2
+Makefile:127: recipe for target 'cmTC_8b5f4/fast' failed
+make: *** [cmTC_8b5f4/fast] Error 2
 
 
 Source file was:
@@ -46,10 +46,10 @@ int main(void)
 Performing C++ SOURCE FILE Test has_string_view failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_26fae/fast && /usr/bin/make  -f CMakeFiles/cmTC_26fae.dir/build.make CMakeFiles/cmTC_26fae.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a5826/fast && /usr/bin/make  -f CMakeFiles/cmTC_a5826.dir/build.make CMakeFiles/cmTC_a5826.dir/build
 make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_26fae.dir/src.cxx.o
-/usr/bin/c++ -Dhas_string_view  -std=c++14 -o CMakeFiles/cmTC_26fae.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_a5826.dir/src.cxx.o
+/usr/bin/c++ -Dhas_string_view  -std=c++14 -o CMakeFiles/cmTC_a5826.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
 /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:17: error: #include expects "FILENAME" or <FILENAME>
          #include <string_view>
                  ^
@@ -57,11 +57,11 @@ Building CXX object CMakeFiles/cmTC_26fae.dir/src.cxx.o
 /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:4:16: error: ‘string_view’ is not a member of ‘std’
          { std::string_view sv; }
                 ^~~~~~~~~~~
-CMakeFiles/cmTC_26fae.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_26fae.dir/src.cxx.o' failed
-make[1]: *** [CMakeFiles/cmTC_26fae.dir/src.cxx.o] Error 1
+CMakeFiles/cmTC_a5826.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_a5826.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a5826.dir/src.cxx.o] Error 1
 make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_26fae/fast' failed
-make: *** [cmTC_26fae/fast] Error 2
+Makefile:127: recipe for target 'cmTC_a5826/fast' failed
+make: *** [cmTC_a5826/fast] Error 2
 
 
 Source file was:
@@ -72,19 +72,19 @@ Source file was:
 Performing C++ SOURCE FILE Test has_span failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_bd1aa/fast && /usr/bin/make  -f CMakeFiles/cmTC_bd1aa.dir/build.make CMakeFiles/cmTC_bd1aa.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a1e55/fast && /usr/bin/make  -f CMakeFiles/cmTC_a1e55.dir/build.make CMakeFiles/cmTC_a1e55.dir/build
 make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_bd1aa.dir/src.cxx.o
-/usr/bin/c++ -Dhas_span  -std=c++14 -o CMakeFiles/cmTC_bd1aa.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_a1e55.dir/src.cxx.o
+/usr/bin/c++ -Dhas_span  -std=c++14 -o CMakeFiles/cmTC_a1e55.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
 /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:14: fatal error: span: No such file or directory
      #include <span>
               ^~~~~~
 compilation terminated.
-CMakeFiles/cmTC_bd1aa.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_bd1aa.dir/src.cxx.o' failed
-make[1]: *** [CMakeFiles/cmTC_bd1aa.dir/src.cxx.o] Error 1
+CMakeFiles/cmTC_a1e55.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_a1e55.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a1e55.dir/src.cxx.o] Error 1
 make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_bd1aa/fast' failed
-make: *** [cmTC_bd1aa/fast] Error 2
+Makefile:127: recipe for target 'cmTC_a1e55/fast' failed
+make: *** [cmTC_a1e55/fast] Error 2
 
 
 Source file was:
@@ -95,19 +95,19 @@ Source file was:
 Determining if the CL_VERSION_2_2 exist failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_302ad/fast && /usr/bin/make  -f CMakeFiles/cmTC_302ad.dir/build.make CMakeFiles/cmTC_302ad.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_67f7b/fast && /usr/bin/make  -f CMakeFiles/cmTC_67f7b.dir/build.make CMakeFiles/cmTC_67f7b.dir/build
 make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_302ad.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_302ad.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_67f7b.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_67f7b.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
  #include <OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-CMakeFiles/cmTC_302ad.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_302ad.dir/CheckSymbolExists.c.o' failed
-make[1]: *** [CMakeFiles/cmTC_302ad.dir/CheckSymbolExists.c.o] Error 1
+CMakeFiles/cmTC_67f7b.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_67f7b.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_67f7b.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_302ad/fast' failed
-make: *** [cmTC_302ad/fast] Error 2
+Makefile:127: recipe for target 'cmTC_67f7b/fast' failed
+make: *** [cmTC_67f7b/fast] Error 2
 
 
 File /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -127,19 +127,19 @@ int main(int argc, char** argv)
 Determining if the CL_VERSION_2_1 exist failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_b05e1/fast && /usr/bin/make  -f CMakeFiles/cmTC_b05e1.dir/build.make CMakeFiles/cmTC_b05e1.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b237d/fast && /usr/bin/make  -f CMakeFiles/cmTC_b237d.dir/build.make CMakeFiles/cmTC_b237d.dir/build
 make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b05e1.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_b05e1.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_b237d.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_b237d.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
  #include <OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-CMakeFiles/cmTC_b05e1.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_b05e1.dir/CheckSymbolExists.c.o' failed
-make[1]: *** [CMakeFiles/cmTC_b05e1.dir/CheckSymbolExists.c.o] Error 1
+CMakeFiles/cmTC_b237d.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_b237d.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_b237d.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_b05e1/fast' failed
-make: *** [cmTC_b05e1/fast] Error 2
+Makefile:127: recipe for target 'cmTC_b237d/fast' failed
+make: *** [cmTC_b237d/fast] Error 2
 
 
 File /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -159,19 +159,19 @@ int main(int argc, char** argv)
 Determining if the CL_VERSION_2_0 exist failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_89e71/fast && /usr/bin/make  -f CMakeFiles/cmTC_89e71.dir/build.make CMakeFiles/cmTC_89e71.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f6ba7/fast && /usr/bin/make  -f CMakeFiles/cmTC_f6ba7.dir/build.make CMakeFiles/cmTC_f6ba7.dir/build
 make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_89e71.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_89e71.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_f6ba7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_f6ba7.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
  #include <OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-CMakeFiles/cmTC_89e71.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_89e71.dir/CheckSymbolExists.c.o' failed
-make[1]: *** [CMakeFiles/cmTC_89e71.dir/CheckSymbolExists.c.o] Error 1
+CMakeFiles/cmTC_f6ba7.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_f6ba7.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_f6ba7.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_89e71/fast' failed
-make: *** [cmTC_89e71/fast] Error 2
+Makefile:127: recipe for target 'cmTC_f6ba7/fast' failed
+make: *** [cmTC_f6ba7/fast] Error 2
 
 
 File /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -191,19 +191,19 @@ int main(int argc, char** argv)
 Determining if the CL_VERSION_1_2 exist failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_875a8/fast && /usr/bin/make  -f CMakeFiles/cmTC_875a8.dir/build.make CMakeFiles/cmTC_875a8.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_53eff/fast && /usr/bin/make  -f CMakeFiles/cmTC_53eff.dir/build.make CMakeFiles/cmTC_53eff.dir/build
 make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_875a8.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_875a8.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_53eff.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_53eff.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
  #include <OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-CMakeFiles/cmTC_875a8.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_875a8.dir/CheckSymbolExists.c.o' failed
-make[1]: *** [CMakeFiles/cmTC_875a8.dir/CheckSymbolExists.c.o] Error 1
+CMakeFiles/cmTC_53eff.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_53eff.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_53eff.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_875a8/fast' failed
-make: *** [cmTC_875a8/fast] Error 2
+Makefile:127: recipe for target 'cmTC_53eff/fast' failed
+make: *** [cmTC_53eff/fast] Error 2
 
 
 File /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -223,19 +223,19 @@ int main(int argc, char** argv)
 Determining if the CL_VERSION_1_1 exist failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_0deb4/fast && /usr/bin/make  -f CMakeFiles/cmTC_0deb4.dir/build.make CMakeFiles/cmTC_0deb4.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c979a/fast && /usr/bin/make  -f CMakeFiles/cmTC_c979a.dir/build.make CMakeFiles/cmTC_c979a.dir/build
 make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0deb4.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_0deb4.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_c979a.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_c979a.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
  #include <OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-CMakeFiles/cmTC_0deb4.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_0deb4.dir/CheckSymbolExists.c.o' failed
-make[1]: *** [CMakeFiles/cmTC_0deb4.dir/CheckSymbolExists.c.o] Error 1
+CMakeFiles/cmTC_c979a.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_c979a.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_c979a.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_0deb4/fast' failed
-make: *** [cmTC_0deb4/fast] Error 2
+Makefile:127: recipe for target 'cmTC_c979a/fast' failed
+make: *** [cmTC_c979a/fast] Error 2
 
 
 File /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -255,19 +255,19 @@ int main(int argc, char** argv)
 Determining if the CL_VERSION_1_0 exist failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_3a191/fast && /usr/bin/make  -f CMakeFiles/cmTC_3a191.dir/build.make CMakeFiles/cmTC_3a191.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4d11a/fast && /usr/bin/make  -f CMakeFiles/cmTC_4d11a.dir/build.make CMakeFiles/cmTC_4d11a.dir/build
 make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3a191.dir/CheckSymbolExists.c.o
-/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_3a191.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Building C object CMakeFiles/cmTC_4d11a.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=gnu11 -o CMakeFiles/cmTC_4d11a.dir/CheckSymbolExists.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: No such file or directory
  #include <OPENCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-CMakeFiles/cmTC_3a191.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_3a191.dir/CheckSymbolExists.c.o' failed
-make[1]: *** [CMakeFiles/cmTC_3a191.dir/CheckSymbolExists.c.o] Error 1
+CMakeFiles/cmTC_4d11a.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_4d11a.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_4d11a.dir/CheckSymbolExists.c.o] Error 1
 make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_3a191/fast' failed
-make: *** [cmTC_3a191/fast] Error 2
+Makefile:127: recipe for target 'cmTC_4d11a/fast' failed
+make: *** [cmTC_4d11a/fast] Error 2
 
 
 File /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -284,3 +284,346 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
+Performing C++ SOURCE FILE Test has_string_view failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_38bde/fast && /usr/bin/make  -f CMakeFiles/cmTC_38bde.dir/build.make CMakeFiles/cmTC_38bde.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_38bde.dir/src.cxx.o
+/usr/bin/c++ -Dhas_string_view  -std=c++14 -o CMakeFiles/cmTC_38bde.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:17: error: #include expects "FILENAME" or <FILENAME>
+         #include <string_view>
+                 ^
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:4:16: error: ‘string_view’ is not a member of ‘std’
+         { std::string_view sv; }
+                ^~~~~~~~~~~
+CMakeFiles/cmTC_38bde.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_38bde.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_38bde.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_38bde/fast' failed
+make: *** [cmTC_38bde/fast] Error 2
+
+
+Source file was:
+
+        #include <string_view>
+        int main()
+        { std::string_view sv; }
+Performing C++ SOURCE FILE Test has_span failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_29a4c/fast && /usr/bin/make  -f CMakeFiles/cmTC_29a4c.dir/build.make CMakeFiles/cmTC_29a4c.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_29a4c.dir/src.cxx.o
+/usr/bin/c++ -Dhas_span  -std=c++14 -o CMakeFiles/cmTC_29a4c.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:14: fatal error: span: No such file or directory
+     #include <span>
+              ^~~~~~
+compilation terminated.
+CMakeFiles/cmTC_29a4c.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_29a4c.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_29a4c.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_29a4c/fast' failed
+make: *** [cmTC_29a4c/fast] Error 2
+
+
+Source file was:
+
+    #include <span>
+    int main()
+    { std::span<float> s; }
+Performing C++ SOURCE FILE Test has_string_view failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e1537/fast && /usr/bin/make  -f CMakeFiles/cmTC_e1537.dir/build.make CMakeFiles/cmTC_e1537.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e1537.dir/src.cxx.o
+/usr/bin/c++ -Dhas_string_view  -std=c++14 -o CMakeFiles/cmTC_e1537.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:17: error: #include expects "FILENAME" or <FILENAME>
+         #include <string_view>
+                 ^
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:4:16: error: ‘string_view’ is not a member of ‘std’
+         { std::string_view sv; }
+                ^~~~~~~~~~~
+CMakeFiles/cmTC_e1537.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_e1537.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_e1537.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_e1537/fast' failed
+make: *** [cmTC_e1537/fast] Error 2
+
+
+Source file was:
+
+        #include <string_view>
+        int main()
+        { std::string_view sv; }
+Performing C++ SOURCE FILE Test has_span failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_07ddb/fast && /usr/bin/make  -f CMakeFiles/cmTC_07ddb.dir/build.make CMakeFiles/cmTC_07ddb.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_07ddb.dir/src.cxx.o
+/usr/bin/c++ -Dhas_span  -std=c++14 -o CMakeFiles/cmTC_07ddb.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:14: fatal error: span: No such file or directory
+     #include <span>
+              ^~~~~~
+compilation terminated.
+CMakeFiles/cmTC_07ddb.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_07ddb.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_07ddb.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_07ddb/fast' failed
+make: *** [cmTC_07ddb/fast] Error 2
+
+
+Source file was:
+
+    #include <span>
+    int main()
+    { std::span<float> s; }
+Performing C++ SOURCE FILE Test has_string_view failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6739b/fast && /usr/bin/make  -f CMakeFiles/cmTC_6739b.dir/build.make CMakeFiles/cmTC_6739b.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6739b.dir/src.cxx.o
+/usr/bin/c++ -Dhas_string_view  -std=c++14 -o CMakeFiles/cmTC_6739b.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:17: error: #include expects "FILENAME" or <FILENAME>
+         #include <string_view>
+                 ^
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:4:16: error: ‘string_view’ is not a member of ‘std’
+         { std::string_view sv; }
+                ^~~~~~~~~~~
+CMakeFiles/cmTC_6739b.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_6739b.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_6739b.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_6739b/fast' failed
+make: *** [cmTC_6739b/fast] Error 2
+
+
+Source file was:
+
+        #include <string_view>
+        int main()
+        { std::string_view sv; }
+Performing C++ SOURCE FILE Test has_span failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_30f27/fast && /usr/bin/make  -f CMakeFiles/cmTC_30f27.dir/build.make CMakeFiles/cmTC_30f27.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_30f27.dir/src.cxx.o
+/usr/bin/c++ -Dhas_span  -std=c++14 -o CMakeFiles/cmTC_30f27.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:14: fatal error: span: No such file or directory
+     #include <span>
+              ^~~~~~
+compilation terminated.
+CMakeFiles/cmTC_30f27.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_30f27.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_30f27.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_30f27/fast' failed
+make: *** [cmTC_30f27/fast] Error 2
+
+
+Source file was:
+
+    #include <span>
+    int main()
+    { std::span<float> s; }
+Performing C++ SOURCE FILE Test has_string_view failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c61d2/fast && /usr/bin/make  -f CMakeFiles/cmTC_c61d2.dir/build.make CMakeFiles/cmTC_c61d2.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c61d2.dir/src.cxx.o
+/usr/bin/c++ -Dhas_string_view  -std=c++14 -o CMakeFiles/cmTC_c61d2.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:17: error: #include expects "FILENAME" or <FILENAME>
+         #include <string_view>
+                 ^
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:4:16: error: ‘string_view’ is not a member of ‘std’
+         { std::string_view sv; }
+                ^~~~~~~~~~~
+CMakeFiles/cmTC_c61d2.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_c61d2.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_c61d2.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_c61d2/fast' failed
+make: *** [cmTC_c61d2/fast] Error 2
+
+
+Source file was:
+
+        #include <string_view>
+        int main()
+        { std::string_view sv; }
+Performing C++ SOURCE FILE Test has_span failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3a61f/fast && /usr/bin/make  -f CMakeFiles/cmTC_3a61f.dir/build.make CMakeFiles/cmTC_3a61f.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3a61f.dir/src.cxx.o
+/usr/bin/c++ -Dhas_span  -std=c++14 -o CMakeFiles/cmTC_3a61f.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:14: fatal error: span: No such file or directory
+     #include <span>
+              ^~~~~~
+compilation terminated.
+CMakeFiles/cmTC_3a61f.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_3a61f.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_3a61f.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_3a61f/fast' failed
+make: *** [cmTC_3a61f/fast] Error 2
+
+
+Source file was:
+
+    #include <span>
+    int main()
+    { std::span<float> s; }
+Performing C++ SOURCE FILE Test has_string_view failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6372a/fast && /usr/bin/make  -f CMakeFiles/cmTC_6372a.dir/build.make CMakeFiles/cmTC_6372a.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6372a.dir/src.cxx.o
+/usr/bin/c++ -Dhas_string_view  -std=c++14 -o CMakeFiles/cmTC_6372a.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:17: error: #include expects "FILENAME" or <FILENAME>
+         #include <string_view>
+                 ^
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:4:16: error: ‘string_view’ is not a member of ‘std’
+         { std::string_view sv; }
+                ^~~~~~~~~~~
+CMakeFiles/cmTC_6372a.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_6372a.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_6372a.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_6372a/fast' failed
+make: *** [cmTC_6372a/fast] Error 2
+
+
+Source file was:
+
+        #include <string_view>
+        int main()
+        { std::string_view sv; }
+Performing C++ SOURCE FILE Test has_span failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_25695/fast && /usr/bin/make  -f CMakeFiles/cmTC_25695.dir/build.make CMakeFiles/cmTC_25695.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_25695.dir/src.cxx.o
+/usr/bin/c++ -Dhas_span  -std=c++14 -o CMakeFiles/cmTC_25695.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:14: fatal error: span: No such file or directory
+     #include <span>
+              ^~~~~~
+compilation terminated.
+CMakeFiles/cmTC_25695.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_25695.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_25695.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_25695/fast' failed
+make: *** [cmTC_25695/fast] Error 2
+
+
+Source file was:
+
+    #include <span>
+    int main()
+    { std::span<float> s; }
+Performing C++ SOURCE FILE Test has_string_view failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_37cfb/fast && /usr/bin/make  -f CMakeFiles/cmTC_37cfb.dir/build.make CMakeFiles/cmTC_37cfb.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_37cfb.dir/src.cxx.o
+/usr/bin/c++ -Dhas_string_view  -std=c++14 -o CMakeFiles/cmTC_37cfb.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:17: error: #include expects "FILENAME" or <FILENAME>
+         #include <string_view>
+                 ^
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:4:16: error: ‘string_view’ is not a member of ‘std’
+         { std::string_view sv; }
+                ^~~~~~~~~~~
+CMakeFiles/cmTC_37cfb.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_37cfb.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_37cfb.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_37cfb/fast' failed
+make: *** [cmTC_37cfb/fast] Error 2
+
+
+Source file was:
+
+        #include <string_view>
+        int main()
+        { std::string_view sv; }
+Performing C++ SOURCE FILE Test has_span failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b7809/fast && /usr/bin/make  -f CMakeFiles/cmTC_b7809.dir/build.make CMakeFiles/cmTC_b7809.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b7809.dir/src.cxx.o
+/usr/bin/c++ -Dhas_span  -std=c++14 -o CMakeFiles/cmTC_b7809.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:14: fatal error: span: No such file or directory
+     #include <span>
+              ^~~~~~
+compilation terminated.
+CMakeFiles/cmTC_b7809.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_b7809.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_b7809.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_b7809/fast' failed
+make: *** [cmTC_b7809/fast] Error 2
+
+
+Source file was:
+
+    #include <span>
+    int main()
+    { std::span<float> s; }
+Performing C++ SOURCE FILE Test has_string_view failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7d01e/fast && /usr/bin/make  -f CMakeFiles/cmTC_7d01e.dir/build.make CMakeFiles/cmTC_7d01e.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7d01e.dir/src.cxx.o
+/usr/bin/c++ -Dhas_string_view  -std=c++14 -o CMakeFiles/cmTC_7d01e.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:17: error: #include expects "FILENAME" or <FILENAME>
+         #include <string_view>
+                 ^
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:4:16: error: ‘string_view’ is not a member of ‘std’
+         { std::string_view sv; }
+                ^~~~~~~~~~~
+CMakeFiles/cmTC_7d01e.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_7d01e.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_7d01e.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_7d01e/fast' failed
+make: *** [cmTC_7d01e/fast] Error 2
+
+
+Source file was:
+
+        #include <string_view>
+        int main()
+        { std::string_view sv; }
+Performing C++ SOURCE FILE Test has_span failed with the following output:
+Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8e65f/fast && /usr/bin/make  -f CMakeFiles/cmTC_8e65f.dir/build.make CMakeFiles/cmTC_8e65f.dir/build
+make[1]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8e65f.dir/src.cxx.o
+/usr/bin/c++ -Dhas_span  -std=c++14 -o CMakeFiles/cmTC_8e65f.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx
+/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp/src.cxx:2:14: fatal error: span: No such file or directory
+     #include <span>
+              ^~~~~~
+compilation terminated.
+CMakeFiles/cmTC_8e65f.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_8e65f.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_8e65f.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_8e65f/fast' failed
+make: *** [cmTC_8e65f/fast] Error 2
+
+
+Source file was:
+
+    #include <span>
+    int main()
+    { std::span<float> s; }

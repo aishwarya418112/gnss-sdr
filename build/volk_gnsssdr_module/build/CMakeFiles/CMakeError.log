@@ -1,20 +1,20 @@
 Determining if the include file filesystem exists failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_ff9b6/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_ff9b6.dir/build.make CMakeFiles/cmTC_ff9b6.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_32b7e/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_32b7e.dir/build.make CMakeFiles/cmTC_32b7e.dir/build
 make[4]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ff9b6.dir/CheckIncludeFile.cxx.o
-/usr/bin/c++   -std=c++1z -o CMakeFiles/cmTC_ff9b6.dir/CheckIncludeFile.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Building CXX object CMakeFiles/cmTC_32b7e.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -std=c++1z -o CMakeFiles/cmTC_32b7e.dir/CheckIncludeFile.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
 /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: filesystem: No such file or directory
  #include <filesystem>
           ^~~~~~~~~~~~
 compilation terminated.
-CMakeFiles/cmTC_ff9b6.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_ff9b6.dir/CheckIncludeFile.cxx.o' failed
-make[4]: *** [CMakeFiles/cmTC_ff9b6.dir/CheckIncludeFile.cxx.o] Error 1
+CMakeFiles/cmTC_32b7e.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_32b7e.dir/CheckIncludeFile.cxx.o' failed
+make[4]: *** [CMakeFiles/cmTC_32b7e.dir/CheckIncludeFile.cxx.o] Error 1
 make[4]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_ff9b6/fast' failed
-make[3]: *** [cmTC_ff9b6/fast] Error 2
+Makefile:127: recipe for target 'cmTC_32b7e/fast' failed
+make[3]: *** [cmTC_32b7e/fast] Error 2
 make[3]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
 
 
@@ -22,22 +22,22 @@ make[3]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_
 Performing C++ SOURCE FILE Test CXX_FILESYSTEM_NO_LINK_NEEDED failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_d8e5d/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_d8e5d.dir/build.make CMakeFiles/cmTC_d8e5d.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b9420/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_b9420.dir/build.make CMakeFiles/cmTC_b9420.dir/build
 make[4]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d8e5d.dir/src.cxx.o
-/usr/bin/c++ -DCXX_FILESYSTEM_NO_LINK_NEEDED  -std=c++1z -o CMakeFiles/cmTC_d8e5d.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_d8e5d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8e5d.dir/link.txt --verbose=1
-/usr/bin/c++ CMakeFiles/cmTC_d8e5d.dir/src.cxx.o -o cmTC_d8e5d 
-CMakeFiles/cmTC_d8e5d.dir/src.cxx.o: In function `main':
+Building CXX object CMakeFiles/cmTC_b9420.dir/src.cxx.o
+/usr/bin/c++ -DCXX_FILESYSTEM_NO_LINK_NEEDED  -std=c++1z -o CMakeFiles/cmTC_b9420.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b9420
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9420.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_b9420.dir/src.cxx.o -o cmTC_b9420 
+CMakeFiles/cmTC_b9420.dir/src.cxx.o: In function `main':
 src.cxx:(.text+0x20): undefined reference to `std::experimental::filesystem::v1::current_path[abi:cxx11]()'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_d8e5d.dir/build.make:98: recipe for target 'cmTC_d8e5d' failed
-make[4]: *** [cmTC_d8e5d] Error 1
+CMakeFiles/cmTC_b9420.dir/build.make:98: recipe for target 'cmTC_b9420' failed
+make[4]: *** [cmTC_b9420] Error 1
 make[4]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_d8e5d/fast' failed
-make[3]: *** [cmTC_d8e5d/fast] Error 2
+Makefile:127: recipe for target 'cmTC_b9420/fast' failed
+make[3]: *** [cmTC_b9420/fast] Error 2
 make[3]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
 
 
@@ -52,20 +52,20 @@ Source file was:
 Determining if the include file intrin.h exists failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_4b35b/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_4b35b.dir/build.make CMakeFiles/cmTC_4b35b.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_30670/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_30670.dir/build.make CMakeFiles/cmTC_30670.dir/build
 make[4]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4b35b.dir/CheckIncludeFile.c.o
-/usr/bin/cc   -fcx-limited-range -Wall -Werror=incompatible-pointer-types -Werror=pointer-sign  -o CMakeFiles/cmTC_4b35b.dir/CheckIncludeFile.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_30670.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fcx-limited-range -Wall -Werror=incompatible-pointer-types -Werror=pointer-sign  -o CMakeFiles/cmTC_30670.dir/CheckIncludeFile.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: intrin.h: No such file or directory
  #include <intrin.h>
           ^~~~~~~~~~
 compilation terminated.
-CMakeFiles/cmTC_4b35b.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_4b35b.dir/CheckIncludeFile.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_4b35b.dir/CheckIncludeFile.c.o] Error 1
+CMakeFiles/cmTC_30670.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_30670.dir/CheckIncludeFile.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_30670.dir/CheckIncludeFile.c.o] Error 1
 make[4]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_4b35b/fast' failed
-make[3]: *** [cmTC_4b35b/fast] Error 2
+Makefile:127: recipe for target 'cmTC_30670/fast' failed
+make[3]: *** [cmTC_30670/fast] Error 2
 make[3]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
 
 
@@ -73,17 +73,17 @@ make[3]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_
 Performing C++ SOURCE FILE Test HAVE_WERROR_UNUSED_CMD_LINE_ARG failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_655ed/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_655ed.dir/build.make CMakeFiles/cmTC_655ed.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3c918/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_3c918.dir/build.make CMakeFiles/cmTC_3c918.dir/build
 make[4]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_655ed.dir/src.cxx.o
-/usr/bin/c++ -DHAVE_WERROR_UNUSED_CMD_LINE_ARG  -fcx-limited-range  -Wall -Wextra -Wall    -Werror=unused-command-line-argument -std=c++14 -o CMakeFiles/cmTC_655ed.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_3c918.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_WERROR_UNUSED_CMD_LINE_ARG  -fcx-limited-range  -Wall -Wextra -Wall    -Werror=unused-command-line-argument -std=c++14 -o CMakeFiles/cmTC_3c918.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
 cc1plus: error: -Werror=unused-command-line-argument: no option -Wunused-command-line-argument
-CMakeFiles/cmTC_655ed.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_655ed.dir/src.cxx.o' failed
-make[4]: *** [CMakeFiles/cmTC_655ed.dir/src.cxx.o] Error 1
+CMakeFiles/cmTC_3c918.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_3c918.dir/src.cxx.o' failed
+make[4]: *** [CMakeFiles/cmTC_3c918.dir/src.cxx.o] Error 1
 make[4]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_655ed/fast' failed
-make[3]: *** [cmTC_655ed/fast] Error 2
+Makefile:127: recipe for target 'cmTC_3c918/fast' failed
+make[3]: *** [cmTC_3c918/fast] Error 2
 make[3]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
 
 
@@ -92,17 +92,17 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test have_mfloat_abi_softfp failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_42f5f/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_42f5f.dir/build.make CMakeFiles/cmTC_42f5f.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6b61d/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_6b61d.dir/build.make CMakeFiles/cmTC_6b61d.dir/build
 make[4]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_42f5f.dir/src.cxx.o
-/usr/bin/c++ -Dhave_mfloat_abi_softfp  -fcx-limited-range  -Wall -Wextra -Wall    -mfloat-abi=softfp -std=c++14 -o CMakeFiles/cmTC_42f5f.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_6b61d.dir/src.cxx.o
+/usr/bin/c++ -Dhave_mfloat_abi_softfp  -fcx-limited-range  -Wall -Wextra -Wall    -mfloat-abi=softfp -std=c++14 -o CMakeFiles/cmTC_6b61d.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
 c++: error: unrecognized command line option '-mfloat-abi=softfp'
-CMakeFiles/cmTC_42f5f.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_42f5f.dir/src.cxx.o' failed
-make[4]: *** [CMakeFiles/cmTC_42f5f.dir/src.cxx.o] Error 1
+CMakeFiles/cmTC_6b61d.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_6b61d.dir/src.cxx.o' failed
+make[4]: *** [CMakeFiles/cmTC_6b61d.dir/src.cxx.o] Error 1
 make[4]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_42f5f/fast' failed
-make[3]: *** [cmTC_42f5f/fast] Error 2
+Makefile:127: recipe for target 'cmTC_6b61d/fast' failed
+make[3]: *** [cmTC_6b61d/fast] Error 2
 make[3]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
 
 
@@ -111,17 +111,17 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test have_mfloat_abi_hard failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_f5416/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_f5416.dir/build.make CMakeFiles/cmTC_f5416.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fa0f5/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_fa0f5.dir/build.make CMakeFiles/cmTC_fa0f5.dir/build
 make[4]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f5416.dir/src.cxx.o
-/usr/bin/c++ -Dhave_mfloat_abi_hard  -fcx-limited-range  -Wall -Wextra -Wall    -mfloat-abi=hard -std=c++14 -o CMakeFiles/cmTC_f5416.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_fa0f5.dir/src.cxx.o
+/usr/bin/c++ -Dhave_mfloat_abi_hard  -fcx-limited-range  -Wall -Wextra -Wall    -mfloat-abi=hard -std=c++14 -o CMakeFiles/cmTC_fa0f5.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
 c++: error: unrecognized command line option '-mfloat-abi=hard'
-CMakeFiles/cmTC_f5416.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_f5416.dir/src.cxx.o' failed
-make[4]: *** [CMakeFiles/cmTC_f5416.dir/src.cxx.o] Error 1
+CMakeFiles/cmTC_fa0f5.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_fa0f5.dir/src.cxx.o' failed
+make[4]: *** [CMakeFiles/cmTC_fa0f5.dir/src.cxx.o] Error 1
 make[4]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_f5416/fast' failed
-make[3]: *** [cmTC_f5416/fast] Error 2
+Makefile:127: recipe for target 'cmTC_fa0f5/fast' failed
+make[3]: *** [cmTC_fa0f5/fast] Error 2
 make[3]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
 
 
@@ -130,17 +130,17 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test have_mfpu_neon failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_d3044/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_d3044.dir/build.make CMakeFiles/cmTC_d3044.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_fc35a/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_fc35a.dir/build.make CMakeFiles/cmTC_fc35a.dir/build
 make[4]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d3044.dir/src.cxx.o
-/usr/bin/c++ -Dhave_mfpu_neon  -fcx-limited-range  -Wall -Wextra -Wall    -mfpu=neon -std=c++14 -o CMakeFiles/cmTC_d3044.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_fc35a.dir/src.cxx.o
+/usr/bin/c++ -Dhave_mfpu_neon  -fcx-limited-range  -Wall -Wextra -Wall    -mfpu=neon -std=c++14 -o CMakeFiles/cmTC_fc35a.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
 c++: error: unrecognized command line option '-mfpu=neon'
-CMakeFiles/cmTC_d3044.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_d3044.dir/src.cxx.o' failed
-make[4]: *** [CMakeFiles/cmTC_d3044.dir/src.cxx.o] Error 1
+CMakeFiles/cmTC_fc35a.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_fc35a.dir/src.cxx.o' failed
+make[4]: *** [CMakeFiles/cmTC_fc35a.dir/src.cxx.o] Error 1
 make[4]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_d3044/fast' failed
-make[3]: *** [cmTC_d3044/fast] Error 2
+Makefile:127: recipe for target 'cmTC_fc35a/fast' failed
+make[3]: *** [cmTC_fc35a/fast] Error 2
 make[3]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
 
 
@@ -149,21 +149,21 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test have_m32 failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_3ebaf/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_3ebaf.dir/build.make CMakeFiles/cmTC_3ebaf.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_74d3b/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_74d3b.dir/build.make CMakeFiles/cmTC_74d3b.dir/build
 make[4]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3ebaf.dir/src.cxx.o
-/usr/bin/c++ -Dhave_m32  -fcx-limited-range  -Wall -Wextra -Wall    -m32 -std=c++14 -o CMakeFiles/cmTC_3ebaf.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_3ebaf
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ebaf.dir/link.txt --verbose=1
-/usr/bin/c++  -fcx-limited-range  -Wall -Wextra -Wall  CMakeFiles/cmTC_3ebaf.dir/src.cxx.o -o cmTC_3ebaf 
-/usr/bin/ld: i386 architecture of input file `CMakeFiles/cmTC_3ebaf.dir/src.cxx.o' is incompatible with i386:x86-64 output
+Building CXX object CMakeFiles/cmTC_74d3b.dir/src.cxx.o
+/usr/bin/c++ -Dhave_m32  -fcx-limited-range  -Wall -Wextra -Wall    -m32 -std=c++14 -o CMakeFiles/cmTC_74d3b.dir/src.cxx.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_74d3b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74d3b.dir/link.txt --verbose=1
+/usr/bin/c++  -fcx-limited-range  -Wall -Wextra -Wall  CMakeFiles/cmTC_74d3b.dir/src.cxx.o -o cmTC_74d3b 
+/usr/bin/ld: i386 architecture of input file `CMakeFiles/cmTC_74d3b.dir/src.cxx.o' is incompatible with i386:x86-64 output
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_3ebaf.dir/build.make:98: recipe for target 'cmTC_3ebaf' failed
-make[4]: *** [cmTC_3ebaf] Error 1
+CMakeFiles/cmTC_74d3b.dir/build.make:98: recipe for target 'cmTC_74d3b' failed
+make[4]: *** [cmTC_74d3b] Error 1
 make[4]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_3ebaf/fast' failed
-make[3]: *** [cmTC_3ebaf/fast] Error 2
+Makefile:127: recipe for target 'cmTC_74d3b/fast' failed
+make[3]: *** [cmTC_74d3b/fast] Error 2
 make[3]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
 
 
@@ -172,20 +172,20 @@ int main() { return 0; }
 Performing C SOURCE FILE Test neon_compile_result failed with the following output:
 Change Dir: /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_4dfec/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-/usr/bin/make  -f CMakeFiles/cmTC_4dfec.dir/build.make CMakeFiles/cmTC_4dfec.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ba572/fast && make[3]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
+/usr/bin/make  -f CMakeFiles/cmTC_ba572.dir/build.make CMakeFiles/cmTC_ba572.dir/build
 make[4]: Entering directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4dfec.dir/src.c.o
-/usr/bin/cc -Dneon_compile_result  -fcx-limited-range -Wall -Werror=incompatible-pointer-types -Werror=pointer-sign  -o CMakeFiles/cmTC_4dfec.dir/src.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_ba572.dir/src.c.o
+/usr/bin/cc -Dneon_compile_result  -fcx-limited-range -Wall -Werror=incompatible-pointer-types -Werror=pointer-sign  -o CMakeFiles/cmTC_ba572.dir/src.c.o -c /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.c
 /home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: arm_neon.h: No such file or directory
  #include <arm_neon.h>
           ^~~~~~~~~~~~
 compilation terminated.
-CMakeFiles/cmTC_4dfec.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_4dfec.dir/src.c.o' failed
-make[4]: *** [CMakeFiles/cmTC_4dfec.dir/src.c.o] Error 1
+CMakeFiles/cmTC_ba572.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_ba572.dir/src.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_ba572.dir/src.c.o] Error 1
 make[4]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_4dfec/fast' failed
-make[3]: *** [cmTC_4dfec/fast] Error 2
+Makefile:127: recipe for target 'cmTC_ba572/fast' failed
+make[3]: *** [cmTC_ba572/fast] Error 2
 make[3]: Leaving directory '/home/aishwarya/Desktop/gnss-sdr/build/volk_gnsssdr_module/build/CMakeFiles/CMakeTmp'
 
 

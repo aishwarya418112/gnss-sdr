@@ -2,7 +2,7 @@
 * BUILDING CONFIGURATION SUMMARY *
 **********************************
 
-GNSS-SDR version: 0.0.14.git-next-ab6a774f4
+GNSS-SDR version: 0.0.14.git-next-1fc7286a3
 Building on GNU/Linux Ubuntu 18.04 (64 bits)
 CMake version: 3.20.3
 The CXX compiler identification is GNU 7.5.0. Standard: C++14.

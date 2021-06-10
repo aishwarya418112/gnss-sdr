@@ -29,11 +29,11 @@ Gps_Navigation_Message::Gps_Navigation_Message()
 {
     auto gnss_sat = Gnss_Satellite();
     const std::string _system("GPS");
-    for (uint32_t i = 1; i < 9; i++)
+    for (uint32_t i = 1; i < 10; i++)
         {
             satelliteBlock[i] = gnss_sat.what_block(_system, i);
         }
-    for (int32_t i = 1; i < 9; i++)
+    for (int32_t i = 1; i < 10; i++)
         {
             almanacHealth[i] = 0;
         }
@@ -330,8 +330,8 @@ int32_t Gps_Navigation_Message::subframe_decoder(char* subframe)
                     almanacHealth[6] = static_cast<int32_t>(read_navigation_unsigned(subframe_bits, HEALTH_SV6));
                     almanacHealth[7] = static_cast<int32_t>(read_navigation_unsigned(subframe_bits, HEALTH_SV7));
                     almanacHealth[8] = static_cast<int32_t>(read_navigation_unsigned(subframe_bits, HEALTH_SV8));
-                    /*almanacHealth[9] = static_cast<int32_t>(read_navigation_unsigned(subframe_bits, HEALTH_SV9));
-                    almanacHealth[10] = static_cast<int32_t>(read_navigation_unsigned(subframe_bits, HEALTH_SV10));
+                    //almanacHealth[9] = static_cast<int32_t>(read_navigation_unsigned(subframe_bits, HEALTH_SV9));
+                    /*almanacHealth[10] = static_cast<int32_t>(read_navigation_unsigned(subframe_bits, HEALTH_SV10));
                     almanacHealth[11] = static_cast<int32_t>(read_navigation_unsigned(subframe_bits, HEALTH_SV11));
                     almanacHealth[12] = static_cast<int32_t>(read_navigation_unsigned(subframe_bits, HEALTH_SV12));
                     almanacHealth[13] = static_cast<int32_t>(read_navigation_unsigned(subframe_bits, HEALTH_SV13));

@@ -19,7 +19,7 @@
 #include "gps_sdr_signal_replica.h"
 #include <array>
 #include <bitset>
-
+#include <iostream>   // for cout, cerr
 const auto AUX_CEIL = [](float x) { return static_cast<int32_t>(static_cast<int64_t>((x) + 1)); };
 
 void gps_l1_ca_code_gen_int(own::span<int32_t> dest, int32_t prn, uint32_t chip_shift)
@@ -38,8 +38,8 @@ void gps_l1_ca_code_gen_int(own::span<int32_t> dest, int32_t prn, uint32_t chip_
 
     // G2 Delays as defined in GPS-ISD-200D
     //const std::array<int32_t, 7> init_val = {s1.to_ullong() /*PRN1*/, s2.to_ullong() /*PRN2*/, s3.to_ullong() /*PRN3*/, s4.to_ullong() /*PRN4*/, s5.to_ullong() /*PRN5*/, s6.to_ullong() /*PRN6*/, s7.to_ullong() /*PRN7*/};
-    std::array<int,7> dec_value = {935,38,564,370,944,107,20};
-    std::bitset<10> G2_register[6] = {};
+    std::array<int,8> dec_value = {919,400,177,314,55,856,160,50};
+    std::bitset<10> G2_register[7] = {};
     for (std::size_t i = 0; i < dec_value.size(); ++i)
     {
         G2_register[i]= std::bitset<10>(dec_value[i]); 
@@ -49,7 +49,7 @@ void gps_l1_ca_code_gen_int(own::span<int32_t> dest, int32_t prn, uint32_t chip_
         
 
     // A simple error check
-    if ((prn_idx < 0) || (prn_idx > 6))
+    if ((prn_idx < 0) || (prn_idx > 7))
         {
             return;
         }
@@ -114,6 +114,7 @@ void gps_l1_ca_code_gen_complex(own::span<std::complex<float>> dest, int32_t prn
     for (uint32_t ii = 0; ii < code_length; ++ii)
         {
             dest[ii] = std::complex<float>(0.0F, static_cast<float>(ca_code_int[ii]));
+            std::cout<<"With PRN ID "<<prn<<" The prn code is "<<dest[ii];
         }
 }
 
@@ -161,5 +162,6 @@ void gps_l1_ca_code_gen_complex_sampled(own::span<std::complex<float>> dest, uin
                 {
                     dest[i] = code_aux[codeValueIndex];  // repeat the chip -> upsample
                 }
+            
         }
 }

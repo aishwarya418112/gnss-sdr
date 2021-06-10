@@ -140,7 +140,7 @@ void Gnss_Satellite::update_PRN(uint32_t PRN_)
         }
     else
         {
-            if (PRN_ < 1 or PRN_ > 24)
+            if (PRN_ < 1 or PRN_ > 8)
                 {
                     DLOG(INFO) << "This PRN is not defined";
                     // Adjusting for PRN 26, now used in
@@ -186,7 +186,7 @@ void Gnss_Satellite::set_PRN(uint32_t PRN_)
                     PRN = PRN_;
                 }
         }
-    else if (system == "SBAS")
+    /*else if (system == "SBAS")
         {
             if ((PRN_ == 120)      // EGNOS Test Platform.Inmarsat 3-F2 (Atlantic Ocean Region-East)
                 || (PRN_ == 123)   // EGNOS Operational Platform. Astra 5B
@@ -202,7 +202,7 @@ void Gnss_Satellite::set_PRN(uint32_t PRN_)
                     DLOG(INFO) << "This PRN is not defined";
                     PRN = 0;
                 }
-        }
+        }*/
     else if (system == "Galileo")
         {
             if (PRN_ < 1 or PRN_ > 36)
@@ -426,7 +426,7 @@ std::string Gnss_Satellite::what_block(const std::string& system_, uint32_t PRN_
                     block_ = std::string("Unknown");
                 }
         }
-    if (system_ == "SBAS")
+    /*if (system_ == "SBAS")
         {
             switch (PRN_)
                 {
@@ -451,7 +451,7 @@ std::string Gnss_Satellite::what_block(const std::string& system_, uint32_t PRN_
                 default:
                     block_ = std::string("Unknown");
                 }
-        }
+        }*/
     if (system_ == "Galileo")
         {
             // Check https://en.wikipedia.org/wiki/List_of_Galileo_satellites and https://www.gsc-europa.eu/system-status/Constellation-Information

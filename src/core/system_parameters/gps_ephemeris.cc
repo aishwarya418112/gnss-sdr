@@ -25,7 +25,7 @@ Gps_Ephemeris::Gps_Ephemeris()
 {
     auto gnss_sat = Gnss_Satellite();
     const std::string _system("GPS");
-    for (uint32_t i = 1; i < 9; i++)
+    for (uint32_t i = 1; i < 10; i++)
         {
             satelliteBlock[i] = gnss_sat.what_block(_system, i);
         }

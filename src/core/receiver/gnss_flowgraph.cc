@@ -1206,9 +1206,9 @@ int GNSSFlowgraph::connect_signal_conditioners_to_channels()
                                 //case evGPS_L5:
                                   //  acq_fs = GPS_L5_OPT_ACQ_FS_SPS;
                                     //break;
-                                case evSBAS_1C:
-                                    acq_fs = GPS_L1_CA_OPT_ACQ_FS_SPS;
-                                    break;
+                                //case evSBAS_1C:
+                                  //  acq_fs = GPS_L1_CA_OPT_ACQ_FS_SPS;
+                                    //break;
                                 case evGAL_1B:
                                     acq_fs = GALILEO_E1_OPT_ACQ_FS_SPS;
                                     break;
@@ -2233,7 +2233,7 @@ void GNSSFlowgraph::set_signals_list()
     std::set<unsigned int>::const_iterator available_gnss_prn_iter;
 
     // Create the lists of GNSS satellites
-    std::set<unsigned int> available_irnss_prn = {1, 2, 3, 4, 5, 6, 7, 8};
+    std::set<unsigned int> available_gps_prn = {1, 2, 3, 4, 5, 6, 7, 8,9};
 
     std::set<unsigned int> available_sbas_prn = {123, 131, 135, 136, 138};
 
@@ -2301,7 +2301,7 @@ void GNSSFlowgraph::set_signals_list()
 
             if (!tmp_set.empty())
                 {
-                    available_irnss_prn = tmp_set;
+                    available_gps_prn = tmp_set;
                 }
         }
 
@@ -2316,7 +2316,7 @@ void GNSSFlowgraph::set_signals_list()
                     try
                         {
                             auto banned = static_cast<unsigned int>(std::stoi(substr));
-                            available_irnss_prn.erase(banned);
+                            available_gps_prn.erase(banned);
                         }
                     catch (const std::invalid_argument& ia)
                         {
@@ -2329,7 +2329,7 @@ void GNSSFlowgraph::set_signals_list()
                 }
         }*/
 
-    sv_list = configuration_->property("SBAS.prns", std::string(""));
+    /*sv_list = configuration_->property("SBAS.prns", std::string(""));
 
     if (sv_list.length() > 0)
         {
@@ -2367,7 +2367,7 @@ void GNSSFlowgraph::set_signals_list()
                             std::cerr << "Out of range at GNSS-SDR.SBAS_banned_prns configuration parameter: " << oor.what() << '\n';
                         }
                 }
-        }
+        }*/
 
     sv_list = configuration_->property("Glonass.prns", std::string(""));
 
@@ -2452,8 +2452,8 @@ void GNSSFlowgraph::set_signals_list()
     if (configuration_->property("Channels_1C.count", 0) > 0)
         {
             // Loop to create GPS L1 C/A signals
-            for (available_gnss_prn_iter = available_irnss_prn.cbegin();
-                 available_gnss_prn_iter != available_irnss_prn.cend();
+            for (available_gnss_prn_iter = available_gps_prn.cbegin();
+                 available_gnss_prn_iter != available_gps_prn.cend();
                  available_gnss_prn_iter++)
                 {
                     available_GPS_1C_signals_.emplace_back(
@@ -2465,8 +2465,8 @@ void GNSSFlowgraph::set_signals_list()
     /*if (configuration_->property("Channels_2S.count", 0) > 0)
         {
             // Loop to create GPS L2C M signals
-            for (available_gnss_prn_iter = available_irnss_prn.cbegin();
-                 available_gnss_prn_iter != available_irnss_prn.cend();
+            for (available_gnss_prn_iter = available_gps_prn.cbegin();
+                 available_gnss_prn_iter != available_gps_prn.cend();
                  available_gnss_prn_iter++)
                 {
                     available_GPS_2S_signals_.emplace_back(
@@ -2478,8 +2478,8 @@ void GNSSFlowgraph::set_signals_list()
     if (configuration_->property("Channels_L5.count", 0) > 0)
         {
             // Loop to create GPS L5 signals
-            for (available_gnss_prn_iter = available_irnss_prn.cbegin();
-                 available_gnss_prn_iter != available_irnss_prn.cend();
+            for (available_gnss_prn_iter = available_gps_prn.cbegin();
+                 available_gnss_prn_iter != available_gps_prn.cend();
                  available_gnss_prn_iter++)
                 {
                     available_GPS_L5_signals_.emplace_back(
@@ -2488,7 +2488,7 @@ void GNSSFlowgraph::set_signals_list()
                 }
         }*/
 
-    if (configuration_->property("Channels_SBAS.count", 0) > 0)
+    /*if (configuration_->property("Channels_SBAS.count", 0) > 0)
         {
             // Loop to create SBAS L1 C/A signals
             for (available_gnss_prn_iter = available_sbas_prn.cbegin();
@@ -2500,7 +2500,7 @@ void GNSSFlowgraph::set_signals_list()
                         std::string("1C"));
                 }
         }
-
+*/
     if (configuration_->property("Channels_1B.count", 0) > 0)
         {
             // Loop to create the list of Galileo E1B signals

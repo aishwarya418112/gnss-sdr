@@ -13,11 +13,11 @@
 %
 
 %% Configuration
-path = '/home/dmiralles/Documents/gnss-sdr/';
-file = 'bds_acq';
-sat = 6;
+path = '/home/aishwarya/Desktop/gnss-sdr/data';
+file = 'acq_dump_G_1C_ch_0_1_sat_1';
+sat = 1;
 channel = 0;
-execution = 4;
+execution = 1;
 % Signal:
 %     1 GPS  L1
 %     2 GPS  L2M
@@ -30,7 +30,7 @@ execution = 4;
 %     9 BDS. B3
 %    10 BDS. B2a
 
-signal_type = 8;
+signal_type = 1;
 
 %%% True for light grid representation
 lite_view = true;

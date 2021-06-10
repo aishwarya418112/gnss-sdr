@@ -56,65 +56,98 @@ constexpr uint32_t GPS_L1_CA_OPT_ACQ_FS_SPS = 2000000;  //!< Sampling frequency 
 constexpr int32_t GPS_L1_CA_HISTORY_DEEP = 100;
 
 // NAVIGATION MESSAGE DEMODULATION AND DECODING
-constexpr double GPS_CA_PREAMBLE_DURATION_S = 0.160;
-constexpr int32_t GPS_CA_PREAMBLE_LENGTH_BITS = 8;
-constexpr int32_t GPS_CA_PREAMBLE_LENGTH_SYMBOLS = 160;
-constexpr int32_t GPS_CA_PREAMBLE_DURATION_MS = 160;
-constexpr int32_t GPS_CA_TELEMETRY_RATE_BITS_SECOND = 50;  //!< NAV message bit rate [bits/s]
-constexpr int32_t GPS_CA_TELEMETRY_SYMBOLS_PER_BIT = 20;
+constexpr double GPS_CA_PREAMBLE_DURATION_S = 0.32;
+constexpr int32_t GPS_CA_PREAMBLE_LENGTH_BITS = 16;
+constexpr int32_t GPS_CA_PREAMBLE_LENGTH_SYMBOLS = 16;
+constexpr int32_t GPS_CA_PREAMBLE_DURATION_MS = 320;
+constexpr int32_t GPS_CA_TELEMETRY_RATE_BITS_SECOND = 25;  //!< NAV message bit rate [bits/s]
+constexpr int32_t GPS_CA_TELEMETRY_SYMBOLS_PER_BIT = 2;
 constexpr int32_t GPS_CA_TELEMETRY_RATE_SYMBOLS_SECOND = GPS_CA_TELEMETRY_RATE_BITS_SECOND * GPS_CA_TELEMETRY_SYMBOLS_PER_BIT;  //!< NAV message bit rate [symbols/s]
-constexpr int32_t GPS_WORD_LENGTH = 4;                                                                                          //!< CRC + GPS WORD (-2 -1 0 ... 29) Bits = 4 bytes
-constexpr int32_t GPS_SUBFRAME_LENGTH = 40;                                                                                     //!< GPS_WORD_LENGTH x 10 = 40 bytes
+constexpr int32_t GPS_WORD_LENGTH = 3.75;                                                                                          //!< CRC + GPS WORD (-2 -1 0 ... 29) Bits = 4 bytes
+constexpr int32_t GPS_SUBFRAME_LENGTH = 300;                                                                                     //!< GPS_WORD_LENGTH x 10 = 40 bytes
 constexpr int32_t GPS_SUBFRAME_BITS = 300;                                                                                      //!< Number of bits per subframe in the NAV message [bits]
-constexpr int32_t GPS_SUBFRAME_SECONDS = 6;                                                                                     //!< Subframe duration [seconds]
-constexpr int32_t GPS_SUBFRAME_MS = 6000;                                                                                       //!< Subframe duration [seconds]
+constexpr int32_t GPS_SUBFRAME_SECONDS = 12;                                                                                     //!< Subframe duration [seconds]
+constexpr int32_t GPS_SUBFRAME_MS = 12000;                                                                                       //!< Subframe duration [seconds]
 constexpr int32_t GPS_WORD_BITS = 30;                                                                                           //!< Number of bits per word in the NAV message [bits]
-constexpr char GPS_CA_PREAMBLE[9] = "10001011";
-constexpr char GPS_CA_PREAMBLE_SYMBOLS_STR[161] = "1111111111111111111100000000000000000000000000000000000000000000000000000000000011111111111111111111000000000000000000001111111111111111111111111111111111111111";
+constexpr char GPS_CA_PREAMBLE[17] = "1110101110010000";
+constexpr char GPS_CA_PREAMBLE_SYMBOLS_STR[17] = "1110101110010000";
 
 // GPS NAVIGATION MESSAGE STRUCTURE
 // NAVIGATION MESSAGE FIELDS POSITIONS (from IS-GPS-200L Appendix II)
 
 // SUBFRAME 1-5 (TLM and HOW)
+//SUBFRAME 1
+const std::vector<std::pair<int32_t, int32_t>> ALERT_FLAG({{26, 1}});
+const std::vector<std::pair<int32_t, int32_t>> SUBFRAME_ID({{28,2}});
+const std::vector<std::pair<int32_t, int32_t>> TOW({{31, 10}});
+const std::vector<std::pair<int32_t, int32_t>> A_F0({{41, 22}});
+const std::vector<std::pair<int32_t, int32_t>> A_F1({{63, 16}});
+const std::vector<std::pair<int32_t, int32_t>> A_F2({{79, 8}});
+const std::vector<std::pair<int32_t, int32_t>> SV_ACCURACY({{87, 4}});
+const std::vector<std::pair<int32_t, int32_t>> T_OC({{91, 16}});
+const std::vector<std::pair<int32_t, int32_t>> T_GD({{107, 8}});
+const std::vector<std::pair<int32_t, int32_t>> DELTA_N({{115, 22}});
+constexpr double DELTA_N_LSB = PI_TWO_N41;
+constexpr double T_GD_LSB = TWO_N31;
+const std::vector<std::pair<int32_t, int32_t>> IODE_SF1({{137, 8}});
+constexpr int32_t T_OC_LSB = static_cast<int32_t>(TWO_P4);
+constexpr double A_F2_LSB = TWO_N55;
+constexpr double A_F1_LSB = TWO_N43;
+constexpr double A_F0_LSB = TWO_N31;
+const std::vector<std::pair<int32_t, int32_t>> L5_FLAG({{155, 1}});
+const std::vector<std::pair<int32_t, int32_t>> S_FLAG({{156, 1}});
+const std::vector<std::pair<int32_t, int32_t>> C_UC({{157, 15}});
+constexpr double C_UC_LSB = TWO_N28;
+const std::vector<std::pair<int32_t, int32_t>> C_US({{172, 15}});
+constexpr double C_US_LSB = TWO_N28;
+const std::vector<std::pair<int32_t, int32_t>> C_IC({{187, 15}});
+constexpr double C_IC_LSB = TWO_N28;
+const std::vector<std::pair<int32_t, int32_t>> C_IS({{202, 15}});
+constexpr double C_IS_LSB = TWO_N28;
+const std::vector<std::pair<int32_t, int32_t>> C_RC({{217, 15}});
+constexpr double C_RC_LSB = TWO_N4;
+const std::vector<std::pair<int32_t, int32_t>> C_RS({{232, 15}});
+constexpr double C_RS_LSB = TWO_N4;
+const std::vector<std::pair<int32_t, int32_t>> I_DOT({{247, 14}});
+constexpr double I_DOT_LSB = TWO_N43;
 
-const std::vector<std::pair<int32_t, int32_t>> TOW({{31, 17}});
+
+
 const std::vector<std::pair<int32_t, int32_t>> INTEGRITY_STATUS_FLAG({{23, 1}});
-const std::vector<std::pair<int32_t, int32_t>> ALERT_FLAG({{48, 1}});
+
 const std::vector<std::pair<int32_t, int32_t>> ANTI_SPOOFING_FLAG({{49, 1}});
-const std::vector<std::pair<int32_t, int32_t>> SUBFRAME_ID({{50, 3}});
 
 // SUBFRAME 1
+
 const std::vector<std::pair<int32_t, int32_t>> GPS_WEEK({{61, 10}});
 const std::vector<std::pair<int32_t, int32_t>> CA_OR_P_ON_L2({{71, 2}});  //*
-const std::vector<std::pair<int32_t, int32_t>> SV_ACCURACY({{73, 4}});
+//const std::vector<std::pair<int32_t, int32_t>> SV_ACCURACY({{73, 4}});
 const std::vector<std::pair<int32_t, int32_t>> SV_HEALTH({{77, 6}});
 const std::vector<std::pair<int32_t, int32_t>> L2_P_DATA_FLAG({{91, 1}});
-const std::vector<std::pair<int32_t, int32_t>> T_GD({{197, 8}});
-constexpr double T_GD_LSB = TWO_N31;
+//const std::vector<std::pair<int32_t, int32_t>> T_GD({{197, 8}});
 const std::vector<std::pair<int32_t, int32_t>> IODC({{83, 2}, {211, 8}});
-const std::vector<std::pair<int32_t, int32_t>> T_OC({{219, 16}});
-constexpr int32_t T_OC_LSB = static_cast<int32_t>(TWO_P4);
+/*const std::vector<std::pair<int32_t, int32_t>> T_OC({{219, 16}});
 const std::vector<std::pair<int32_t, int32_t>> A_F2({{241, 8}});
-constexpr double A_F2_LSB = TWO_N55;
+
 const std::vector<std::pair<int32_t, int32_t>> A_F1({{249, 16}});
-constexpr double A_F1_LSB = TWO_N43;
+
 const std::vector<std::pair<int32_t, int32_t>> A_F0({{271, 22}});
-constexpr double A_F0_LSB = TWO_N31;
+*/
 
 // SUBFRAME 2
 const std::vector<std::pair<int32_t, int32_t>> IODE_SF2({{61, 8}});
-const std::vector<std::pair<int32_t, int32_t>> C_RS({{69, 16}});
-constexpr double C_RS_LSB = TWO_N5;
-const std::vector<std::pair<int32_t, int32_t>> DELTA_N({{91, 16}});
-constexpr double DELTA_N_LSB = PI_TWO_N43;
+/*const std::vector<std::pair<int32_t, int32_t>> C_RS({{69, 16}});
+constexpr double C_RS_LSB = TWO_N5;*/
+//const std::vector<std::pair<int32_t, int32_t>> DELTA_N({{91, 16}});
+
 const std::vector<std::pair<int32_t, int32_t>> M_0({{107, 8}, {121, 24}});
 constexpr double M_0_LSB = PI_TWO_N31;
-const std::vector<std::pair<int32_t, int32_t>> C_UC({{151, 16}});
-constexpr double C_UC_LSB = TWO_N29;
+/*const std::vector<std::pair<int32_t, int32_t>> C_UC({{151, 16}});
+constexpr double C_UC_LSB = TWO_N29;*/
 const std::vector<std::pair<int32_t, int32_t>> ECCENTRICITY({{167, 8}, {181, 24}});
 constexpr double ECCENTRICITY_LSB = TWO_N33;
-const std::vector<std::pair<int32_t, int32_t>> C_US({{211, 16}});
-constexpr double C_US_LSB = TWO_N29;
+/*const std::vector<std::pair<int32_t, int32_t>> C_US({{211, 16}});
+constexpr double C_US_LSB = TWO_N29;*/
 const std::vector<std::pair<int32_t, int32_t>> SQRT_A({{227, 8}, {241, 24}});
 constexpr double SQRT_A_LSB = TWO_N19;
 const std::vector<std::pair<int32_t, int32_t>> T_OE({{271, 16}});
@@ -124,23 +157,23 @@ const std::vector<std::pair<int32_t, int32_t>> AODO({{272, 5}});
 constexpr int32_t AODO_LSB = 900;
 
 // SUBFRAME 3
-const std::vector<std::pair<int32_t, int32_t>> C_IC({{61, 16}});
-constexpr double C_IC_LSB = TWO_N29;
+/*const std::vector<std::pair<int32_t, int32_t>> C_IC({{61, 16}});
+constexpr double C_IC_LSB = TWO_N29;*/
 const std::vector<std::pair<int32_t, int32_t>> OMEGA_0({{77, 8}, {91, 24}});
 constexpr double OMEGA_0_LSB = PI_TWO_N31;
-const std::vector<std::pair<int32_t, int32_t>> C_IS({{121, 16}});
-constexpr double C_IS_LSB = TWO_N29;
+/*const std::vector<std::pair<int32_t, int32_t>> C_IS({{121, 16}});
+constexpr double C_IS_LSB = TWO_N28;*/
 const std::vector<std::pair<int32_t, int32_t>> I_0({{137, 8}, {151, 24}});
 constexpr double I_0_LSB = PI_TWO_N31;
-const std::vector<std::pair<int32_t, int32_t>> C_RC({{181, 16}});
-constexpr double C_RC_LSB = TWO_N5;
+/*const std::vector<std::pair<int32_t, int32_t>> C_RC({{181, 16}});
+constexpr double C_RC_LSB = TWO_N5;*/
 const std::vector<std::pair<int32_t, int32_t>> OMEGA({{197, 8}, {211, 24}});
 constexpr double OMEGA_LSB = PI_TWO_N31;
 const std::vector<std::pair<int32_t, int32_t>> OMEGA_DOT({{241, 24}});
 constexpr double OMEGA_DOT_LSB = PI_TWO_N43;
 const std::vector<std::pair<int32_t, int32_t>> IODE_SF3({{271, 8}});
-const std::vector<std::pair<int32_t, int32_t>> I_DOT({{279, 14}});
-constexpr double I_DOT_LSB = PI_TWO_N43;
+/*const std::vector<std::pair<int32_t, int32_t>> I_DOT({{279, 14}});
+constexpr double I_DOT_LSB = PI_TWO_N43;*/
 
 // SUBFRAME 4-5
 const std::vector<std::pair<int32_t, int32_t>> SV_DATA_ID({{61, 2}});
@@ -208,8 +241,8 @@ const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV5({{121, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV6({{127, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV7({{133, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV8({{139, 6}});
-/*const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV9({{151, 6}});
-const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV10({{157, 6}});
+const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV9({{151, 6}});
+/*const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV10({{157, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV11({{163, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV12({{169, 6}});
 const std::vector<std::pair<int32_t, int32_t>> HEALTH_SV13({{181, 6}});

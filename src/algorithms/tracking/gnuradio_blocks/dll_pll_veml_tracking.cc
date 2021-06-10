@@ -644,6 +644,9 @@ void dll_pll_veml_tracking::start_tracking()
     if (d_systemName == "GPS" and d_signal_type == "1C")
         {
             gps_l1_ca_code_gen_float(d_tracking_code, d_acquisition_gnss_synchro->PRN, 0);
+            d_systemName = "IRNSS";
+            d_signal_pretty_name = "L5";
+            
         }
     /*else if (d_systemName == "GPS" and d_signal_type == "2S")
         {
